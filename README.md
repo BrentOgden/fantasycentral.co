@@ -62,3 +62,22 @@ npm install
 # or
 yarn
 ```
+
+### Folder Structure
+
+```
+.
+├── public/                   # Static assets (favicon, images)
+├── src/
+│   ├── assets/               # Custom CSS files, images, etc.
+│   ├── components/           # Reusable UI components (Card, LeagueHistory, etc.)
+        ├──dataSources/       # statistical data to populate the stats components
+│   ├── pages/                # Page views (Home, League, Team, Player)
+│   ├── styles/               # Tailwind config & global CSS
+│   ├── App.jsx               # Routes & layout
+│   └── main.jsx              # Application entrypoint
+├── .gitignore                # Ignore rules
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
