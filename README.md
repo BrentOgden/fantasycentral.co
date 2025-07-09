@@ -1,8 +1,64 @@
-# React + Vite
+# Fantasy Central
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive fantasy football league stats and analytics site—featuring real-time data, and animated stat counters. Built with React, Vite, and TailwindCSS, and deployed on Netlify.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Demo](#demo)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Installation](#installation)  
+  - [Running Locally](#running-locally)  
+  - [Building for Production](#building-for-production)  
+- [Folder Structure](#folder-structure)  
+
+
+---
+
+## Demo
+
+Live site: https://fantasycentral.co
+
+---
+
+## Features
+
+- **All-Time Records** — View career highs and aggregate stats across seasons.  
+- **Animated Counters** — Smoothly animate stat numbers on load and scroll.    
+- **Team Pages** — Dedicated pages for each team with roster and recent performance.  
+- **Responsive Design** — Mobile-first layout that adapts to all screen sizes.  
+
+---
+
+## Tech Stack
+
+- **Framework:** React  
+- **Bundler:** Vite  
+- **Styling:** TailwindCSS  
+- **Animations:** Framer Motion  
+- **Data Fetching:** Axios  
+- **Routing:** React Router  
+- **Deployment:** Netlify  
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 16.x  
+- npm or Yarn  
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/fantasycentral.git
+cd fantasycentral
+npm install
+# or
+yarn
+```
