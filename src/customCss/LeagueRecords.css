@@ -1,0 +1,45 @@
+.timeline-layout h3 {
+  background-color: #8e2034;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.highlight-row {
+  /* background-color: rgba(237, 5, 5, 0.9); */
+  font-weight: bold;
+  
+  
+}
+
+.api-table {
+  border-collapse: collapse;
+  font-size: .9rem;
+  text-align: left;
+  width: -webkit-fill-available;
+}
+
+.api-table thead th {
+  
+  color: white;
+  padding: 10px;
+}
+
+.api-table tbody td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+  color: #8e2034;
+}
+
+.api-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tr.headerBackground {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+  
+}
+
+.header {
+  background-color: rgba(96, 91, 91, 0.33) !important;
+}

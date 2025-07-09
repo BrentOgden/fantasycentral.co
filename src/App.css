@@ -1,0 +1,111 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  width: 100%;
+  background-image: url(./assets/18410.jpg);
+  color: #ccc;
+}
+
+/* Mobile devices (default styles) */
+.grid-layout {
+  display: none;
+  /* Hide the grid layout on mobile by default */
+}
+
+
+
+/* TwoColumnGrid.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Two columns of equal width */
+  gap: 20px;
+  /* Space between columns */
+  padding: 20px;
+}
+
+h1 {
+  color: #111;
+}
+
+.grid-column {
+  /* You can add further styles for each column if needed */
+  box-shadow: 0px 0px 10px 0px #888888;
+  
+}
+
+p {
+  text-align: left;
+}
+
+.league h1 {
+  font-size: 2rem;
+  color: #8e2034;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-list {
+    display: block;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    flex-direction: row;
+  }
+
+}
+
+.read-the-docs {
+  color: #888;
+}
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .cards-list {
+      display: block; /* Stack cards on top of each other */
+  }
+
+  /* Any other adjustments for the cards on mobile */
+  .cards-list .card-class-name { /* Replace .card-class-name with the class of individual cards if they have one */
+      width: 100%; /* Make cards full width on mobile */
+      margin-bottom: 1rem; /* Add some space between stacked cards */
+  }
+  .grid-container {
+    display: block !important;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns of equal width */
+    gap: 20px;
+    /* Space between columns */
+    padding: 20px;
+  }
+}

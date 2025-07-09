@@ -1,0 +1,167 @@
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-image: url(./assets/18410.jpg);
+  background-size: 0vmax;
+ 
+}
+.timeline-layout{
+  margin-bottom: 40px;
+}
+.timeline-layout h2{
+  color: #8e2034;
+  text-align: center;
+  font-size: 2rem;
+}
+.timeline-intro{
+  width: 100%;
+  text-align: left;
+  color: #213547;
+}
+.timeline-intro img{
+  width: 33%;
+}
+
+.timeline-intro p{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 20px;
+  clear: both;
+  color: #213547;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  /* background: #333; */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-entry.left {
+  padding-right: 310px;
+}
+
+.timeline-entry.left::before {
+  left: -16px;
+}
+
+.timeline-entry.right {
+  padding-left: 310px;
+}
+
+.timeline-entry.right::before {
+  right: -16px;
+}
+
+.timeline-content {
+  padding: 10px 15px;
+  background: #e8e7e7;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: #8e2034;
+  width: fit-content;
+  color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+a {
+  text-decoration: none;
+  color: #213547;
+
+}
+.timeline-content a:hover{
+  color: #8e2034;
+  font-weight: bold;
+
+}
+/* make sure the timeline wrapper is positioned for the center line */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+/* your existing center line, if you have one; otherwise add: */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: .4rem;
+  background: #6b0909b4;
+  box-shadow: 0 12px 12px rgba(246, 245, 245, 0.9);
+  transform: translateX(-50%);
+}
+ /* add this instead: */
+
+
+/* style the bubble */
+.timeline-entry .timeline-content {
+  position: relative;           /* for the pseudo-arrow to be positioned */
+  background: #fff;             /* bubble background */
+  border: 1px solid #e0e0e0;    /* light border */
+  border-radius: 8px;           /* rounded corners */
+  padding: 1rem;   
+  background-image: url('./assets/trophy.png');
+  background-size: 6rem;             /* your choice */
+  box-shadow: 0 4px 8px rgba(246, 245, 245, 0.8);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* arrow on the left bubble (points right) */
+.timeline-entry.left .timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 1rem;                    /* adjust to vertically center arrow */
+  right: -10px;                 /* sits just outside the bubble */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff; /* same as bubble bg */
+}
+
+/* arrow on the right bubble (points left) */
+.timeline-entry.right .timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .timeline-entry.right {
+    padding-left: 0 !important;
+    width: 100%;
+  }
+  .timeline-entry.left {
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+  .timeline{
+    width: 100%;
+  }
+}

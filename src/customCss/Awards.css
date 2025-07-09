@@ -1,0 +1,145 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  border: 1px solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: inherit;
+}
+
+.flex-item {
+
+
+  text-align: center;
+
+}
+
+
+
+.section-header {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  background-image: url(http://www.dagrafixdesigns.com/SB16/img/digit-bottom.png);
+  background-origin: padding-box;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-color: rgba(217, 49, 81, 0.6) rgba(255, 255, 255, 0.08) rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  border-style: solid;
+  border-width: 6px 1px 1px;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding: 6px 12px;
+  vertical-align: top;
+  color: #213547;
+  margin-top: 20px;
+}
+
+.section-header h2 {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: baseline;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #213547;
+}
+
+.section-header-panels {
+  background-color: white;
+  background-image: url(http://www.dagrafixdesigns.com/SB16/img/digit-bottom.png);
+  background-origin: padding-box;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-color: rgba(217, 49, 81, 0.6) rgba(255, 255, 255, 0.08) rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  border-style: solid;
+  border-width: 6px 1px 1px;
+  margin-right: 10px;
+  height: 200px;
+  text-align: center;
+  padding: 15px;
+  color: #213547;
+}
+
+.section-header-panels h2 {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 6px 12px;
+  text-align: center;
+  color: #213547;
+}
+
+/* .section-header-panels h2:hover {
+  background-color: rgba(217, 49, 81, 0.85);
+} */
+
+.award-weekly {
+  margin-right: 10px;
+  vertical-align: top;
+  background-color: white !important;
+
+
+}
+.awardtotal{
+  font-weight: bold;
+  color: #213547;
+}
+.award-weekly p {
+  padding: 10px;
+  color: #213547;
+  text-align: center;
+}
+
+.award-weekly h4 {
+  /* background: darkred; */
+  border: 1px solid #d93151;
+  border-radius: 0px;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.award-weekly h3 {
+    /* background: darkred; */
+    border: 1px solid #d93151;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    margin-top: 0;
+    width: 100%; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    line-height: 1.2; /* Adjust line-height to center text vertically if necessary */
+    overflow: hidden; /* Hide overflow text */
+    display: flex; /* Use flexbox to center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+
+
+h3.award-weekly {
+  background: white;
+  border: 1px solid #d93151;
+  margin: 0;
+}
+
+
+/* Marquee container masks overflow */
+
+@media (max-width: 768px) {
+
+  /* Adjust the breakpoint as needed */
+  .section-header {
+    padding: 0;
+  }
+  .header-padding{
+    padding: 10px;
+  }
+  
+}

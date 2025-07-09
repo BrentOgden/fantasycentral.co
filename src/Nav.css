@@ -1,0 +1,114 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  margin: .6rem;
+  list-style: none;
+  color: #213547;
+}
+
+li a:hover {
+  color: #8e2034;
+  box-shadow: 0 3.5px 0 0 #8e2034;
+  transition: color 0.6s ease-in 0s, box-shadow 0.2s ease 0s !important;
+  border-bottom: #f54d6d solid 2px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #213547;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+
+
+.dropdown {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.headerNav li {
+  position: relative;
+  color: #ffffff;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #e0dddd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Mobile only */
+
+
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+ .menu-list li a {
+    color: #213547 !important;
+  }
+  /* make menu full-width panel */
+  .menu-list {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}

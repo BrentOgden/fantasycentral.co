@@ -1,0 +1,17 @@
+#custombody1 {
+    background: #000000 url("https://i.ibb.co/xYKLmCb/7124h-Jdy-ONL.jpg") no-repeat scroll 0 0;
+    height: 100%;
+    left: 51%;
+    font: 400 11pt "Oswald",sans-serif;
+    margin-left: -981px;
+    position: fixed;
+    top: 0;
+    width: 1920px;
+    z-index: -1;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% auto ! important;
+    /*background-attachment: fixed;*/
+    filter: brightness(.9) blur(0.5px);
+}
+

@@ -1,0 +1,224 @@
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+/*  */
+
+.full-width {
+  grid-column: 1 / -1;  /* This makes the element span across all columns */
+} */
+
+
+.timeline-layout{
+  margin-bottom: 40px;
+}
+.timeline-layout h2{
+  color: #8e2034;
+  text-align: center;
+  font-size: 2rem;
+}
+.timeline-intro{
+  width: 100%;
+  text-align: left;
+  color: #213547;
+}
+.timeline-intro img{
+  width: 33%;
+}
+
+.timeline-intro p{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #8e2034;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 20px;
+  clear: both;
+  color: #213547;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  /* background: #333; */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-entry.left {
+  padding-right: 310px;
+}
+
+.timeline-entry.left::before {
+  left: -16px;
+}
+
+.timeline-entry.right {
+  padding-left: 310px;
+}
+
+.timeline-entry.right::before {
+  right: -16px;
+}
+.black-text{
+  color: #213547;
+}
+.timeline-content {
+  padding: 10px 15px;
+  background: #e8e7e7;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+.picks img{
+  width: 275px;
+  height: fit-content;
+}
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: #8e2034;
+  color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+a {
+  text-decoration: none;
+  color: #213547;
+
+}
+.award-weekly-results p {
+  padding: 10px;
+  color: #213547;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.award-weekly-results h3 {
+  background: rgba(217, 49, 81, 0.85);
+  border: 1px solid #d93151;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+  margin-top: 0;
+  color: #fff;
+  width: 100%; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  line-height: 1.2; /* Adjust line-height to center text vertically if necessary */
+  overflow: hidden; /* Hide overflow text */
+  display: flex; /* Use flexbox to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+.centered p {
+  text-align: center;
+}
+.timeline-content a:hover{
+  color: #8e2034;
+  font-weight: bold;
+
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Utility classes for the animations */
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+/* shake keyframes */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+/* utility to run shake after slide (0.8s) */
+.animate-shake {
+  animation: shake 0.5s ease-in-out 0.8s both;
+}
+/* keep your existing keyframes... */
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px);  opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60% { transform: translateX(-5px); }
+  40%,80% { transform: translateX(5px); }
+}
+
+/* Combined animations for left logo */
+.animate-logo-left {
+  animation:
+    slideInLeft 0.8s ease-out forwards,
+    shake       0.5s ease-in-out 0.8s both;
+}
+
+/* Combined animations for right logo */
+.animate-logo-right {
+  animation:
+    slideInRight 0.8s ease-out forwards,
+    shake        0.5s ease-in-out 0.8s both;
+}
+
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .picks img{
+    display: none
+  }
+  .card-picks{
+    width: 100%;
+  }
+  .timeline-entry.left{
+    padding-right: 0 !important;
+  }
+  .timeline-entry.right{
+    padding-right: 0 !important;
+  }
+}
+
