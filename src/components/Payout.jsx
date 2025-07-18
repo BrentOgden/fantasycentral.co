@@ -3,8 +3,8 @@ import React from 'react'
 
 function Payout(props) {
   return (
-    <section className='content-icons bg-gradient-to-br from-red-900 via-black to-red-700 shadow-slate-500 mt-4 shadow-2xl rounded-2xl'>
-      <div className='grid grid-cols-2 divide-x p-4 mt-4'>
+    <section className='content-icons bg-gradient-to-br from-red-900 via-black to-red-700 shadow-slate-500 mt-4 mx-5 md:mx-0 shadow-2xl rounded-2xl'>
+      <div className='grid grid-cols-2 divide-x pt-4 mt-4'>
         <div className='align-middle text-center'>
           <h3 className='font-bold text-lg'>2025 Redraft Updates</h3>
           <p className='text-center p-3'>Below are the payouts for 2025 season. The entry fee will remain the same this season. The entry fee is <span className='font-bold'>$230</span>. Reminder that all league dues must be paid prior to the start of the season (or partial payment must be made). </p>

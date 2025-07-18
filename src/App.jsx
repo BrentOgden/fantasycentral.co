@@ -1,5 +1,4 @@
 // src/App.jsx
-
 import React from 'react';
 import {
   HashRouter as Router,
@@ -9,10 +8,12 @@ import {
 } from 'react-router-dom';
 
 // 1) Import SplashPage
+import SplashPagePostGuess from './components/SplashPagePostGuess';
 
-// 2) Nav + Footer for “inside‐site” pages
+// 2) Nav, Footer & BottomNav
 import Nav from './Nav';
 import Footer from './Footer';
+import BottomNav from './components/BottomNav';
 
 // 3) All other components/pages
 import Hero from './Hero';
@@ -21,22 +22,29 @@ import Card from './components/Card';
 import CardDynasty from './components/CardDynasty';
 import Results from './components/Results';
 import FootballDivider from './components/FootballDivider';
-import Marquee from 'react-fast-marquee';           // ← MAKE SURE THIS IS HERE
+import Marquee from 'react-fast-marquee';
 import data from './components/dataSources/data';
 import dataDynasty from './components/dataSources/dataDynasty';
 import LeagueHistory from './components/LeagueHistory';
 import LeagueRecordsWeekly from './components/LeagueRecordsWeekly';
 import LeagueRecordsYearly from './components/LeagueRecordsYearly';
 import LeagueRecordsAT from './components/LeagueRecordsAT';
-import SplashPagePostGuess from './components/SplashPagePostGuess';
+const isApp = typeof window !== 'undefined' && !!window.cordova;
 
-
-// ─── Layout wrapper that shows Nav + Footer ────────────────────────────────────
+// ─── Layout wrapper that shows Nav, Outlet, BottomNav & Footer ───────────────
 function MainLayout() {
+  
+
   return (
     <>
       <Nav />
-      <Outlet />   {/* The matched child route (e.g. HomePage) will render here */}
+      <div className="app-content">
+        <Outlet />
+      </div>
+
+      {/* only show on the mobile app */}
+      {isApp && <BottomNav />}
+
       <Footer />
     </>
   );
@@ -44,14 +52,13 @@ function MainLayout() {
 
 // ─── HomePage moved to "/home" ─────────────────────────────────────────────────
 function HomePage() {
-  // Sort & render your two card lists, as before
   const cards = [...data]
     .sort((a, b) => a.rank - b.rank)
-    .map(i => <Card key={i.id} item={i} />);
+    .map((item) => <Card key={item.id} item={item} />);
 
   const cardsDynasty = [...dataDynasty]
     .sort((a, b) => a.rank - b.rank)
-    .map(i => <CardDynasty key={i.id} item={i} />);
+    .map((item) => <CardDynasty key={item.id} item={item} />);
 
   return (
     <>
@@ -98,21 +105,22 @@ function HomePage() {
   );
 }
 
+// ─── App entrypoint with routing ───────────────────────────────────────────────
 export default function App() {
   return (
     <Router>
       <Routes>
-        {/* 1) SplashPage at "/": no Nav/Footer here */}
+        {/* 1) Splash at root, no Nav/BottomNav/Footer */}
         <Route path="/" element={<SplashPagePostGuess />} />
 
-        {/* 2) All other routes render inside MainLayout */}
+        {/* 2) All other routes use MainLayout */}
         <Route element={<MainLayout />}>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/results" element={<Results />} />
-          <Route path="/leaguehistory" element={<LeagueHistory />} />
-          <Route path="/leaguerecordsweekly" element={<LeagueRecordsWeekly />} />
-          <Route path="/leaguerecordsyearly" element={<LeagueRecordsYearly />} />
-          <Route path="/leaguerecordsat" element={<LeagueRecordsAT />} />
+          <Route path="home"                   element={<HomePage />} />
+          <Route path="results"                element={<Results />} />
+          <Route path="leaguehistory"          element={<LeagueHistory />} />
+          <Route path="leaguerecordsweekly"    element={<LeagueRecordsWeekly />} />
+          <Route path="leaguerecordsyearly"    element={<LeagueRecordsYearly />} />
+          <Route path="leaguerecordsat"        element={<LeagueRecordsAT />} />
           {/* …add more child routes here if needed… */}
         </Route>
       </Routes>

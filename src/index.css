@@ -29,6 +29,17 @@
   margin: 0 10rem;
 
 }
+/* bottom safe‑area padding helper */
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ensure content above the nav */
+.app-content {
+  padding-bottom: 4rem; /* match nav height */
+}
 
 * {
   box-sizing: border-box;

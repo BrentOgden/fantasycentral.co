@@ -5,7 +5,7 @@ import React from 'react'
 
 function Blocks(props) {
   return (
-    <section className='md:container md:mx-auto px-10 blurbs'>
+    <section className='md:container md:mx-auto px-0 blurbs'>
       <div className='shadow-xl shadow-red-800/40 section-header-panel rounded-2xl'>
         <button className='bg-gradient-to-r from-red-900 via-black to-red-700 text-white border-red-800 rounded-sm w-full hover:bg-red-800/80 hover:text-white'><a href={rules} target="_blank">
           <h2 className='text-lg font-bold text-white p-px'>2025 Dynasty Rules</h2>
