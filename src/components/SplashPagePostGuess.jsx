@@ -39,7 +39,8 @@ export default function SplashPagePostGuess() {
 
   // Countdown state...
   const [timeLeft, setTimeLeft] = useState({ days: '0', hours: '00', minutes: '00', seconds: '00' });
-  const TARGET_DATE = new Date('2025-08-23T18:00:00Z').getTime();
+  const TARGET_DATE = new Date('2025-09-05T01:20:00Z').getTime();
+
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -114,7 +115,7 @@ export default function SplashPagePostGuess() {
           </div>
         ))}
       </div>
-      <p className="text-white text-xl mb-4">Until Draft Day</p>
+      <p className="text-white text-xl mb-4">Until Kickoff of the 2025 Season</p>
 
       {/* Original Submissions Modal */}
       {showModal && (

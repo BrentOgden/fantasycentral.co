@@ -4,8 +4,8 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';      // from npm
 import CardPicks from './CardPicks';          // capitalize!
 import dataPicks from './dataSources/dataPicks';         // one level up
-import chiefs from '../assets/texans.png';    // one level up
-import broncos from '../assets/broncos.png';  // one level up
+import away from '../assets/titans.png';    // one level up
+import home from '../assets/broncos.png';  // one level up
 import ResultsStats from './ResultsStats';
 
 export default function Results() {
@@ -42,9 +42,9 @@ export default function Results() {
 
       {/* Logos */}
       <div className="flex items-center justify-center space-x-6">
-        <img src={chiefs} alt="Texans Logo" className="w-32 h-32 object-contain" />
+        <img src={away} alt="Away Logo" className="w-32 h-32 object-contain" />
         <span className="text-2xl font-bold text-[#8e2034]">VS</span>
-        <img src={broncos} alt="Broncos Logo" className="w-32 h-32 object-contain" />
+        <img src={home} alt="Home Logo" className="w-32 h-32 object-contain" />
       </div>
 
       {/* Stats */}

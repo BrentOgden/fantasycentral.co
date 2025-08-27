@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 // 1) Import SplashPage
-import SplashPagePostGuess from './components/SplashPagePostGuess';
+import SplashPage from './components/SplashPage';
 
 // 2) Nav, Footer & BottomNav
 import Nav from './Nav';
@@ -111,7 +111,7 @@ export default function App() {
     <Router>
       <Routes>
         {/* 1) Splash at root, no Nav/BottomNav/Footer */}
-        <Route path="/" element={<SplashPagePostGuess />} />
+        <Route path="/" element={<SplashPage />} />
 
         {/* 2) All other routes use MainLayout */}
         <Route element={<MainLayout />}>

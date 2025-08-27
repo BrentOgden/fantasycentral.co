@@ -1,17 +1,17 @@
 export default [
     {
         id: 1,
-        teamName: "Silence of the Lamb",
+        teamName: "Puka de Beppo",
         ownerName: "Brent Ogden",
         price: 136,
-        teamLogo: "brentlogo2.jpg",
+        teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "4-6",
-            winPercentage: ".400"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
-        rank: 8,
+        rank: 1,
         
     },
     {
@@ -22,22 +22,22 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "2-8",
-            winPercentage: ".200"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
-        rank: 12,
+        rank: 1,
     },
     {
         id: 3,
-        teamName: "Saquon Deez Nutz",
+        teamName: "The Great White Buffalos",
         ownerName: "Tom Courtney ",
         price: 50,
-        teamLogo: "tom_logo.jpg",
+        teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
-            record: "8-2",
-            winPercentage: ".800"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
         rank: 1,
@@ -50,11 +50,11 @@ export default [
         teamLogo: "kristen_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=24",
         record: {
-            record: "5-5",
-            winPercentage: ".500"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
-        rank: 6,
+        rank: 1,
     },
     {
         id: 5,
@@ -64,11 +64,11 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "3-7",
-            winPercentage: ".300"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
-        rank: 11,
+        rank: 1,
     },
     {
         id: 6,
@@ -78,11 +78,11 @@ export default [
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&seasonId=2024&teamId=30",
         record: {
-            record: "8-2",
-            winPercentage: ".800"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Owners",
-        rank: 3,
+        rank: 1,
     },
     {
         id: 7,
@@ -92,25 +92,25 @@ export default [
         teamLogo: "nick_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=7",
         record: {
-            record: "3-7",
-            winPercentage: ".300"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 9,
+        rank: 1,
     },
     {
         id: 8,
-        teamName: "Vinegar Strokes",
-        ownerName: "Brandon Becker",
+        teamName: "Teaser Pleasers",
+        ownerName: "Kyle Kohlscheen",
         price: 50,
-        teamLogo: "brandon_logo.svg",
+        teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
-            record: "5-5",
-            winPercentage: ".500"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 7,
+        rank: 1,
     },
     {
         id: 9,
@@ -120,11 +120,11 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "6-4",
-            winPercentage: ".600"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 5,
+        rank: 1,
     },
     {
         id: 10,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "7-3",
-            winPercentage: ".700"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 2,
+        rank: 1,
     },
     {
         id: 11,
@@ -148,11 +148,11 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "3-7",
-            winPercentage: ".300"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 10,
+        rank: 1,
     },
     {
         id: 12,
@@ -162,11 +162,11 @@ export default [
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {
-            record: "6-4",
-            winPercentage: ".600"
+            record: "0-0",
+            winPercentage: ".000"
         },
         division: "Players",
-        rank: 4,
+        rank: 1,
     }
     
 ]

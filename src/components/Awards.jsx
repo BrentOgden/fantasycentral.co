@@ -50,7 +50,7 @@ export default function Awards() {
       {/* Award Winners (fade-in on scroll) */}
       <div className="rounded-sm">
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 10 Award Winners
+          Week 1 Award Winners
         </h2>
         <motion.div
           className="grid-container"
@@ -85,7 +85,7 @@ export default function Awards() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 10 Top Performers
+          Week 1 Top Performers
         </h2>
         <motion.div
           className="grid grid-cols-2 gap-2 pt-5"

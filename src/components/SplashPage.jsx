@@ -28,7 +28,8 @@ export default function SplashPage() {
     });
 
     // 1) Change this target date/time as needed (UTC)
-    const TARGET_DATE = new Date('2025-08-23T18:00:00Z').getTime();
+    const TARGET_DATE = new Date('2025-09-05T01:20:00Z').getTime();
+
 
     // 2) Run countdown on mount and every second
     useEffect(() => {
@@ -62,6 +63,14 @@ export default function SplashPage() {
     const handleEnterClick = () => {
         navigate('/home');
     };
+    const handleEnterClick2 = () => {
+        window.open(
+            'https://picks.cbssports.com/football/pickem/pools/kbxw63b2geztoobugayte===?entryId=ivxhi4tzhizdcmjyg4ytonzw',
+            '_blank',
+            'noopener,noreferrer'
+        );
+    };
+
     const handleOpenModal = () => setShowModal(true);
     const handleCloseModal = () => setShowModal(false);
 
@@ -135,18 +144,18 @@ export default function SplashPage() {
                     Enter Fantasy Central →
                 </button>
                 <button
-                    onClick={handleOpenModal}
+                    onClick={handleEnterClick2}
                     className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-900 text-yellow-500 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-200"
                 >
-                    Draft Order Challenge →
+                    Make Weekly Picks →
                 </button>
             </div>
 
-            <p className="mt-6 font-bold">
+            {/* <p className="mt-6 font-bold">
                 Guesses must be submitted by{' '}
                 <span className="text-yellow-500">MIDNIGHT</span> on{' '}
                 <span className="text-yellow-500">7/3</span>
-            </p>
+            </p> */}
 
             {/* ─── Countdown Display ─────────────────────────────────────────────── */}
             <div className="flex space-x-4 text-white mb-4 mt-8 text-center">
@@ -168,7 +177,7 @@ export default function SplashPage() {
                 </div>
 
             </div>
-            <p className=' text-white text-xl'>Until Draft Day</p>
+            <p className=' text-white text-xl'>Until Kickoff of the 2025 Season</p>
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
                     <div className="bg-white rounded-2xl w-full max-w-lg mx-4 p-6 relative">

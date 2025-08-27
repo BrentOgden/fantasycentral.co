@@ -4,7 +4,7 @@ import React from 'react';
 
 function CardDynasty({ item }) {
   let badgeText, playoffText;
-  if (item.rank < 6) playoffText = "Playoff Qualifier";
+  if (item.rank < 7) playoffText = "Playoff Qualifier";
   if (item.division === "Varsity") badgeText = "Varsity";
   else if (item.division === "Junior Varsity") badgeText = "Junior Varsity";
   else if (item.division === "The Rest") badgeText = "The Rest";

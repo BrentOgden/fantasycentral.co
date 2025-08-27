@@ -6,7 +6,7 @@ import React from 'react';
 
 function Card({ item }) {
   let badgeText, playoffText;
-  if (item.rank < 6) playoffText = "Playoff Qualifier";
+  if (item.rank < 7) playoffText = "Playoff Qualifier";
   if (item.division === "Owners") badgeText = "Owners";
   else if (item.division === "Players") badgeText = "Players";
 
