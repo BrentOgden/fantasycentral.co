@@ -58,7 +58,7 @@ export default [
     },
     {
         id: 5,
-        teamName: "Kishi Kaisei",
+        teamName: "De'Vont Stop Believin'",
         ownerName: "Met Nagatani",
         price: 50,
         teamLogo: "met_logo.jpg",
