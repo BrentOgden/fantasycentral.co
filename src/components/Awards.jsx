@@ -24,25 +24,25 @@ const itemVariants = {
 
 export default function Awards() {
   const awards = [
-    { title: "High Points", name: "Casey Splane", details: "211.65 points" },
-    { title: 'Tim Tebow "Praise Jesus" Award', name: "Jamar Chase", details: "80.8 points" },
-    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Freeman Puthavongsa", details: "Lost to Casey by 67.45 points" },
-    { title: "Pot of Gold Award", name: "Freeman Puthavongsa", details: "Lost to Casey 211.65 to 144.2" },
-    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Kristen Hazen", details: "Lost to Justin by 10.35 points" },
+    { title: "High Points", name: "Kyle Kohlscheen", details: "221.6 points" },
+    { title: 'Tim Tebow "Praise Jesus" Award', name: "Josh Allen", details: "60.5 points" },
+    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Kristen Hazen", details: "Lost to Tom by 70.5 points" },
+    { title: "Pot of Gold Award", name: "Cody Box", details: "Lost to Kyle 221.6 to 163.45" },
+    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Met Nagatani", details: "Lost to Justin by 0.35 points" },
   ];
 
   const offenseStars = [
-    "Jamar Chase - 80.8 points - 264 receiving yards, 3 TDs",
-    "Joe Burrow - 76 points - 428 passing yards, 4 TDs",
-    "Lamar Jackson - 59.05 points - 323 total yards, 4 TDs",
-    "Brock Purdy - 43.7 points - 370 total yards, 2 TDs"
+    "Josh Allen - 60.5 points - 424 total yards, 4 TDs",
+    "Justin Herbert - 48.95 points - 350 total yards, 3 TDs",
+    "Michael Penix Jr. - 41.6 points - 319 total yards, 2 TDs",
+    "Aaron Rodgers - 40.15 points - 244 passing yards, 4 TDs"
   ];
 
   const defenseStars = [
-    "Buffalo - 25.25 points - 4 TOs, 4 sacks, 1 TD",
-    "Philadelphia - 23.75 points - 5 TOs, 3 sacks",
-    "New England - 22.25 points - 9 sacks",
-    "Los Angeles Chargers - 17.25 points - 7 sacks"
+    "Denver - 22 points - 2 TOs, 6 sacks",
+    "Chicago - 17.25 points - 1 TOs, 3 sacks, 1 TD",
+    "Indianapolis - 16.25 points - 3 TOs, 3 sacks",
+    "New Orleans - 15.25 points - 5 sacks"
   ];
 
   return (

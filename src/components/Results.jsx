@@ -4,8 +4,8 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';      // from npm
 import CardPicks from './CardPicks';          // capitalize!
 import dataPicks from './dataSources/dataPicks';         // one level up
-import away from '../assets/titans.png';    // one level up
-import home from '../assets/broncos.png';  // one level up
+import away from '../assets/broncos.png';    // one level up
+import home from '../assets/colts.png';  // one level up
 import ResultsStats from './ResultsStats';
 
 export default function Results() {
@@ -28,15 +28,15 @@ export default function Results() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">1st Place</h3>
-          <p className='text-black text-center'>Casey Splane (11-3)</p>
+          <p className='text-black text-center'>Garret Weber | Jeremy Ogden | Justin Gutierrez (12-4)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">2nd Place</h3>
-          <p className='text-black text-center'>Cody Box (10-4)</p>
+          <p className='text-black text-center'>Brent Ogden | Tom Courtney (11-5)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">3rd Place</h3>
-          <p className='text-black text-center'>Met Nagatani | Brent Ogden (9-5)</p>
+          <p className='text-black text-center'>Met Nagatani | Freeman Puthavongsa (10-6)</p>
         </div>
       </div>
 

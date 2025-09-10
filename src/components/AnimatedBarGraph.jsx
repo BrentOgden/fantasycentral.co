@@ -21,7 +21,7 @@ function AnimatedBarGraph() {
         },
         series: [{
             name: 'Correct Picks',
-            data: [0, 0, 0, 0, 0],
+            data: [0, 5, 5, 0, 2],
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
