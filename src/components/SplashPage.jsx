@@ -28,7 +28,8 @@ export default function SplashPage() {
     });
 
     // 1) Change this target date/time as needed (UTC)
-    const TARGET_DATE = new Date('2025-09-05T01:20:00Z').getTime();
+    const TARGET_DATE = new Date('2025-12-05T08:00:00Z').getTime();
+
 
 
     // 2) Run countdown on mount and every second
@@ -177,7 +178,7 @@ export default function SplashPage() {
                 </div>
 
             </div>
-            <p className=' text-white text-xl'>Until Kickoff of the 2025 Season</p>
+            <p className=' text-white text-xl'>Until the Trade Deadline</p>
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
                     <div className="bg-white rounded-2xl w-full max-w-lg mx-4 p-6 relative">

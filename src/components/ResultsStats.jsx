@@ -6,7 +6,7 @@ const stats = [
     { id: 1, name: 'Total Picks Made', value: 160 },
     { id: 2, name: 'Correct Picks', value: 103 },
     { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 15 },
-    { id: 4, name: 'Average Correct Pick %', value: 64, isPercentage: true },
+    { id: 4, name: 'Average Correct Pick %', value: .64, isPercentage: true },
 ]
 
 const containerVariants = {
