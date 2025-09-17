@@ -7,11 +7,11 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "11-5",
-            points: "11"
+            record: "13-3",
+            points: "24"
         },
         division: "Owners",
-        rank: 4,
+        rank: 3,
         
     },
     {
@@ -22,11 +22,11 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "12-4",
-            points: "12"
+            record: "11-5",
+            points: "23"
         },
         division: "Owners",
-        rank: 1,
+        rank: 5,
     },
     {
         id: 3,
@@ -36,11 +36,11 @@ export default [
         teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
-            record: "11-5",
-            points: "11"
+            record: "13-3",
+            points: "24"
         },
         division: "Owners",
-        rank: 2,
+        rank: 3,
     },
     {
         id: 4,
@@ -65,10 +65,10 @@ export default [
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
             record: "10-6",
-            points: "10"
+            points: "20"
         },
         division: "Owners",
-        rank: 6,
+        rank: 9,
     },
     {
         id: 6,
@@ -78,11 +78,11 @@ export default [
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=30",
         record: {
-            record: "8-8",
-            points: "8"
+            record: "11-5",
+            points: "19"
         },
         division: "Owners",
-        rank: 9,
+        rank: 10,
     },
     {
         id: 7,
@@ -106,11 +106,11 @@ export default [
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
-            record: "9-7",
-            points: "9"
+            record: "14-2",
+            points: "23"
         },
         division: "Players",
-        rank: 8,
+        rank: 5,
     },
     {
         id: 9,
@@ -120,11 +120,11 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "12-4",
-            points: "12"
+            record: "13-3",
+            points: "25"
         },
         division: "Players",
-        rank: 1,
+        rank: 2,
     },
     {
         id: 10,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "8-8",
-            points: "8"
+            record: "14-2",
+            points: "22"
         },
         division: "Players",
-        rank: 9,
+        rank: 8,
     },
     {
         id: 11,
@@ -148,22 +148,22 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "10-6",
-            points: "10"
+            record: "13-3",
+            points: "23"
         },
         division: "Players",
-        rank: 6,
+        rank: 5,
     },
     {
         id: 12,
-        teamName: "Cookn Sutton on Psychedelics",
+        teamName: "SeeDeez TeeDeez",
         ownerName: "Garret Weber",
         price: 50,
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {
-            record: "12-4",
-            points: "12"
+            record: "14-2",
+            points: "26"
         },
         division: "Players",
         rank: 1,
