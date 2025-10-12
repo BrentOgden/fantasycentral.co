@@ -7,8 +7,8 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "10-6",
-            points: "44"
+            record: "4-10",
+            points: "48"
         },
         division: "Owners",
         rank: 1,
@@ -22,11 +22,11 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "6-10",
-            points: "39"
+            record: "9-5",
+            points: "48"
         },
         division: "Owners",
-        rank: 6,
+        rank: 1,
     },
     {
         id: 3,
@@ -64,8 +64,8 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "10-6",
-            points: "38"
+            record: "5-10",
+            points: "43"
         },
         division: "Owners",
         rank: 7,
@@ -78,11 +78,11 @@ export default [
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=30",
         record: {
-            record: "10-6",
-            points: "36"
+            record: "8-7",
+            points: "44"
         },
         division: "Owners",
-        rank: 9,
+        rank: 7,
     },
     {
         id: 7,
@@ -106,11 +106,11 @@ export default [
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
-            record: "6-10",
-            points: "37"
+            record: "6-8",
+            points: "43"
         },
         division: "Players",
-        rank: 8,
+        rank: 9,
     },
     {
         id: 9,
@@ -120,11 +120,11 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "9-7",
-            points: "42"
+            record: "6-8",
+            points: "48"
         },
         division: "Players",
-        rank: 4,
+        rank: 1,
     },
     {
         id: 10,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "10-6",
-            points: "43"
+            record: "4-10",
+            points: "47"
         },
         division: "Players",
-        rank: 3,
+        rank: 6,
     },
     {
         id: 11,
@@ -148,8 +148,8 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "12-4",
-            points: "44"
+            record: "4-10",
+            points: "48"
         },
         division: "Players",
         rank: 1,
@@ -162,11 +162,11 @@ export default [
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {
-            record: "9-7",
-            points: "41"
+            record: "7-7",
+            points: "48"
         },
         division: "Players",
-        rank: 5,
+        rank: 1,
     }
     
 ]
