@@ -7,12 +7,12 @@ export default [
         teamLogo: "brent2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0001&O=07",
         record: {
-            record: "4-1",
-            winPercentage: ".800",
-            victoryPoints: "13"
+            record: "5-2",
+            winPercentage: ".714",
+            victoryPoints: "19"
         },
         division: "Junior Varsity",
-        rank: 3,
+        rank: 2,
         
     },
     {
@@ -23,12 +23,12 @@ export default [
         teamLogo: "tom2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0002&O=07",
         record: {
-            record: "1-4",
-            winPercentage: ".200",
-            victoryPoints: "8"
+            record: "3-4",
+            winPercentage: ".429",
+            victoryPoints: "14"
         },
         division: "Junior Varsity",
-        rank: 9,
+        rank: 7,
     },
     {
         id: 3,
@@ -38,9 +38,9 @@ export default [
         teamLogo: "nick2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0003&O=07",
         record: {
-            record: "3-2",
-            winPercentage: ".600",
-            victoryPoints: "12"
+            record: "4-3",
+            winPercentage: ".571",
+            victoryPoints: "16"
         },
         division: "Varsity",
         rank: 5,
@@ -53,9 +53,9 @@ export default [
         teamLogo: "kristen2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0004&O=07",
         record: {
-            record: "4-1",
-            winPercentage: ".800",
-            victoryPoints: "18"
+            record: "5-2",
+            winPercentage: ".714",
+            victoryPoints: "22"
         },
         division: "Varsity",
         rank: 1,
@@ -68,12 +68,12 @@ export default [
         teamLogo: "kylelogo2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0005&O=07",
         record: {
-            record: "3-2",
-            winPercentage: ".600",
-            victoryPoints: "8"
+            record: "4-3",
+            winPercentage: ".571",
+            victoryPoints: "11"
         },
         division: "Junior Varsity",
-        rank: 10,
+        rank: 11,
     },
     {
         id: 6,
@@ -83,8 +83,8 @@ export default [
         teamLogo: "brandon2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0006&O=07",
         record: {
-            record: "1-4",
-            winPercentage: ".200",
+            record: "1-6",
+            winPercentage: ".143",
             victoryPoints: "3"
         },
         division: "Junior Varsity",
@@ -98,12 +98,12 @@ export default [
         teamLogo: "gary2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0007&O=07",
         record: {
-            record: "0-5",
-            winPercentage: ".000",
-            victoryPoints: "5"
+            record: "1-6",
+            winPercentage: ".143",
+            victoryPoints: "12"
         },
         division: "Varsity",
-        rank: 11,
+        rank: 9,
     },
     {
         id: 8,
@@ -113,12 +113,12 @@ export default [
         teamLogo: "chad2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0008&O=07",
         record: {
-            record: "4-1",
-            winPercentage: ".800",
-            victoryPoints: "18"
+            record: "4-3",
+            winPercentage: ".571",
+            victoryPoints: "19"
         },
         division: "Junior Varsity",
-        rank: 2,
+        rank: 4,
     },
     {
         id: 9,
@@ -128,12 +128,12 @@ export default [
         teamLogo: "jimmy2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0009&O=07",
         record: {
-            record: "2-3",
-            winPercentage: ".400",
-            victoryPoints: "8"
+            record: "3-4",
+            winPercentage: ".429",
+            victoryPoints: "12"
         },
         division: "Junior Varsity",
-        rank: 8,
+        rank: 10,
     },
     {
         id: 10,
@@ -143,12 +143,12 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0010&O=07",
         record: {
-            record: "3-2",
-            winPercentage: ".600",
-            victoryPoints: "12"
+            record: "5-2",
+            winPercentage: ".714",
+            victoryPoints: "19"
         },
         division: "Varsity",
-        rank: 4,
+        rank: 3,
     },
     {
         id: 11,
@@ -158,12 +158,12 @@ export default [
         teamLogo: "justin2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0011&O=07",
         record: {
-            record: "2-3",
-            winPercentage: ".200",
-            victoryPoints: "9"
+            record: "3-4",
+            winPercentage: ".429",
+            victoryPoints: "15"
         },
         division: "Varsity",
-        rank: 7,
+        rank: 6,
     },
     {
         id: 12,
@@ -173,12 +173,12 @@ export default [
         teamLogo: "met2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0012&O=07",
         record: {
-            record: "3-2",
-            winPercentage: ".600",
-            victoryPoints: "10"
+            record: "4-3",
+            winPercentage: ".571",
+            victoryPoints: "13"
         },
         division: "Varsity",
-        rank: 6,
+        rank: 8,
     }
    
     
