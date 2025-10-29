@@ -4,8 +4,8 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';      // from npm
 import CardPicks from './CardPicks';          // capitalize!
 import dataPicks from './dataSources/dataPicks';         // one level up
-import away from '../assets/cowboys.png';    // one level up
-import home from '../assets/broncos.png';  // one level up
+import away from '../assets/broncos.png';    // one level up
+import home from '../assets/texans.png';  // one level up
 import ResultsStats from './ResultsStats';
 
 export default function Results() {
@@ -28,15 +28,15 @@ export default function Results() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">1st Place</h3>
-          <p className='text-black text-center'>Justin Gutierrez | Jeremy Ogden (12-3)</p>
+          <p className='text-black text-center'>Met Nagatani (11-2)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">2nd Place</h3>
-          <p className='text-black text-center'>Brent Ogden | Cody Box (11-4)</p>
+          <p className='text-black text-center'>Freeman Puthavongsa | Justin Gutierrez (10-3)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">3rd Place</h3>
-          <p className='text-black text-center'>Several Tied (10-5)</p>
+          <p className='text-black text-center'>Several Tied (8-5)</p>
         </div>
       </div>
 
