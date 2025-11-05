@@ -1,19 +1,19 @@
 {
   "Sheet1": [
     {
-      "Wins": "161",
+      "Wins": "162",
       "Owner": "Justin Gutierrez",
-      "Winning %": "0.615"
+      "Winning %": "0.616"
     },
     {
       "Wins": "150",
       "Owner": "Nick Hazen",
-      "Winning %": "0.575"
+      "Winning %": "0.573"
     },
     {
       "Wins": "133",
       "Owner": "Brent Ogden",
-      "Winning %": "0.508"
+      "Winning %": "0.506"
     },
     {
       "Wins": "92",
@@ -21,9 +21,9 @@
       "Winning %": "0.594"
     },
     {
-      "Wins": "87",
+      "Wins": "88",
       "Owner": "Jeremy Ogden",
-      "Winning %": "0.512"
+      "Winning %": "0.515"
     },
     {
       "Wins": "86",
@@ -37,18 +37,18 @@
     },
     {
       "Wins": "77",
+      "Owner": "Kristen Hazen",
+      "Winning %": "0.535"
+    },
+    {
+      "Wins": "77",
       "Owner": "Curt Ogden",
       "Winning %": "0.542"
     },
     {
-      "Wins": "77",
-      "Owner": "Kristen Hazen",
-      "Winning %": "0.538"
-    },
-    {
-      "Wins": "74",
+      "Wins": "75",
       "Owner": "Kyle Kohlscheen",
-      "Winning %": "0.451"
+      "Winning %": "0.455"
     },
     {
       "Wins": "74",
@@ -58,12 +58,12 @@
     {
       "Wins": "53",
       "Owner": "Met Nagatani",
-      "Winning %": "0.449"
+      "Winning %": "0.445"
     },
     {
-      "Wins": "38",
+      "Wins": "39",
       "Owner": "Tom Courtney",
-      "Winning %": "0.576"
+      "Winning %": "0.582"
     },
     {
       "Wins": "33",
@@ -76,19 +76,19 @@
       "Winning %": "0.393"
     },
     {
-      "Wins": "30",
+      "Wins": "31",
       "Owner": "Cody Box",
-      "Winning %": "0.448"
+      "Winning %": "0.456"
     },
     {
       "Wins": "30",
       "Owner": "Freeman Puthavongsa",
-      "Winning %": "0.455"
+      "Winning %": "0.448"
     },
     {
       "Wins": "30",
       "Owner": "Garret Weber",
-      "Winning %": "0.455"
+      "Winning %": "0.448"
     },
     {
       "Wins": "25",
@@ -101,9 +101,9 @@
       "Winning %": "0.487"
     },
     {
-      "Wins": "16",
+      "Wins": "17",
       "Owner": "Casey Splane",
-      "Winning %": "0.727"
+      "Winning %": "0.739"
     },
     {
       "Wins": "14",
@@ -118,9 +118,9 @@
   ],
   "Sheet2": [
     {
-      "Losses": "129",
+      "Losses": "130",
       "Owner": "Brent Ogden",
-      "Winning %": "0.508"
+      "Winning %": "0.506"
     },
     {
       "Losses": "118",
@@ -128,24 +128,24 @@
       "Winning %": "0.404"
     },
     {
-      "Losses": "111",
+      "Losses": "112",
       "Owner": "Nick Hazen",
-      "Winning %": "0.575"
+      "Winning %": "0.573"
     },
     {
       "Losses": "101",
       "Owner": "Justin Gutierrez",
-      "Winning %": "0.615"
+      "Winning %": "0.616"
     },
     {
       "Losses": "90",
       "Owner": "Kyle Kohlscheen",
-      "Winning %": "0.451"
+      "Winning %": "0.455"
     },
     {
       "Losses": "83",
       "Owner": "Jeremy Ogden",
-      "Winning %": "0.512"
+      "Winning %": "0.515"
     },
     {
       "Losses": "70",
@@ -153,19 +153,19 @@
       "Winning %": "0.551"
     },
     {
-      "Losses": "66",
+      "Losses": "67",
       "Owner": "Kristen Hazen",
-      "Winning %": "0.538"
+      "Winning %": "0.535"
+    },
+    {
+      "Losses": "66",
+      "Owner": "Met Nagatani",
+      "Winning %": "0.445"
     },
     {
       "Losses": "65",
       "Owner": "Curt Ogden",
       "Winning %": "0.542"
-    },
-    {
-      "Losses": "65",
-      "Owner": "Met Nagatani",
-      "Winning %": "0.449"
     },
     {
       "Losses": "63",
@@ -190,17 +190,17 @@
     {
       "Losses": "37",
       "Owner": "Cody Box",
+      "Winning %": "0.456"
+    },
+    {
+      "Losses": "37",
+      "Owner": "Freeman Puthavongsa",
       "Winning %": "0.448"
     },
     {
-      "Losses": "36",
-      "Owner": "Freeman Puthavongsa",
-      "Winning %": "0.455"
-    },
-    {
-      "Losses": "36",
+      "Losses": "37",
       "Owner": "Garret Weber",
-      "Winning %": "0.455"
+      "Winning %": "0.448"
     },
     {
       "Losses": "30",
@@ -210,7 +210,7 @@
     {
       "Losses": "28",
       "Owner": "Tom Courtney",
-      "Winning %": "0.576"
+      "Winning %": "0.582"
     },
     {
       "Losses": "20",
@@ -230,12 +230,12 @@
     {
       "Losses": "6",
       "Owner": "Casey Splane",
-      "Winning %": "0.727"
+      "Winning %": "0.739"
     }
   ],
   "Sheet3": [
     {
-      "Times": "37",
+      "Times": "38",
       "Owner": "Justin Gutierrez"
     },
     {
@@ -1195,9 +1195,9 @@
   ],
   "Sheet12": [
     {
-      "Winning %": "0.508",
+      "Winning %": "0.506",
       "Wins": "133",
-      "Losses": "129",
+      "Losses": "130",
       "Owner": "Brent Ogden"
     },
     {
@@ -1207,26 +1207,26 @@
       "Owner": "Ken Ryan"
     },
     {
-      "Winning %": "0.575",
+      "Winning %": "0.573",
       "Wins": "150",
-      "Losses": "111",
+      "Losses": "112",
       "Owner": "Nick Hazen"
     },
     {
-      "Winning %": "0.615",
-      "Wins": "161",
+      "Winning %": "0.616",
+      "Wins": "162",
       "Losses": "101",
       "Owner": "Justin Gutierrez"
     },
     {
-      "Winning %": "0.451",
-      "Wins": "74",
+      "Winning %": "0.455",
+      "Wins": "75",
       "Losses": "90",
       "Owner": "Kyle Kohlscheen"
     },
     {
-      "Winning %": "0.512",
-      "Wins": "87",
+      "Winning %": "0.515",
+      "Wins": "88",
       "Losses": "83",
       "Owner": "Jeremy Ogden"
     },
@@ -1237,22 +1237,22 @@
       "Owner": " Jake Killingbeck"
     },
     {
-      "Winning %": "0.538",
+      "Winning %": "0.535",
       "Wins": "77",
-      "Losses": "66",
+      "Losses": "67",
       "Owner": "Kristen Hazen"
+    },
+    {
+      "Winning %": "0.445",
+      "Wins": "53",
+      "Losses": "66",
+      "Owner": "Met Nagatani"
     },
     {
       "Winning %": "0.542",
       "Wins": "77",
       "Losses": "65",
       "Owner": "Curt Ogden"
-    },
-    {
-      "Winning %": "0.449",
-      "Wins": "53",
-      "Losses": "65",
-      "Owner": "Met Nagatani"
     },
     {
       "Winning %": "0.594",
@@ -1279,21 +1279,21 @@
       "Owner": "Brandon Becker"
     },
     {
-      "Winning %": "0.448",
-      "Wins": "30",
+      "Winning %": "0.456",
+      "Wins": "31",
       "Losses": "37",
       "Owner": "Cody Box"
     },
     {
-      "Winning %": "0.455",
+      "Winning %": "0.448",
       "Wins": "30",
-      "Losses": "36",
+      "Losses": "37",
       "Owner": "Freeman Puthavongsa"
     },
     {
-      "Winning %": "0.455",
+      "Winning %": "0.448",
       "Wins": "30",
-      "Losses": "36",
+      "Losses": "37",
       "Owner": "Garret Weber"
     },
     {
@@ -1303,8 +1303,8 @@
       "Owner": "Pat Edgington"
     },
     {
-      "Winning %": "0.576",
-      "Wins": "38",
+      "Winning %": "0.582",
+      "Wins": "39",
       "Losses": "28",
       "Owner": "Tom Courtney"
     },
@@ -1327,8 +1327,8 @@
       "Owner": "Danny Culberson"
     },
     {
-      "Winning %": "0.727",
-      "Wins": "16",
+      "Winning %": "0.739",
+      "Wins": "17",
       "Losses": "6",
       "Owner": "Casey Splane"
     }
