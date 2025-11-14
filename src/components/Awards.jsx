@@ -17,25 +17,25 @@ const itemVariants = {
 
 export default function Awards() {
   const awards = [
-    { title: "High Points", name: "Justin Gutierrez", details: "216.4 points" },
-    { title: 'Tim Tebow "Praise Jesus" Award', name: "Caleb Williams", details: "60.15 points" },
-    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Garret Weber", details: "Lost to Justin by 49.25 points" },
-    { title: "Pot of Gold Award", name: "Garret Weber", details: "Lost to Justin 216.4 to 167.15" },
-    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Brent Ogden", details: "Lost to Cody by 0.15 points" },
+    { title: "High Points", name: "Met Nagatani", details: "214.4 points" },
+    { title: 'Tim Tebow "Praise Jesus" Award', name: "Jonathan Taylor", details: "76.2 points" },
+    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Freeman Puthavongsa", details: "Lost to Tom by 46.55 points" },
+    { title: "Pot of Gold Award", name: "Garret Weber", details: "Lost to Met 214.4 to 182.3" },
+    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Cody Box", details: "Lost to Cody by 3.85 points" },
   ];
 
   const offenseStars = [
-    "Caleb Williams - 60.15 points - 355 total yards, 4 TDs",
-    "Joe Flacco - 59.15 points - 470 passing yards, 4 TDs",
-    "Sam Darnold - 56 points - 330 passing yards, 4 TDs",
-    "Brock Bowers - 50.15 points - 127 receiving yards, 3 TDs"
+    "Jonathan Taylor - 76.2 points - 286 total yards, 3 TDs",
+    "De'von Achane - 59.2 points - 225 total yards, 2 TDs",
+    "TreVeyon Henderson - 51.7 points - 147 rushing yards, 2 TDs",
+    "Jahmyr Gibbs - 48.75 points - 172 total yards, 3 TDs"
   ];
 
   const defenseStars = [
-    "Tennessee - 29 points - 1 TOs, 6 sacks, 2 TD",
-    "Pittsburgh - 28.25 points - 6 TOs, 5 sacks",
-    "Arizona - 22.5 points - 3 TOs, 5 sacks",
-    "Atlanta - 19.75 points - 2 TOs, 6 sacks"
+    "Seattle - 31.5 points - 2 TOs, 6 sacks, 2 TD",
+    "New York Jets - 26.75 points - 6 sacks, 2 TD",
+    "Houston - 22.25 points - 2 TOs, 5 sacks, 1 TD",
+    "Denver - 20.75 points - 1 TOs, 6 sacks"
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Awards() {
       {/* Award Winners (fade-in on scroll) */}
       <div className="rounded-sm">
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 9 Award Winners
+          Week 10 Award Winners
         </h2>
         <motion.div
           className="grid-container"
@@ -80,7 +80,7 @@ export default function Awards() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 9 Top Performers
+          Week 10 Top Performers
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">

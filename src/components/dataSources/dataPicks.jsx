@@ -7,8 +7,8 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "10-4",
-            points: "87"
+            record: "9-5",
+            points: "96"
         },
         division: "Owners",
         rank: 2,
@@ -22,11 +22,11 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "11-3",
-            points: "86"
+            record: "7-7",
+            points: "93"
         },
         division: "Owners",
-        rank: 4,
+        rank: 5,
     },
     {
         id: 3,
@@ -64,8 +64,8 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "8-6",
-            points: "81"
+            record: "7-7",
+            points: "88"
         },
         division: "Owners",
         rank: 6,
@@ -121,7 +121,7 @@ export default [
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
             record: "9-5",
-            points: "89"
+            points: "98"
         },
         division: "Players",
         rank: 1,
@@ -134,8 +134,8 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "10-4",
-            points: "86"
+            record: "9-5",
+            points: "95"
         },
         division: "Players",
         rank: 4,
@@ -148,8 +148,8 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "8-6",
-            points: "87"
+            record: "9-5",
+            points: "96"
         },
         division: "Players",
         rank: 2,
