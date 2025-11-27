@@ -28,15 +28,15 @@ export default function Results() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">1st Place</h3>
-          <p className='text-black text-center'>Brent Ogden (13-2)</p>
+          <p className='text-black text-center'>Cody Box (13-1)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">2nd Place</h3>
-          <p className='text-black text-center'>Jeremy Ogden | Justin Gutierrez | Freeman Puthavongsa (11-4)</p>
+          <p className='text-black text-center'>Jeremy Ogden | Brent Ogden | Freeman Puthavongsa (12-2)</p>
         </div>
         <div className="bg-white rounded p-4 shadow-2xl">
           <h3 className="text-xl text-[#8e2034] font-semibold text-center">3rd Place</h3>
-          <p className='text-black text-center'>Cody Box | Met Nagatani (10-5)</p>
+          <p className='text-black text-center'>Met Nagatani (11-3)</p>
         </div>
       </div>
 

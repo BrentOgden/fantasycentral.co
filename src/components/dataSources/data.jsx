@@ -7,8 +7,8 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "7-4",
-            winPercentage: ".636"
+            record: "8-4",
+            winPercentage: ".667"
         },
         division: "Owners",
         rank: 2,
@@ -22,8 +22,8 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "5-6",
-            winPercentage: ".455"
+            record: "5-7",
+            winPercentage: ".417"
         },
         division: "Owners",
         rank: 9,
@@ -36,8 +36,8 @@ export default [
         teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
-            record: "7-4",
-            winPercentage: ".636"
+            record: "8-4",
+            winPercentage: ".667"
         },
         division: "Owners",
         rank: 4,
@@ -50,8 +50,8 @@ export default [
         teamLogo: "kristen_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=24",
         record: {
-            record: "3-8",
-            winPercentage: ".273"
+            record: "4-8",
+            winPercentage: ".333"
         },
         division: "Owners",
         rank: 10,
@@ -64,11 +64,11 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "5-6",
-            winPercentage: ".455"
+            record: "6-6",
+            winPercentage: ".500"
         },
         division: "Owners",
-        rank: 8,
+        rank: 5,
     },
     {
         id: 6,
@@ -78,11 +78,11 @@ export default [
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&seasonId=2024&teamId=30",
         record: {
-            record: "6-5",
-            winPercentage: ".545"
+            record: "6-6",
+            winPercentage: ".500"
         },
         division: "Owners",
-        rank: 6,
+        rank: 7,
     },
     {
         id: 7,
@@ -92,11 +92,11 @@ export default [
         teamLogo: "nick_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=7",
         record: {
-            record: "6-5",
-            winPercentage: ".545"
+            record: "6-6",
+            winPercentage: ".500"
         },
         division: "Players",
-        rank: 7,
+        rank: 8,
     },
     {
         id: 8,
@@ -106,8 +106,8 @@ export default [
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
-            record: "9-2",
-            winPercentage: ".818"
+            record: "9-3",
+            winPercentage: ".750"
         },
         division: "Players",
         rank: 1,
@@ -120,8 +120,8 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "7-4",
-            winPercentage: ".636"
+            record: "8-4",
+            winPercentage: ".667"
         },
         division: "Players",
         rank: 3,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "6-5",
-            winPercentage: ".545"
+            record: "6-6",
+            winPercentage: ".500"
         },
         division: "Players",
-        rank: 5,
+        rank: 6,
     },
     {
         id: 11,
@@ -148,8 +148,8 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "3-8",
-            winPercentage: ".273"
+            record: "4-8",
+            winPercentage: ".333"
         },
         division: "Players",
         rank: 11,
@@ -162,8 +162,8 @@ export default [
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {
-            record: "2-9",
-            winPercentage: ".182"
+            record: "2-10",
+            winPercentage: ".167"
         },
         division: "Players",
         rank: 12,
