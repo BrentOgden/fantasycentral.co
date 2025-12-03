@@ -7,8 +7,8 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "12-2",
-            points: "121"
+            record: "9-7",
+            points: "130"
         },
         division: "Owners",
         rank: 1,
@@ -22,8 +22,8 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "12-2",
-            points: "116"
+            record: "9-7",
+            points: "125"
         },
         division: "Owners",
         rank: 5,
@@ -64,8 +64,8 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "11-3",
-            points: "109"
+            record: "9-7",
+            points: "118"
         },
         division: "Owners",
         rank: 6,
@@ -120,8 +120,8 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "10-4",
-            points: "119"
+            record: "10-6",
+            points: "129"
         },
         division: "Players",
         rank: 2,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "13-1",
-            points: "118"
+            record: "10-6",
+            points: "128"
         },
         division: "Players",
-        rank: 4,
+        rank: 3,
     },
     {
         id: 11,
@@ -148,11 +148,11 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "12-2",
-            points: "119"
+            record: "9-7",
+            points: "128"
         },
         division: "Players",
-        rank: 2,
+        rank: 3,
     },
     {
         id: 12,

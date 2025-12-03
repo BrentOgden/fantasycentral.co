@@ -3,9 +3,9 @@ import { motion, useInView } from 'framer-motion'
 import CountUp from '../components/CountUp'
 
 const stats = [
-    { id: 1, name: 'Total Picks Made', value: 1443 },
-    { id: 2, name: 'Correct Picks', value: 925 },
-    { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 135 },
+    { id: 1, name: 'Total Picks Made', value: 1539 },
+    { id: 2, name: 'Correct Picks', value: 981 },
+    { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 144 },
     { id: 4, name: 'Average Correct Pick %', value: .64, isPercentage: true },
 ]
 
