@@ -362,7 +362,9 @@ export default function SplashPage() {
                                                     <span className="text-sm  text-gray-600">{team.ownerName}</span>
                                                     {recordLine && (
                                                         <span className="text-sm  text-gray-600">Record: {recordLine}</span>
+                                                        
                                                     )}
+                                                    <span className="text-sm font-bold text-gray-600">Victory Points: {team.record.victoryPoints}</span>
                                                     <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
                                                         {getSeedLabel(seedNum)}
                                                     </span>
