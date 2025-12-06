@@ -2,22 +2,23 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import emailjs from 'emailjs-com';
 import logoBlack from '../assets/logo2025black.png';
+
+// 🔹 Import the two league data files
+import ownersStandings from './dataSources/data';
+import playersStandings from './dataSources/dataDynasty';
+
+// Helper to format ordinal ("1st", "2nd", etc.)
+function ordinal(n) {
+    const s = ['th', 'st', 'nd', 'rd'];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
 
 export default function SplashPage() {
     const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
-
-    // ─── Form state ──────────────────────────────────────────────────────────
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        wins: '',
-        runDiff: '',
-        winPercentage: '',
-        gamesBack: '',
-    });
+    const [animateModal, setAnimateModal] = useState(false);
 
     // ─── Countdown state ─────────────────────────────────────────────────────
     const [timeLeft, setTimeLeft] = useState({
@@ -28,9 +29,7 @@ export default function SplashPage() {
     });
 
     // 1) Change this target date/time as needed (UTC)
-    const TARGET_DATE = new Date('2025-12-05T08:00:00Z').getTime();
-
-
+    const TARGET_DATE = new Date('2025-12-11T08:00:00Z').getTime();
 
     // 2) Run countdown on mount and every second
     useEffect(() => {
@@ -45,8 +44,12 @@ export default function SplashPage() {
             }
 
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const hours = Math.floor(
+                (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor(
+                (diff % (1000 * 60 * 60)) / (1000 * 60)
+            );
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
             setTimeLeft({
@@ -64,6 +67,7 @@ export default function SplashPage() {
     const handleEnterClick = () => {
         navigate('/home');
     };
+
     const handleEnterClick2 = () => {
         window.open(
             'https://picks.cbssports.com/football/pickem/pools/kbxw63b2geztoobugayte===?entryId=ivxhi4tzhizdcmjyg4ytonzw',
@@ -72,58 +76,64 @@ export default function SplashPage() {
         );
     };
 
-    const handleOpenModal = () => setShowModal(true);
-    const handleCloseModal = () => setShowModal(false);
-
-    // ─── Handle form field changes ────────────────────────────────────────────
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
+    const handleOpenModal = () => {
+        setShowModal(true);
     };
 
-    // ─── Handle form submission via EmailJS ──────────────────────────────────
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleCloseModal = () => {
+        setAnimateModal(false);
+        setTimeout(() => {
+            setShowModal(false);
+        }, 200);
+    };
 
-        const serviceID = 'service_nnyc6kk';       // your Service ID
-        const templateID = 'template_wnnpzus';     // your Template ID
-        const userID = 'z5I93C69PJur8wDNK';        // your User ID
+    useEffect(() => {
+        if (showModal) {
+            const id = setTimeout(() => setAnimateModal(true), 10);
+            return () => clearTimeout(id);
+        }
+    }, [showModal]);
 
-        const templateParams = {
-            from_name: formData.name,
-            from_email: formData.email,
-            wins: formData.wins,
-            run_diff: formData.runDiff,
-            win_percentage: formData.winPercentage,
-            games_back: formData.gamesBack,
-        };
+    // ─── Derive playoff qualifiers from each league’s data ────────────────────
+    // Top 6 by rank in each league
+    const ownersQualifiers = ownersStandings
+        .filter((t) => typeof t.rank === 'number' && t.rank <= 6)
+        .sort((a, b) => a.rank - b.rank);
 
-        emailjs.send(serviceID, templateID, templateParams, userID)
-            .then(
-                () => {
-                    // clear form and close modal
-                    setFormData({
-                        name: '',
-                        email: '',
-                        wins: '',
-                        runDiff: '',
-                        winPercentage: '',
-                        gamesBack: '',
-                    });
-                    handleCloseModal();
-                    alert('Thanks! Your submission was sent.');
-                },
-                (error) => {
-                    console.error('EmailJS error:', error);
-                    alert('Oops, something went wrong. Please try again.');
-                }
-            );
+    const playersQualifiers = playersStandings
+        .filter((t) => typeof t.rank === 'number' && t.rank <= 6)
+        .sort((a, b) => a.rank - b.rank);
+
+    const league1Name = 'He-Man Woman Haters';
+    const league2Name = "Hernandez's Hangmen";
+
+    // Optional league logos (set to asset paths if you want)
+    const league1LogoUrl = ''; // e.g. '/owners-league-logo.png'
+    const league2LogoUrl = ''; // e.g. '/players-league-logo.png'
+
+    const getSeedNumber = (team, idx) =>
+        typeof team.rank === 'number' ? team.rank : idx + 1;
+
+    const getSeedLabel = (seedNum) => `${ordinal(seedNum)} Seed`;
+
+    // "8-5 (.615)" using your record object
+    const formatRecordLine = (team) => {
+        const recordStr = team.record?.record ?? '';
+        const winPct = team.record?.winPercentage ?? '';
+        if (recordStr && winPct) return `${recordStr} (${winPct})`;
+        if (recordStr) return recordStr;
+        if (winPct) return winPct;
+        return '';
     };
 
     return (
         <div className="relative h-screen w-full bg-gradient-to-br from-red-900 via-black to-orange-700 flex flex-col items-center justify-center px-4 text-center">
             {/* Logo */}
-            <img src={logoBlack} alt="Fantasy Central Logo" className="w-32 h-32 mb-6" />
+            <img
+                src={logoBlack}
+                alt="Fantasy Central Logo"
+                className="w-32 h-32 mb-6"
+            />
 
             {/* Headline */}
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
@@ -132,11 +142,11 @@ export default function SplashPage() {
 
             {/* Sub-headline */}
             <p className="text-lg text-center md:text-2xl text-indigo-200 mb-8 max-w-2xl">
-                Keep up with both leagues all season long. Track all-time records, updated stats,
-                weekly awards and much more. Ready to dominate this season?
+                Keep up with both leagues all season long. Track all-time records, updated
+                stats, weekly awards and much more. Ready to dominate this season?
             </p>
 
-            {/* “Enter” + “Sign Up” buttons */}
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
                 <button
                     onClick={handleEnterClick}
@@ -144,21 +154,23 @@ export default function SplashPage() {
                 >
                     Enter Fantasy Central →
                 </button>
+
                 <button
                     onClick={handleEnterClick2}
                     className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-900 text-yellow-500 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-200"
                 >
                     Make Weekly Picks →
                 </button>
+
+                <button
+                    onClick={handleOpenModal}
+                    className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-900 text-yellow-500 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-200"
+                >
+                    2025 Playoff Qualifiers →
+                </button>
             </div>
 
-            {/* <p className="mt-6 font-bold">
-                Guesses must be submitted by{' '}
-                <span className="text-yellow-500">MIDNIGHT</span> on{' '}
-                <span className="text-yellow-500">7/3</span>
-            </p> */}
-
-            {/* ─── Countdown Display ─────────────────────────────────────────────── */}
+            {/* Countdown Display */}
             <div className="flex space-x-4 text-white mb-4 mt-8 text-center">
                 <div>
                     <span className="text-5xl font-bold">{timeLeft.days}</span>
@@ -176,149 +188,201 @@ export default function SplashPage() {
                     <span className="text-5xl font-bold">{timeLeft.seconds}</span>
                     <div className="uppercase text-sm">Seconds</div>
                 </div>
-
             </div>
-            <p className=' text-white text-xl'>Until the Trade Deadline</p>
+
+            <p className="text-white text-xl">Until the Playoffs</p>
+
+            {/* Playoff Qualifiers Modal */}
             {showModal && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white rounded-2xl w-full max-w-lg mx-4 p-6 relative">
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
+                    <div
+                        className={[
+                            'bg-white rounded-2xl w-full max-w-7xl mx-4 p-6 relative max-h-[80vh] overflow-y-scroll shadow-2xl',
+                            'transform transition-all duration-200 ease-out',
+                            animateModal
+                                ? 'opacity-100 translate-y-0 scale-100'
+                                : 'opacity-0 translate-y-4 scale-95',
+                        ].join(' ')}
+                    >
                         {/* Close button */}
                         <button
                             onClick={handleCloseModal}
-                            className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+                            className="absolute top-3 right-3 text-white hover:text-gray-700"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="h-4 w-4 md:h-6 md:w-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
                                 strokeWidth={2}
                             >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
                             </svg>
                         </button>
 
-                        {/* Form Title & Description */}
-                        <h2 className="text-lg md:text-2xl font-semibold text-gray-800 mb-1 md:mb-4 text-center">
-                            Draft Order Challenge
+                        {/* Modal Title */}
+                        <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2 text-center">
+                            2025 Playoff Qualifiers
                         </h2>
-                        <p className="text-gray-800 mb-6 text-sm md:text-md">
-                            In order to determine draft order for the upcoming season we will be using the
-                            Rockies record-breaking failures as a starting point. Make your best guess as to how
-                            many <strong>WINS</strong> the Rockies will have by <strong>August 1st</strong>. For
-                            tiebreaker purposes, also guess their <strong>run-differential</strong>,{' '}
-                            <strong>winning %</strong> and how many <strong>games out of 1st place</strong> they
-                            will be by August 1st. Picks will be determined in order of how close your guesses
-                            come to the actual numbers.
+
+                        <p className="text-gray-700 mb-6 text-center text-md md:text-lg">
+                            Congratulations to this year's playoff qualifiers! Below are the playoff teams and seeds for both leagues.
                         </p>
 
-                        {/* Modal Form */}
-                        <form onSubmit={handleSubmit} className="max-h-screen grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {/* Name Field */}
-                            <div>
-                                <label htmlFor="name" className="block text-gray-700 mb-1">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Email Field */}
-                            <div>
-                                <label htmlFor="email" className="block text-gray-700 mb-1">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Rockies Wins (by 8/1) */}
-                            <div>
-                                <label htmlFor="wins" className="block text-gray-700 mb-1">
-                                    Rockies Wins (by 8/1)
-                                </label>
-                                <input
-                                    type="text"
-                                    id="wins"
-                                    name="wins"
-                                    value={formData.wins}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Run Differential */}
-                            <div>
-                                <label htmlFor="runDiff" className="block text-gray-700 mb-1">
-                                    Run Differential (by 8/1)
-                                </label>
-                                <input
-                                    type="text"
-                                    id="runDiff"
-                                    name="runDiff"
-                                    value={formData.runDiff}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Rockies Winning % */}
-                            <div>
-                                <label htmlFor="winPercentage" className="block text-gray-700 mb-1">
-                                    Rockies Winning % (by 8/1)
-                                </label>
-                                <input
-                                    type="text"
-                                    id="winPercentage"
-                                    name="winPercentage"
-                                    value={formData.winPercentage}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Games Back */}
-                            <div>
-                                <label htmlFor="gamesBack" className="block text-gray-700 mb-1">
-                                    Games out of 1st (by 8/1)
-                                </label>
-                                <input
-                                    type="text"
-                                    id="gamesBack"
-                                    name="gamesBack"
-                                    value={formData.gamesBack}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full border text-black border-gray-300 rounded-lg px-1 py-1 md:px-3 md:py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                />
-                            </div>
-
-                            {/* Submit Button (spans both columns) */}
-                            <button
-                                type="submit"
-                                className="sm:col-span-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg transition duration-200"
+                        {/* STACKED LEAGUE SECTIONS */}
+                        <div className="space-y-8">
+                            {/* Owners League */}
+                            <section
+                                className="relative rounded-xl overflow-hidden shadow-lg p-4 md:p-6"
+                                style={{
+                                    backgroundImage: `url('fftrophy4-min.jpg')`,  // ← your image here
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                }}
                             >
-                                Submit
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-black/40"></div>
+
+                                {/* Content wrapper so text sits above overlay */}
+                                <div className="relative z-10">
+                                    <div className="flex items-center justify-center gap-3 mb-3 text-white">
+                                        {league1LogoUrl && (
+                                            <img
+                                                src={league1LogoUrl}
+                                                alt={`${league1Name} logo`}
+                                                className="w-10 h-10 rounded-full object-cover shadow-sm"
+                                            />
+                                        )}
+                                        <h3 className="text-lg md:text-xl font-semibold">{league1Name}</h3>
+                                    </div>
+
+                                    {/* GRID of 6 teams */}
+                                    <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                                        {ownersQualifiers.map((team, idx) => {
+                                            const seedNum = getSeedNumber(team, idx);
+                                            const recordLine = formatRecordLine(team);
+                                            const hasBye = seedNum <= 2;
+
+                                            return (
+                                                <li
+                                                    key={team.teamName}
+                                                    className="relative flex flex-col items-center bg-white/90 rounded-lg px-3 py-4 shadow-md text-center"
+                                                >
+                                                    {/* BYE badge */}
+                                                    {hasBye && (
+                                                        <span className="absolute top-2 right-2 rounded-full bg-red-700 text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wide">
+                                                            BYE
+                                                        </span>
+                                                    )}
+
+                                                    {/* <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-700 text-white text-sm font-bold mb-2">
+                                                        {seedNum}
+                                                    </span> */}
+
+                                                    <img
+                                                        src={team.teamLogo}
+                                                        alt={team.teamName}
+                                                        className="h-10 w-10 rounded-full object-cover border border-gray-300 shadow-sm mb-2"
+                                                    />
+
+                                                    <span className="font-semibold text-gray-900">{team.teamName}</span>
+                                                    <span className="text-sm text-gray-600">{team.ownerName}</span>
+                                                    {recordLine && (
+                                                        <span className="text-sm text-gray-600">Record: {recordLine}</span>
+                                                    )}
+                                                    <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
+                                                        {getSeedLabel(seedNum)}
+                                                    </span>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                            </section>
+
+
+                            {/* Players League */}
+                            <section
+                                className="relative rounded-xl overflow-hidden shadow-lg p-4 md:p-6"
+                                style={{
+                                    backgroundImage: `url('/banner_image2.jpg')`,  // ← your image here
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'top',
+                                }}
+                            >
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-black/70"></div>
+
+                                <div className="relative z-10">
+                                    <div className="flex items-center justify-center gap-3 mb-3 text-white">
+                                        {league2LogoUrl && (
+                                            <img
+                                                src={league2LogoUrl}
+                                                alt={`${league2Name} logo`}
+                                                className="w-10 h-10 rounded-full object-cover shadow-sm"
+                                            />
+                                        )}
+                                        <h3 className="text-lg md:text-xl font-semibold">{league2Name}</h3>
+                                    </div>
+
+                                    <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                                        {playersQualifiers.map((team, idx) => {
+                                            const seedNum = getSeedNumber(team, idx);
+                                            const recordLine = formatRecordLine(team);
+                                            const hasBye = seedNum <= 2;
+
+                                            return (
+                                                <li
+                                                    key={team.teamName}
+                                                    className="relative flex flex-col items-center bg-white/90 rounded-lg px-3 py-4 shadow-md text-center"
+                                                >
+                                                    {/* BYE badge */}
+                                                    {hasBye && (
+                                                        <span className="absolute top-2 right-2 rounded-full bg-red-700 text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wide">
+                                                            BYE
+                                                        </span>
+                                                    )}
+
+                                                    {/* <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600 text-white text-sm font-bold mb-2">
+                                                        {seedNum}
+                                                    </span> */}
+
+                                                    <img
+                                                        src={team.teamLogo}
+                                                        alt={team.teamName}
+                                                        className="h-10 w-10 rounded-full object-cover border border-gray-300 shadow-sm mb-2"
+                                                    />
+
+                                                    <span className="font-semibold text-gray-900">{team.teamName}</span>
+                                                    <span className="text-sm  text-gray-600">{team.ownerName}</span>
+                                                    {recordLine && (
+                                                        <span className="text-sm  text-gray-600">Record: {recordLine}</span>
+                                                    )}
+                                                    <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
+                                                        {getSeedLabel(seedNum)}
+                                                    </span>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <div className="mt-8 flex justify-center">
+                            <button
+                                onClick={handleCloseModal}
+                                className="px-6 py-2 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800 transition"
+                            >
+                                Close
                             </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             )}

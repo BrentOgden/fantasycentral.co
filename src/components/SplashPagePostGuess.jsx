@@ -103,7 +103,7 @@ export default function SplashPagePostGuess() {
           onClick={handleOpenModal2}
           className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-900 text-yellow-500 font-semibold py-3 px-8 rounded-full shadow-lg transition"
         >
-          2025 Draft Order →
+          2025 Playoff Teams →
         </button>
       </p>
 
@@ -129,7 +129,7 @@ export default function SplashPagePostGuess() {
               <span className="text-2xl leading-none">&times;</span>
             </button>
             <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-              Draft Order Challenge Submissions
+              2025 Playoff Qualifiers
             </h2>
             <div className="overflow-x-auto">
               <table className="table-auto w-full border-collapse text-center">
