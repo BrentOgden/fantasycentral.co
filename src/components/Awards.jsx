@@ -17,25 +17,25 @@ const itemVariants = {
 
 export default function Awards() {
   const awards = [
-    { title: "High Points", name: "Jeremy Ogden", details: "207.75 points" },
-    { title: 'Tim Tebow "Praise Jesus" Award', name: "Jordan Love", details: "46.65 points" },
-    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Cody Box", details: "Lost to Jeremy by 121.1 points" },
-    { title: "Pot of Gold Award", name: "Cody Box", details: "Lost to Justin 207.75 to 86.65" },
-    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Justin Gutierrez", details: "Lost to Freeman by 18.8 points" },
+    { title: "High Points", name: "Cody Box", details: "223.25 points" },
+    { title: 'Tim Tebow "Praise Jesus" Award', name: "Shedeur Sanders", details: "57.65 points" },
+    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Garrett Weber", details: "Lost to Cody by 64.4 points" },
+    { title: "Pot of Gold Award", name: "Garrett Weber", details: "Lost to Cody 223.25 to 158.85" },
+    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Freeman Puthavongsa", details: "Lost to Met by 2.4 points" },
   ];
 
   const offenseStars = [
-    "Jordan Love - 46.65 points - 238 total yards, 4 TDs",
-    "Patrick Mahomes - 43.75 points - 291 total yards, 4 TDs",
-    "AJ Brown - 41.6 points - 132 receiving yards, 2 TDs",
-    "Bijan Robinson - 41.45 points - 193 total yards, 1 TDs"
+    "Shedeur Sanders - 57.65 points - 393 total yards, 4 TDs",
+    "Josh Allen - 55.05 points - 329 total yards, 4 TDs",
+    "Tony Pollard - 46.35 points - 161 rushing yards, 2 TDs",
+    "Michael Wilson - 44.4 points - 142 receiving yards, 2 TDs"
   ];
 
   const defenseStars = [
-    "Seattle - 36.5 points - 5 TOs, 4 sacks, 1 TD",
-    "Miami - 18.5 points - 2 TOs, 4 sacks",
-    "Cincinnati - 17.5 points - 4 TOs, 2 sacks",
-    "Los Angeles Chargers - 17.25 points - 1 TOs, 5 sacks"
+    "Philadelphia - 24.25 points - 2 TOs, 7 sacks",
+    "Miami - 23.25 points - 3 TOs, 6 sacks",
+    "Seattle - 21.5 points - 3 TOs, 1 sack, 1 TD",
+    "Minnesota - 20 points - 3 TOs, 2 sacks"
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Awards() {
       {/* Award Winners (fade-in on scroll) */}
       <div className="rounded-sm">
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 13 Award Winners
+          Week 14 Award Winners
         </h2>
         <motion.div
           className="grid-container"
@@ -80,7 +80,7 @@ export default function Awards() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 13 Top Performers
+          Week 14 Top Performers
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">
