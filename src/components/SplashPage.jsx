@@ -231,7 +231,7 @@ export default function SplashPage() {
                         </h2>
 
                         <p className="text-gray-700 mb-6 text-center text-md md:text-lg">
-                            Congratulations to this year's playoff qualifiers! Below are the playoff teams and seeds for both leagues.
+                            Congratulations to this year's playoff qualifiers! Below are the playoff teams and seeds for both leagues. Seeds 2-6 will play Week 15, with the top two scoring teams moving on to weeks 16 and 17. The final 4 teams will play a two week battle two determine final results.
                         </p>
 
                         {/* STACKED LEAGUE SECTIONS */}
