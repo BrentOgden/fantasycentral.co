@@ -284,11 +284,11 @@ export default function SplashPage() {
                                                     className="relative flex flex-col items-center bg-white/90 rounded-lg px-3 py-4 shadow-md text-center"
                                                 >
                                                     {/* BYE badge */}
-                                                    {hasBye && (
+                                                    {/* {hasBye && (
                                                         <span className="absolute top-2 right-2 rounded-full bg-red-700 text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wide">
                                                             BYE
                                                         </span>
-                                                    )}
+                                                    )} */}
 
                                                     {/* <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-700 text-white text-sm font-bold mb-2">
                                                         {seedNum}
@@ -354,11 +354,11 @@ export default function SplashPage() {
                                                     className="relative flex flex-col items-center bg-white/90 rounded-lg px-3 py-4 shadow-md text-center"
                                                 >
                                                     {/* BYE badge */}
-                                                    {hasBye && (
+                                                    {/* {hasBye && (
                                                         <span className="absolute top-2 right-2 rounded-full bg-red-700 text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wide">
                                                             BYE
                                                         </span>
-                                                    )}
+                                                    )} */}
 
                                                     {/* <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600 text-white text-sm font-bold mb-2">
                                                         {seedNum}
