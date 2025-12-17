@@ -7,8 +7,8 @@ export default [
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
-            record: "8-6",
-            points: "138"
+            record: "9-7",
+            points: "147"
         },
         division: "Owners",
         rank: 1,
@@ -22,11 +22,11 @@ export default [
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
-            record: "10-4",
-            points: "135"
+            record: "12-4",
+            points: "147"
         },
         division: "Owners",
-        rank: 4,
+        rank: 1,
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export default [
         teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "24"
         },
         division: "Owners",
@@ -50,7 +50,7 @@ export default [
         teamLogo: "kristen_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=24",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "0"
         },
         division: "Owners",
@@ -64,8 +64,8 @@ export default [
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
-            record: "7-7",
-            points: "125"
+            record: "9-7",
+            points: "134"
         },
         division: "Owners",
         rank: 6,
@@ -78,7 +78,7 @@ export default [
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=30",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "71"
         },
         division: "Owners",
@@ -92,7 +92,7 @@ export default [
         teamLogo: "nick_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=7",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "0"
         },
         division: "Players",
@@ -106,7 +106,7 @@ export default [
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "50"
         },
         division: "Players",
@@ -120,11 +120,11 @@ export default [
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
-            record: "7-7",
-            points: "136"
+            record: "11-5",
+            points: "147"
         },
         division: "Players",
-        rank: 2,
+        rank: 1,
     },
     {
         id: 10,
@@ -134,11 +134,11 @@ export default [
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
-            record: "8-6",
-            points: "136"
+            record: "10-6",
+            points: "146"
         },
         division: "Players",
-        rank: 2,
+        rank: 4,
     },
     {
         id: 11,
@@ -148,11 +148,11 @@ export default [
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
-            record: "7-7",
-            points: "135"
+            record: "10-6",
+            points: "145"
         },
         division: "Players",
-        rank: 4,
+        rank: 5,
     },
     {
         id: 12,
@@ -162,7 +162,7 @@ export default [
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {
-            record: "0-14",
+            record: "0-16",
             points: "78"
         },
         division: "Players",
