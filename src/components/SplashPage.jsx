@@ -237,7 +237,7 @@ export default function SplashPage() {
 
                         {/* Modal Title */}
                         <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2 text-center">
-                            2025 Playoff Qualifiers
+                            2025 Playoff Results
                         </h2>
 
                         <p className="text-gray-700 mb-6 text-center text-md md:text-lg">
