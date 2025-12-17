@@ -3,7 +3,7 @@ export default [
         id: 1,
         teamName: "Puka de Beppo",
         ownerName: "Brent Ogden",
-        price: 136,
+        playoffPoints: 159.55,
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
@@ -12,13 +12,14 @@ export default [
         },
         division: "Owners",
         rank: 2,
+        playoffRank: 2,
         
     },
     {
         id: 2,
         teamName: "Smoking Split Lickers",
         ownerName: "Jeremy Ogden",
-        price: 125,
+        playoffPoints: 'DNQ',
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=21",
         record: {
@@ -32,7 +33,7 @@ export default [
         id: 3,
         teamName: "The Great White Buffalos",
         ownerName: "Tom Courtney ",
-        price: 50,
+        playoffPoints: 241.25,
         teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
@@ -41,12 +42,13 @@ export default [
         },
         division: "Owners",
         rank: 4,
+        playoffRank: 3,
     },
     {
         id: 4,
         teamName: "*Show Stopper*",
         ownerName: "Kristen Hazen",
-        price: 50,
+        playoffPoints: 'DNQ',
         teamLogo: "kristen_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=24",
         record: {
@@ -60,7 +62,7 @@ export default [
         id: 5,
         teamName: "De'Vont Stop Believin'",
         ownerName: "Met Nagatani",
-        price: 50,
+        playoffPoints: 201.75,
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
@@ -69,12 +71,13 @@ export default [
         },
         division: "Owners",
         rank: 5,
+        playoffRank: 4,
     },
     {
         id: 6,
         teamName: "Half Chubb",
         ownerName: "Casey Splane",
-        price: 50,
+        playoffPoints: 'DNQ',
         teamLogo: "pat_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&seasonId=2024&teamId=30",
         record: {
@@ -88,7 +91,7 @@ export default [
         id: 7,
         teamName: "Parker The Show",
         ownerName: "Nick Hazen",
-        price: 50,
+        playoffPoints: 'DNQ',
         teamLogo: "nick_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=7",
         record: {
@@ -102,7 +105,7 @@ export default [
         id: 8,
         teamName: "Teaser Pleasers",
         ownerName: "Kyle Kohlscheen",
-        price: 50,
+        playoffPoints: 186.65,
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
@@ -111,12 +114,13 @@ export default [
         },
         division: "Players",
         rank: 1,
+        playoffRank: 1,
     },
     {
         id: 9,
         teamName: "Hamburger Meat FC",
         ownerName: "Justin Gutierrez",
-        price: 50,
+        playoffPoints: 196.2,
         teamLogo: "justin_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
@@ -130,7 +134,7 @@ export default [
         id: 10,
         teamName: "Slap And Tickle",
         ownerName: "Cody Box",
-        price: 50,
+        playoffPoints: 142.6,
         teamLogo: "cody_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=25",
         record: {
@@ -144,7 +148,7 @@ export default [
         id: 11,
         teamName: "OH Rick Rocket",
         ownerName: "Freeman Puthavongsa",
-        price: 50,
+        playoffPoints: 'DNQ',
         teamLogo: "freeman_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
@@ -158,7 +162,7 @@ export default [
         id: 12,
         teamName: "Rebuilding Year",
         ownerName: "Garret Weber",
-        price: 50,
+        playoffPoints: 'DNQ',
         teamLogo: "garret_logo.svg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=29",
         record: {

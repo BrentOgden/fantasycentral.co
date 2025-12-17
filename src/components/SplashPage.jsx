@@ -103,6 +103,13 @@ export default function SplashPage() {
     const playersQualifiers = playersStandings
         .filter((t) => typeof t.rank === 'number' && t.rank <= 6)
         .sort((a, b) => a.rank - b.rank);
+        const ownersQualifiersPO = ownersStandings
+        .filter((t) => typeof t.playoffRank === 'number' && t.playoffRank <= 6)
+        .sort((a, b) => a.playoffRank - b.playoffRank);
+
+    const playersQualifiersPO = playersStandings
+        .filter((t) => typeof t.playoffRank === 'number' && t.playoffRank <= 6)
+        .sort((a, b) => a.playoffRank - b.playoffRank);
 
     const league1Name = 'He-Man Woman Haters';
     const league2Name = "Hernandez's Hangmen";
@@ -113,6 +120,9 @@ export default function SplashPage() {
 
     const getSeedNumber = (team, idx) =>
         typeof team.rank === 'number' ? team.rank : idx + 1;
+    const getPlayoffSeedNumber = (team, idx) =>
+        typeof team.playoffRank === 'number' ? team.playoffRank: idx + 1;
+
 
     const getSeedLabel = (seedNum) => `${ordinal(seedNum)} Seed`;
 
@@ -263,10 +273,10 @@ export default function SplashPage() {
 
                                     {/* GRID of 6 teams */}
                                     <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                                        {ownersQualifiers.map((team, idx) => {
-                                            const seedNum = getSeedNumber(team, idx);
+                                        {ownersQualifiersPO.map((team, idx) => {
+                                            const seedNum = getPlayoffSeedNumber(team, idx);
                                             const recordLine = formatRecordLine(team);
-                                            const hasBye = seedNum <= 2;
+                                            const hasBye = seedNum <= 4;
 
                                             return (
                                                 <li
@@ -291,13 +301,15 @@ export default function SplashPage() {
                                                     />
 
                                                     <span className="font-semibold text-gray-900">{team.teamName}</span>
+                                                     
                                                     <span className="text-sm text-gray-600">{team.ownerName}</span>
                                                     {recordLine && (
                                                         <span className="text-sm text-gray-600">Record: {recordLine}</span>
                                                     )}
-                                                    <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
+                                                    {/* <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
                                                         {getSeedLabel(seedNum)}
-                                                    </span>
+                                                    </span> */}
+                                                    <span className="font-normal text-gray-900 mt-2">Current Playoff Points - {team.playoffPoints}</span>
                                                 </li>
                                             );
                                         })}
@@ -331,8 +343,8 @@ export default function SplashPage() {
                                     </div>
 
                                     <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                                        {playersQualifiers.map((team, idx) => {
-                                            const seedNum = getSeedNumber(team, idx);
+                                        {playersQualifiersPO.map((team, idx) => {
+                                            const seedNum = getPlayoffSeedNumber(team, idx);
                                             const recordLine = formatRecordLine(team);
                                             const hasBye = seedNum <= 2;
 
@@ -360,14 +372,16 @@ export default function SplashPage() {
 
                                                     <span className="font-semibold text-gray-900">{team.teamName}</span>
                                                     <span className="text-sm  text-gray-600">{team.ownerName}</span>
+                                                    
                                                     {recordLine && (
                                                         <span className="text-sm  text-gray-600">Record: {recordLine}</span>
 
                                                     )}
                                                     <span className="text-sm font-bold text-gray-600">Victory Points: {team.record.victoryPoints}</span>
-                                                    <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
+                                                    {/* <span className="mt-2 text-md font-medium uppercase tracking-wide text-red-700">
                                                         {getSeedLabel(seedNum)}
-                                                    </span>
+                                                    </span> */}
+                                                    <span className="font-normal text-gray-900 mt-2">Current Playoff Points - {team.playoffPoints}</span>
                                                 </li>
                                             );
                                         })}
