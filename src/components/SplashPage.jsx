@@ -103,7 +103,7 @@ export default function SplashPage() {
     const playersQualifiers = playersStandings
         .filter((t) => typeof t.rank === 'number' && t.rank <= 6)
         .sort((a, b) => a.rank - b.rank);
-        const ownersQualifiersPO = ownersStandings
+    const ownersQualifiersPO = ownersStandings
         .filter((t) => typeof t.playoffRank === 'number' && t.playoffRank <= 6)
         .sort((a, b) => a.playoffRank - b.playoffRank);
 
@@ -121,7 +121,7 @@ export default function SplashPage() {
     const getSeedNumber = (team, idx) =>
         typeof team.rank === 'number' ? team.rank : idx + 1;
     const getPlayoffSeedNumber = (team, idx) =>
-        typeof team.playoffRank === 'number' ? team.playoffRank: idx + 1;
+        typeof team.playoffRank === 'number' ? team.playoffRank : idx + 1;
 
 
     const getSeedLabel = (seedNum) => `${ordinal(seedNum)} Seed`;
@@ -301,7 +301,7 @@ export default function SplashPage() {
                                                     />
 
                                                     <span className="font-semibold text-gray-900">{team.teamName}</span>
-                                                     
+
                                                     <span className="text-sm text-gray-600">{team.ownerName}</span>
                                                     {recordLine && (
                                                         <span className="text-sm text-gray-600">Record: {recordLine}</span>
@@ -372,7 +372,7 @@ export default function SplashPage() {
 
                                                     <span className="font-semibold text-gray-900">{team.teamName}</span>
                                                     <span className="text-sm  text-gray-600">{team.ownerName}</span>
-                                                    
+
                                                     {recordLine && (
                                                         <span className="text-sm  text-gray-600">Record: {recordLine}</span>
 
@@ -385,9 +385,24 @@ export default function SplashPage() {
                                                 </li>
                                             );
                                         })}
+
+
                                     </ul>
+                                    <div className="flex flex-col md:max-w-7xl items-center bg-white/90 rounded-lg py-4 mt-6 shadow-md font-semibold text-slate-600 text-xl text-center">Race for #1 Pick
+                                        <ul className='md:flex md:flex-col-3 grid grid-cols-2'>
+                                            <li className='font-normal'>#1 <br></br>Gary <br></br><span className='text-red-900 text-lg font-semibold'>244.7</span></li>
+                                            <li className='font-normal'>#2 <br></br>
+                                                Tom<br></br> <span className='text-red-900 text-lg font-semibold'>244.1</span></li>
+                                            <li className='font-normal'>#3 <br></br>Brandon<br></br> <span className='text-red-900 text-lg font-semibold'>220.65</span></li>
+                                            <li className='font-normal'>#4 <br></br>Kyle<br></br> <span className='text-red-900 text-lg font-semibold'>214.9</span></li>
+                                            <li className='font-normal'>#5 <br></br>Met<br></br> <span className='text-red-900 text-lg font-semibold'>197.85</span></li>
+                                            <li className='font-normal'>#6 <br></br>Jimmy<br></br> <span className='text-red-900 text-lg font-semibold'>165.9</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
+
                             </section>
+
 
                         </div>
 
