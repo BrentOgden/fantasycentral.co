@@ -3,7 +3,7 @@ export default [
         id: 1,
         teamName: "Stolen Valor",
         ownerName: "Brent Ogden",
-        playoffPoints: 269.35,
+        playoffPoints: 514.55,
         teamLogo: "brent2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0001&O=07",
         record: {
@@ -20,7 +20,7 @@ export default [
         id: 2,
         teamName: "Tom Zealand All Whites",
         ownerName: "Tom Courtney",
-        playoffPoints: 244.10,
+        playoffPoints: 447.10,
         teamLogo: "tom2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0002&O=07",
         record: {
@@ -35,7 +35,7 @@ export default [
         id: 3,
         teamName: "The Show",
         ownerName: "Nick Hazen",
-        playoffPoints: 273.35,
+        playoffPoints: 267.25,
         teamLogo: "nick2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0003&O=07",
         record: {
@@ -45,13 +45,13 @@ export default [
         },
         division: "Varsity",
         rank: 3,
-        playoffRank: 4,
+        playoffRank: 1,
     },
     {
         id: 4,
         teamName: "*Show Stopper*",
         ownerName: "Kristen Hazen",
-        playoffPoints: 287.70,
+        playoffPoints: 263.85,
         teamLogo: "kristen2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0004&O=07",
         record: {
@@ -67,7 +67,7 @@ export default [
         id: 5,
         teamName: "The Over / Under Takers",
         ownerName: "Kyle Kohlscheen",
-        playoffPoints: 214.90,
+        playoffPoints: 396.10,
         teamLogo: "kylelogo2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0005&O=07",
         record: {
@@ -82,7 +82,7 @@ export default [
         id: 6,
         teamName: "Kyler Ren",
         ownerName: "Brandon Becker",
-        playoffPoints: 220.65,
+        playoffPoints: 400.25,
         teamLogo: "brandon2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0006&O=07",
         record: {
@@ -97,7 +97,7 @@ export default [
         id: 7,
         teamName: "Garcia Zias",
         ownerName: "Gary Garcia",
-        playoffPoints: 244.70,
+        playoffPoints: 473.80,
         teamLogo: "gary2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0007&O=07",
         record: {
@@ -112,7 +112,7 @@ export default [
         id: 8,
         teamName: "Chadahoochie Coochie Munchers",
         ownerName: "Chad Marchand",
-        playoffPoints: 241.20,
+        playoffPoints: 203.85,
         teamLogo: "chad2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0008&O=07",
         record: {
@@ -122,13 +122,13 @@ export default [
         },
         division: "Junior Varsity",
         rank: 1,
-        playoffRank: 1,
+        playoffRank: 4,
     },
     {
         id: 9,
         teamName: "Team Cunningham",
         ownerName: "Jimmy Cunningham",
-        playoffPoints: 165.90,
+        playoffPoints: 399.75,
         teamLogo: "jimmy2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0009&O=07",
         record: {
@@ -143,7 +143,7 @@ export default [
         id: 10,
         teamName: "Smoking Split Lickers",
         ownerName: "Jeremy Ogden",
-        playoffPoints: 277.30,
+        playoffPoints: 237.45,
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0010&O=07",
         record: {
@@ -159,7 +159,7 @@ export default [
         id: 11,
         teamName: "Alvin and the Chipmunks",
         ownerName: "Justin Gutierrez",
-        playoffPoints: 221.40,
+        playoffPoints: 247.60,
         teamLogo: "justin2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0011&O=07",
         record: {
@@ -174,7 +174,7 @@ export default [
         id: 12,
         teamName: "Kishi Kaisei",
         ownerName: "Met Nagatani",
-        playoffPoints: 197.85,
+        playoffPoints: 468.30,
         teamLogo: "met2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0012&O=07",
         record: {
