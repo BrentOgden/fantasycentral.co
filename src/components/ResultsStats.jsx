@@ -3,10 +3,10 @@ import { motion, useInView } from 'framer-motion'
 import CountUp from '../components/CountUp'
 
 const stats = [
-    { id: 1, name: 'Total Picks Made', value: 1815 },
-    { id: 2, name: 'Correct Picks', value: 1154 },
-    { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 160 },
-    { id: 4, name: 'Average Correct Pick %', value: .64, isPercentage: true },
+    { id: 1, name: 'Total Picks Made', value: 1911 },
+    { id: 2, name: 'Correct Picks', value: 1205 },
+    { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 162 },
+    { id: 4, name: 'Average Correct Pick %', value: .63, isPercentage: true },
 ]
 
 const containerVariants = {
