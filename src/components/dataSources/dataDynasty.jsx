@@ -35,7 +35,7 @@ export default [
         id: 3,
         teamName: "The Show",
         ownerName: "Nick Hazen",
-        playoffPoints: 267.25,
+        playoffPoints: 542.9,
         teamLogo: "nick2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0003&O=07",
         record: {
@@ -45,13 +45,13 @@ export default [
         },
         division: "Varsity",
         rank: 3,
-        playoffRank: 1,
+        playoffRank: 2,
     },
     {
         id: 4,
         teamName: "*Show Stopper*",
         ownerName: "Kristen Hazen",
-        playoffPoints: 263.85,
+        playoffPoints: 559.8,
         teamLogo: "kristen2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0004&O=07",
         record: {
@@ -61,7 +61,7 @@ export default [
         },
         division: "Varsity",
         rank: 2,
-        playoffRank: 2,
+        playoffRank: 1,
     },
     {
         id: 5,
@@ -112,7 +112,7 @@ export default [
         id: 8,
         teamName: "Chadahoochie Coochie Munchers",
         ownerName: "Chad Marchand",
-        playoffPoints: 203.85,
+        playoffPoints: 348.3,
         teamLogo: "chad2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0008&O=07",
         record: {
@@ -143,7 +143,7 @@ export default [
         id: 10,
         teamName: "Smoking Split Lickers",
         ownerName: "Jeremy Ogden",
-        playoffPoints: 237.45,
+        playoffPoints: 439.35,
         teamLogo: "jeremy2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0010&O=07",
         record: {

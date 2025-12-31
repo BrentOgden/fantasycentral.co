@@ -3,7 +3,7 @@ export default [
         id: 1,
         teamName: "Puka de Beppo",
         ownerName: "Brent Ogden",
-        playoffPoints: 196.35,
+        playoffPoints: 329.25,
         teamLogo: "brentlogo2025.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
@@ -12,7 +12,7 @@ export default [
         },
         division: "Owners",
         rank: 2,
-        playoffRank: 2,
+        playoffRank: 4,
         
     },
     {
@@ -33,7 +33,7 @@ export default [
         id: 3,
         teamName: "The Great White Buffalos",
         ownerName: "Tom Courtney ",
-        playoffPoints: 173.05,
+        playoffPoints: 352.2,
         teamLogo: "tom_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
@@ -42,7 +42,7 @@ export default [
         },
         division: "Owners",
         rank: 4,
-        playoffRank: 4,
+        playoffRank: 3,
     },
     {
         id: 4,
@@ -62,7 +62,7 @@ export default [
         id: 5,
         teamName: "De'Vont Stop Believin'",
         ownerName: "Met Nagatani",
-        playoffPoints: 226.5,
+        playoffPoints: 432,
         teamLogo: "met_logo.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=26",
         record: {
@@ -105,7 +105,7 @@ export default [
         id: 8,
         teamName: "Teaser Pleasers",
         ownerName: "Kyle Kohlscheen",
-        playoffPoints: 180.55,
+        playoffPoints: 405.25,
         teamLogo: "kyle_logo.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
@@ -114,7 +114,7 @@ export default [
         },
         division: "Players",
         rank: 1,
-        playoffRank: 3,
+        playoffRank: 2,
     },
     {
         id: 9,

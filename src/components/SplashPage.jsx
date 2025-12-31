@@ -390,14 +390,14 @@ export default function SplashPage() {
                                     </ul>
                                     <div className="flex flex-col md:max-w-7xl items-center bg-white/90 rounded-lg py-4 mt-6 shadow-md font-semibold text-slate-600 text-xl text-center">Race for #1 Pick
                                         <ul className='md:flex md:flex-col-3 grid grid-cols-2'>
-                                            <li className='font-normal'>#1 <br></br>Gary <br></br><span className='text-red-900 text-lg font-semibold'>473.8</span></li>
-                                            <li className='font-normal'>#2 <br></br>Met<br></br> <span className='text-red-900 text-lg font-semibold'>468.3</span></li>
+                                            <li className='font-normal'>#1 <br></br>Gary <br></br><span className='text-red-900 text-lg font-semibold'>658.9</span></li>
+                                            <li className='font-normal'>#2 <br></br>Met<br></br> <span className='text-red-900 text-lg font-semibold'>643.45</span></li>
                                             <li className='font-normal'>#3 <br></br>
-                                                Tom<br></br> <span className='text-red-900 text-lg font-semibold'>447.1</span></li>
-                                            <li className='font-normal'>#4 <br></br>Brandon<br></br> <span className='text-red-900 text-lg font-semibold'>400.25</span></li>
-                                            <li className='font-normal'>#5 <br></br>Jimmy<br></br> <span className='text-red-900 text-lg font-semibold'>399.75</span></li>
+                                                Tom<br></br> <span className='text-red-900 text-lg font-semibold'>612.25</span></li>
+                                            <li className='font-normal'>#4 <br></br>Brandon<br></br> <span className='text-red-900 text-lg font-semibold'>541.85</span></li>
+                                            <li className='font-normal'>#5 <br></br>Jimmy<br></br> <span className='text-red-900 text-lg font-semibold'>548.6</span></li>
                                             
-                                            <li className='font-normal'>#6 <br></br>Kyle<br></br> <span className='text-red-900 text-lg font-semibold'>396.1</span></li>
+                                            <li className='font-normal'>#6 <br></br>Kyle<br></br> <span className='text-red-900 text-lg font-semibold'>542.9</span></li>
                                         </ul>
                                     </div>
                                 </div>
