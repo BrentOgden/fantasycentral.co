@@ -129,13 +129,13 @@ export default function SplashPagePostGuess() {
               <span className="text-2xl leading-none">&times;</span>
             </button>
             <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-              2025 Playoff Qualifiers
+              Olympic Medal Challenge
             </h2>
             <div className="overflow-x-auto">
               <table className="table-auto w-full border-collapse text-center">
                 <thead>
                   <tr className="bg-gray-100 text-black">
-                    {['Name','Wins','Run Diff','Win %','Games Back'].map(h => (
+                    {['Name','Gold Medals','Silver Medals','Total Medals','Bronze Medals'].map(h => (
                       <th key={h} className="px-4 py-2 border-b">{h}</th>
                     ))}
                   </tr>
@@ -144,10 +144,10 @@ export default function SplashPagePostGuess() {
                   {submissions.map((row, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                       <td className="px-4 py-2 border-b">{row.name}</td>
-                      <td className="px-4 py-2 border-b">{row.wins}</td>
-                      <td className="px-4 py-2 border-b">{row.runDiff}</td>
-                      <td className="px-4 py-2 border-b">{row.winPercentage.toFixed(3)}</td>
-                      <td className="px-4 py-2 border-b">{row.gamesBack}</td>
+                      <td className="px-4 py-2 border-b">{row.gold}</td>
+                      <td className="px-4 py-2 border-b">{row.silver}</td>
+                      <td className="px-4 py-2 border-b">{row.total.toFixed(3)}</td>
+                      <td className="px-4 py-2 border-b">{row.bronze}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -169,7 +169,7 @@ export default function SplashPagePostGuess() {
               <span className="text-2xl leading-none">&times;</span>
             </button>
             <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-              2025 Draft Order
+              2026 Draft Order
             </h2>
             <p className='text-center pb-6 text-gray-700'>Picks were determined by proximity (over/under) to the total # of Rockies wins <strong>(28)</strong>. For the people tied in distance over/under, the tiebreaker was used - closest to run differential <strong>(-277)</strong>. </p>
             <div className="overflow-x-auto">
