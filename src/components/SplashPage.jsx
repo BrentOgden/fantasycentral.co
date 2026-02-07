@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoBlack from '../assets/logo2025black.png';
 import OlympicMedalGuessModal from './GuessModal';
+import ResultsModal from './ResultsModal';
 
 // 🔹 Import the two league data files
 import ownersStandings from './dataSources/data';
@@ -20,6 +21,8 @@ export default function SplashPage() {
   const [showModal, setShowModal] = useState(false);
   const [animateModal, setAnimateModal] = useState(false);
   const [showMedalModal, setShowMedalModal] = useState(false);
+  const [showResultsModal, setShowResultsModal] = useState(false);
+
 
   // ─── Countdown state ─────────────────────────────────────────────────────
   const [timeLeft, setTimeLeft] = useState({
@@ -30,7 +33,7 @@ export default function SplashPage() {
   });
 
   // 1) Change this target date/time as needed (UTC)
-  const TARGET_DATE = new Date('2026-02-06T07:00:00Z').getTime();
+  const TARGET_DATE = new Date('2026-02-22T07:00:00Z').getTime();
 
   // 2) Run countdown on mount and every second
   useEffect(() => {
@@ -129,7 +132,20 @@ export default function SplashPage() {
     if (winPct) return winPct;
     return '';
   };
-
+  const RESULTS = [
+    { name: "Brent", gold: 11, silver: 10, bronze: 8, totalMedals: 26 },
+    { name: "Kyle", gold: 12, silver: 10, bronze: 10, totalMedals: 32 },
+    { name: "Cody", gold: 11, silver: 10, bronze: 8, totalMedals: 29 },
+    { name: "Nick", gold: 14, silver: 38, bronze: 46, totalMedals: 98 },
+    { name: "Justin", gold: 9, silver: 10, bronze: 11, totalMedals: 30 },
+    { name: "Kristen", gold: 11, silver: 12, bronze: 11, totalMedals: 34 },
+    { name: "Tom", gold: 9, silver: 9, bronze: 11, totalMedals: 29 },
+    { name: "Casey", gold: 15, silver: 12, bronze: 11, totalMedals: 38 },
+    { name: "Jeremy", gold: '10', silver: '9', bronze: '8', totalMedals: '27' },
+    { name: "Garret", gold: '-', silver: '-', bronze: '-', totalMedals: '-' },
+    { name: "Freeman", gold: '15', silver: '5', bronze: '15', totalMedals: '30' },
+    { name: "Met", gold: 14, silver: 16, bronze: 11, totalMedals: 41 },
+  ];
   return (
     <div className="relative h-screen w-full bg-gradient-to-br from-red-900 via-black to-orange-700 flex flex-col items-center justify-center px-4 text-center">
       {/* Logo */}
@@ -167,12 +183,19 @@ export default function SplashPage() {
         </button>
 
         {/* New button for Olympic Medal Guess */}
-        <button
-          onClick={() => setShowMedalModal(true)}
+        {/* <button
+          onClick={() => setShowResultsModal(true)}
           className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-900 text-yellow-500 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-200"
         >
           Olympic Medal Guess →
+        </button> */}
+        <button
+          onClick={() => setShowResultsModal(true)}
+          className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-4 py-2 rounded-full"
+        >
+          View Medal Guesses →
         </button>
+
       </div>
 
       {/* Countdown Display */}
@@ -195,7 +218,7 @@ export default function SplashPage() {
         </div>
       </div>
 
-      <p className="text-white uppercase text-xl">to Submit Draft Order Guesses</p>
+      <p className="text-white uppercase text-xl">until 2026 Draft Order Reveal</p>
 
       {/* Olympic Medal Guess Modal */}
       <OlympicMedalGuessModal
@@ -203,6 +226,11 @@ export default function SplashPage() {
         onClose={() => setShowMedalModal(false)}
         formEndpoint="https://formspree.io/f/meeovwqp"
         countdown={timeLeft}
+      />
+      <ResultsModal
+        isOpen={showResultsModal}
+        onClose={() => setShowResultsModal(false)}
+        results={RESULTS}
       />
 
       {/* Existing Playoff Qualifiers Modal */}
