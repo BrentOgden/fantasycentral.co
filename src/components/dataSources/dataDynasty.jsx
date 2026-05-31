@@ -11,7 +11,7 @@ export default [
             winPercentage: ".643",
             victoryPoints: "33"
         },
-        division: "Junior Varsity",
+        division: "Hangman’s Row",
         rank: 4,
         
         
@@ -28,7 +28,7 @@ export default [
             winPercentage: ".500",
             victoryPoints: "30"
         },
-        division: "Junior Varsity",
+        division: "The Gallows Gate",
         rank: 7,
     },
     {
@@ -43,7 +43,7 @@ export default [
             winPercentage: ".571",
             victoryPoints: "34"
         },
-        division: "Varsity",
+        division: "Hangman’s Row",
         rank: 3,
         playoffRank: 2,
     },
@@ -59,14 +59,14 @@ export default [
             winPercentage: ".571",
             victoryPoints: "37"
         },
-        division: "Varsity",
+        division: "Hangman’s Row",
         rank: 2,
         playoffRank: 1,
     },
     {
         id: 5,
-        teamName: "The Over / Under Takers",
-        ownerName: "Kyle Kohlscheen",
+        teamName: "Team Brooke-Lynn",
+        ownerName: "Brooke-Lynn Killingbeck",
         playoffPoints: 396.10,
         teamLogo: "kylelogo2025.png",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0005&O=07",
@@ -75,13 +75,13 @@ export default [
             winPercentage: ".429",
             victoryPoints: "24"
         },
-        division: "Junior Varsity",
+        division: "The Gallows Gate",
         rank: 10,
     },
     {
         id: 6,
-        teamName: "Kyler Ren",
-        ownerName: "Brandon Becker",
+        teamName: "Team Jake",
+        ownerName: "Jake Killingbeck",
         playoffPoints: 400.25,
         teamLogo: "brandon2024logo.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0006&O=07",
@@ -90,7 +90,7 @@ export default [
             winPercentage: ".214",
             victoryPoints: "9"
         },
-        division: "Junior Varsity",
+        division: "The Gallows Gate",
         rank: 12,
     },
     {
@@ -105,7 +105,7 @@ export default [
             winPercentage: ".357",
             victoryPoints: "27"
         },
-        division: "Varsity",
+        division: "The Gallows Gate",
         rank: 9,
     },
     {
@@ -120,7 +120,7 @@ export default [
             winPercentage: ".786",
             victoryPoints: "48"
         },
-        division: "Junior Varsity",
+        division: "Hangman’s Row",
         rank: 1,
         playoffRank: 4,
     },
@@ -136,7 +136,7 @@ export default [
             winPercentage: ".286",
             victoryPoints: "17"
         },
-        division: "Junior Varsity",
+        division: "The Gallows Gate",
         rank: 11,
     },
     {
@@ -151,23 +151,23 @@ export default [
             winPercentage: ".643",
             victoryPoints: "32"
         },
-        division: "Varsity",
+        division: "Hangman’s Row",
         rank: 5,
         playoffRank: 3,
     },
     {
         id: 11,
-        teamName: "Alvin and the Chipmunks",
+        teamName: "Got that Dog in Him",
         ownerName: "Justin Gutierrez",
         playoffPoints: 247.60,
-        teamLogo: "justin2024logo.jpg",
+        teamLogo: "justin_dynasty.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2025/options?L=63794&F=0011&O=07",
         record: {
             record: "7-7",
             winPercentage: ".500",
             victoryPoints: "31"
         },
-        division: "Varsity",
+        division: "Hangman’s Row",
         rank: 6,
     },
     {
@@ -182,7 +182,7 @@ export default [
             winPercentage: ".500",
             victoryPoints: "28"
         },
-        division: "Varsity",
+        division: "The Gallows Gate",
         rank: 8,
     }
    

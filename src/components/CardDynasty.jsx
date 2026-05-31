@@ -20,8 +20,8 @@ function CardDynasty({ item }) {
   }
 
   // Division labels
-  if (item.division === "Varsity") badgeText = "Varsity";
-  else if (item.division === "Junior Varsity") badgeText = "Junior Varsity";
+  if (item.division === "Hangman’s Row") badgeText = "Hangman’s Row";
+  else if (item.division === "The Gallows Gate") badgeText = "The Gallows Gate";
 
   return (
     <section className="flex-none w-[250px] flex flex-col items-center text-black">
