@@ -33,7 +33,7 @@ export default function SplashPage() {
   });
 
   // 1) Change this target date/time as needed (UTC)
-  const TARGET_DATE = new Date('2026-02-22T07:00:00Z').getTime();
+  const TARGET_DATE = new Date('2026-08-29T21:00:00Z').getTime();
 
   // 2) Run countdown on mount and every second
   useEffect(() => {
@@ -75,7 +75,13 @@ export default function SplashPage() {
       'noopener,noreferrer'
     );
   };
-
+const handleEnterClickApp = () => {
+    window.open(
+      'https://fantasycentral.floot.app',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
   const handleOpenModal = () => {
     setShowModal(true);
   };
@@ -190,10 +196,10 @@ export default function SplashPage() {
           Olympic Medal Guess →
         </button> */}
         <button
-          onClick={() => setShowResultsModal(true)}
-          className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-4 py-2 rounded-full"
+          onClick={handleEnterClickApp}
+          className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-600 hover:text-gray-900 text-yellow-500 font-semibold px-4 py-2 rounded-full animate-pulse"
         >
-          View Medal Guesses →
+          Get the Fantasy Central App →
         </button>
 
       </div>
@@ -218,7 +224,7 @@ export default function SplashPage() {
         </div>
       </div>
 
-      <p className="text-white uppercase text-xl">until 2026 Draft Order Reveal</p>
+      <p className="text-white uppercase text-xl">until draft day</p>
 
       {/* Olympic Medal Guess Modal */}
       <OlympicMedalGuessModal
