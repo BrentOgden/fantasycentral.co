@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { IoMdStar } from 'react-icons/io';
 import '../customCss/Awards.css';
+import weeklyData from './dataSources/weeklyData.json';
 
 // ─── Fade-in variants ─────────────────────────────────────
 const containerVariants = {
@@ -16,34 +17,15 @@ const itemVariants = {
 };
 
 export default function Awards() {
-  const awards = [
-    { title: "High Points", name: "Cody Box", details: "223.25 points" },
-    { title: 'Tim Tebow "Praise Jesus" Award', name: "Shedeur Sanders", details: "57.65 points" },
-    { title: 'Big Ben’s "Buy me Dinner First" Award', name: "Garrett Weber", details: "Lost to Cody by 64.4 points" },
-    { title: "Pot of Gold Award", name: "Garrett Weber", details: "Lost to Cody 223.25 to 158.85" },
-    { title: "Aaron Hernandez Hangin’ Tough Award", name: "Freeman Puthavongsa", details: "Lost to Met by 2.4 points" },
-  ];
-
-  const offenseStars = [
-    "Shedeur Sanders - 57.65 points - 393 total yards, 4 TDs",
-    "Josh Allen - 55.05 points - 329 total yards, 4 TDs",
-    "Tony Pollard - 46.35 points - 161 rushing yards, 2 TDs",
-    "Michael Wilson - 44.4 points - 142 receiving yards, 2 TDs"
-  ];
-
-  const defenseStars = [
-    "Philadelphia - 24.25 points - 2 TOs, 7 sacks",
-    "Miami - 23.25 points - 3 TOs, 6 sacks",
-    "Seattle - 21.5 points - 3 TOs, 1 sack, 1 TD",
-    "Minnesota - 20 points - 3 TOs, 2 sacks"
-  ];
+  const { awards, offenseStars, defenseStars } = weeklyData.espn;
+  const week = weeklyData.week;
 
   return (
     <section className="grid md:grid-cols-2 divide-x p-4">
       {/* Award Winners (fade-in on scroll) */}
       <div className="rounded-sm">
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 14 Award Winners
+          Week {week} Award Winners
         </h2>
         <motion.div
           className="grid-container"
@@ -80,7 +62,7 @@ export default function Awards() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-bold text-2xl text-red-700 text-center">
-          Week 14 Top Performers
+          Week {week} Top Performers
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">

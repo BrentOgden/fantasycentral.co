@@ -1,4 +1,6 @@
-export default [
+import weeklyData from './weeklyData.json';
+
+const fallbackStandings = [
     {
         id: 1,
         teamName: "Stolen Valor",
@@ -187,4 +189,23 @@ export default [
     }
    
     
-]
+];
+
+const generatedById = new Map(
+    weeklyData.mfl.standings.map((team) => [String(team.franchiseId).padStart(4, '0'), team])
+);
+
+export default fallbackStandings.map((team) => {
+    const franchiseId = String(team.id).padStart(4, '0');
+    const generated = generatedById.get(franchiseId);
+    return generated
+        ? {
+            ...team,
+            teamName: generated.teamName || team.teamName,
+            ownerName: generated.ownerName || team.ownerName,
+            division: generated.division || team.division,
+            rank: generated.rank ?? team.rank,
+            record: { ...team.record, ...generated.record },
+        }
+        : team;
+});

@@ -1,4 +1,6 @@
-export default [
+import weeklyData from './weeklyData.json';
+
+const fallbackStandings = [
     {
         id: 1,
         teamName: "Puka de Beppo",
@@ -173,4 +175,22 @@ export default [
         rank: 12,
     }
     
-]
+];
+
+const generatedById = new Map(
+    weeklyData.espn.standings.map((team) => [Number(team.id), team])
+);
+
+export default fallbackStandings.map((team) => {
+    const generated = generatedById.get(Number(team.id));
+    return generated
+        ? {
+            ...team,
+            teamName: generated.teamName || team.teamName,
+            ownerName: generated.ownerName || team.ownerName,
+            division: generated.division || team.division,
+            rank: generated.rank ?? team.rank,
+            record: { ...team.record, ...generated.record },
+        }
+        : team;
+});

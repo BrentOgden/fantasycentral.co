@@ -1,0 +1,96 @@
+name: Weekly fantasy audit
+
+on:
+  schedule:
+    # 9:00 AM America/Denver is 15:00 UTC during daylight time and 16:00 UTC during standard time.
+    - cron: '0 15 * * 2'
+    - cron: '0 16 * * 2'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: Season to audit
+        required: false
+        type: string
+      week:
+        description: Week to audit (blank selects the latest completed ESPN week)
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-fantasy-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Mountain Time schedule
+        id: schedule
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" && "$(TZ=America/Denver date +%H)" != "09" ]]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping the daylight-saving duplicate schedule."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out production branch
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.schedule.outputs.run == 'true'
+        run: npm ci
+
+      - name: Fetch, audit, and update league data
+        if: steps.schedule.outputs.run == 'true'
+        env:
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          MFL_API_KEY: ${{ secrets.MFL_API_KEY }}
+          ESPN_LEAGUE_ID: '249295'
+          MFL_LEAGUE_ID: '63794'
+          SEASON: ${{ inputs.season }}
+          WEEK: ${{ inputs.week }}
+        run: npm run audit:weekly
+
+      - name: Validate production build
+        if: steps.schedule.outputs.run == 'true'
+        run: npm run build
+
+      - name: Add report to workflow summary
+        if: steps.schedule.outputs.run == 'true'
+        shell: bash
+        run: |
+          report_file="$(find reports/weekly -type f -name '*.md' -printf '%T@ %p\n' | sort -nr | head -1 | cut -d' ' -f2-)"
+          if [[ -n "$report_file" ]]; then
+            cat "$report_file" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit verified updates to production
+        if: steps.schedule.outputs.run == 'true'
+        shell: bash
+        run: |
+          if git diff --quiet && [[ -z "$(git status --porcelain)" ]]; then
+            echo "No league data changed; no commit is needed."
+            exit 0
+          fi
+          git config user.name "Fantasy Central Weekly Audit"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/components/dataSources/weeklyData.json src/sheetsData.json reports/weekly
+          git commit -m "Update weekly fantasy results"
+          git push origin HEAD:main

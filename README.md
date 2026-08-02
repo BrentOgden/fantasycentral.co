@@ -31,6 +31,25 @@ Live site: https://fantasycentral.co
 - **Animated Counters** — Smoothly animate stat numbers on load and scroll.    
 - **Team Pages** — Dedicated pages for each team with roster and recent performance.  
 - **Responsive Design** — Mobile-first layout that adapts to all screen sizes.  
+- **Automated Weekly Audit** — Refreshes ESPN/MFL standings, ESPN awards, record changes, and a Markdown report every Tuesday at 9:00 AM Mountain Time.
+
+## Weekly ESPN/MFL automation
+
+The production branch includes `.github/workflows/weekly-fantasy-audit.yml`. It runs at 9:00 AM in `America/Denver`, validates data from both leagues, builds the production site, commits verified changes to `main`, and allows Netlify to deploy the commit. It can also be run manually from the repository’s **Actions** tab with an optional season or week.
+
+Add these encrypted repository secrets under **Settings → Secrets and variables → Actions**:
+
+- `ESPN_SWID` — the private league’s ESPN `SWID` session value
+- `ESPN_S2` — the private league’s ESPN `espn_s2` session value
+- `MFL_API_KEY` — optional; only needed if the MFL export endpoints require authentication
+
+Never add these values to `.env` files that are committed to the repository or to `VITE_` variables, because those are exposed to the browser build. ESPN session values expire periodically; if a scheduled run reports `401` or `403`, replace the two ESPN secrets with fresh values.
+
+Each successful run updates:
+
+- `src/components/dataSources/weeklyData.json`
+- `src/sheetsData.json` when a new weekly high/low record is verified
+- `reports/weekly/<season>-week-<week>.md`
 
 ---
 

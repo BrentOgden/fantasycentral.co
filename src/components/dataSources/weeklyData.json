@@ -1,0 +1,33 @@
+{
+  "season": 2026,
+  "week": 14,
+  "generatedAt": null,
+  "espn": {
+    "standings": [],
+    "matchups": [],
+    "awards": [
+      { "title": "High Points", "name": "Cody Box", "details": "223.25 points" },
+      { "title": "Tim Tebow \"Praise Jesus\" Award", "name": "Shedeur Sanders", "details": "57.65 points" },
+      { "title": "Big Ben’s \"Buy me Dinner First\" Award", "name": "Garrett Weber", "details": "Lost to Cody by 64.4 points" },
+      { "title": "Pot of Gold Award", "name": "Garrett Weber", "details": "Lost to Cody 223.25 to 158.85" },
+      { "title": "Aaron Hernandez Hangin’ Tough Award", "name": "Freeman Puthavongsa", "details": "Lost to Met by 2.4 points" }
+    ],
+    "offenseStars": [
+      "Shedeur Sanders - 57.65 points - 393 total yards, 4 TDs",
+      "Josh Allen - 55.05 points - 329 total yards, 4 TDs",
+      "Tony Pollard - 46.35 points - 161 rushing yards, 2 TDs",
+      "Michael Wilson - 44.4 points - 142 receiving yards, 2 TDs"
+    ],
+    "defenseStars": [
+      "Philadelphia - 24.25 points - 2 TOs, 7 sacks",
+      "Miami - 23.25 points - 3 TOs, 6 sacks",
+      "Seattle - 21.5 points - 3 TOs, 1 sack, 1 TD",
+      "Minnesota - 20 points - 3 TOs, 2 sacks"
+    ]
+  },
+  "mfl": {
+    "standings": [],
+    "matchups": []
+  },
+  "warnings": ["Initial fallback data; the first scheduled audit will replace it."]
+}
