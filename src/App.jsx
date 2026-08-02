@@ -1,10 +1,11 @@
 // src/App.jsx
 import React from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Outlet,
+  Navigate,
 } from 'react-router-dom';
 
 // 1) Import SplashPage
@@ -29,6 +30,7 @@ import LeagueHistory from './components/LeagueHistory';
 import LeagueRecordsWeekly from './components/LeagueRecordsWeekly';
 import LeagueRecordsYearly from './components/LeagueRecordsYearly';
 import LeagueRecordsAT from './components/LeagueRecordsAT';
+import SEO from './components/SEO';
 const isApp = typeof window !== 'undefined' && !!window.cordova;
 
 // ─── Layout wrapper that shows Nav, Outlet, BottomNav & Footer ───────────────
@@ -62,6 +64,11 @@ function HomePage() {
 
   return (
     <>
+      <SEO
+        title="Fantasy Football Leagues"
+        description="Follow the He-Man Woman Haters and Hernandez’s Hangmen fantasy football leagues, including standings, weekly awards and team updates."
+        path="/home"
+      />
       {/* Hero Section */}
       <div className="md:container mx-auto">
         <Hero />
@@ -111,18 +118,31 @@ export default function App() {
     <Router>
       <Routes>
         {/* 1) Splash at root, no Nav/BottomNav/Footer */}
-        <Route path="/" element={<SplashPage />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <SEO
+                title="Fantasy Central"
+                description="Fantasy Central is the companion site for two fantasy football leagues, with standings, records, results, history and weekly awards."
+                path="/"
+              />
+              <SplashPage />
+            </>
+          }
+        />
 
         {/* 2) All other routes use MainLayout */}
         <Route element={<MainLayout />}>
           <Route path="home"                   element={<HomePage />} />
-          <Route path="results"                element={<Results />} />
-          <Route path="leaguehistory"          element={<LeagueHistory />} />
-          <Route path="leaguerecordsweekly"    element={<LeagueRecordsWeekly />} />
-          <Route path="leaguerecordsyearly"    element={<LeagueRecordsYearly />} />
-          <Route path="leaguerecordsat"        element={<LeagueRecordsAT />} />
+          <Route path="results" element={<><SEO title="Weekly Pick Results" description="View the latest Fantasy Central weekly pick results and top finishers." path="/results" /><Results /></>} />
+          <Route path="leaguehistory" element={<><SEO title="League History" description="Explore the history, champions and memorable seasons of the Fantasy Central fantasy football leagues." path="/leaguehistory" /><LeagueHistory /></>} />
+          <Route path="leaguerecordsweekly" element={<><SEO title="Weekly League Records" description="Review Fantasy Central weekly fantasy football records, including the highest and lowest weekly point totals." path="/leaguerecordsweekly" /><LeagueRecordsWeekly /></>} />
+          <Route path="leaguerecordsyearly" element={<><SEO title="Single-Season League Records" description="Review Fantasy Central single-season records for points, wins and losses." path="/leaguerecordsyearly" /><LeagueRecordsYearly /></>} />
+          <Route path="leaguerecordsat" element={<><SEO title="All-Time League Records" description="Explore Fantasy Central all-time fantasy football records for wins, losses, points, high scores and earnings." path="/leaguerecordsat" /><LeagueRecordsAT /></>} />
           {/* …add more child routes here if needed… */}
         </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

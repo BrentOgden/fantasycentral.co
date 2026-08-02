@@ -16,7 +16,7 @@ export default function Nav() {
         <Link to="/home">
           <img
             src={bSquared}
-            alt="Site Logo"
+            alt="Fantasy Central"
             className="h-32 md:h-36 w-auto md:mt-20 p-1 rounded-xl"
           />
         </Link>
@@ -41,7 +41,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="/assets/HernandezHangmenLeagueRules_2024.pdf"
+              href="/HernandezHangmenLeagueRules_2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -132,7 +132,7 @@ export default function Nav() {
           <li>
             <a
               className="text-black"
-              href="/assets/HernandezHangmenLeagueRules_2024.pdf"
+              href="/HernandezHangmenLeagueRules_2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

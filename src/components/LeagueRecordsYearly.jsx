@@ -21,27 +21,27 @@ function LeagueRecordsYearly() {
       </div>
       <div className='grid-container ml-6 mr-6'>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Points in a Season</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Points in a Season</h2>
           <SeasonPoints />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Least Points in a Season (Prior to 2013)</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Least Points in a Season (Prior to 2013)</h2>
           <SeasonPointsLeast />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Least Points in a Season (2013 to Present)</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Least Points in a Season (2013 to Present)</h2>
           <SeasonPointsLeastRecent />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Wins in a Season</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Wins in a Season</h2>
           <SeasonWins />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Losses in a Season</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Losses in a Season</h2>
           <SeasonLosses />
 
         </div>

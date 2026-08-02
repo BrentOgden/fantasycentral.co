@@ -19,17 +19,17 @@ function LeagueRecordsWeekly() {
       </div>
       <div className='grid-container ml-6 mr-6'>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Points in a Week</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Points in a Week</h2>
           <WeeklyPoints />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Fewest Points in a Week (prior to 2013)</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Fewest Points in a Week (prior to 2013)</h2>
           <WeeklyPointsLeast />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Fewest Points in a Week (2013 to Present)</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Fewest Points in a Week (2013 to Present)</h2>
           <WeeklyPointsLeastRecent />
 
         </div>

@@ -22,28 +22,28 @@ function LeagueRecordsAT() {
       </div>
       <div className='grid-container ml-6 mr-6 '>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Win-Loss Records</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Win-Loss Records</h2>
           <AllTimeRecords />
 
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Points Records</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Points Records</h2>
           <YearlyRecords />
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Money Leaders</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>All-Time Money Leaders</h2>
           <MoneyRecords />
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Wins All-Time</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Wins All-Time</h2>
           <Wins />
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Losses All-Time</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most Losses All-Time</h2>
           <Losses />
         </div>
         <div className='grid-column timeline-layout'>
-          <h3 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most High Point Wins All-Time</h3>
+          <h2 className='p-4 bg-gradient-to-r from-red-900 via-black to-red-700'>Most High Point Wins All-Time</h2>
           <HighPoints />
         </div>
       </div>
