@@ -42,6 +42,7 @@ Add these encrypted repository secrets under **Settings → Secrets and variable
 - `ESPN_SWID` — the private league’s ESPN `SWID` session value
 - `ESPN_S2` — the private league’s ESPN `espn_s2` session value
 - `MFL_API_KEY` — optional; only needed if the MFL export endpoints require authentication
+- `GOOGLE_SERVICE_ACCOUNT_JSON` — the complete Google service-account JSON key; the service account must have Editor access to the Scoring Records workbook
 
 Never add these values to `.env` files that are committed to the repository or to `VITE_` variables, because those are exposed to the browser build. ESPN session values expire periodically; if a scheduled run reports `401` or `403`, replace the two ESPN secrets with fresh values.
 
@@ -50,6 +51,8 @@ Each successful run updates:
 - `src/components/dataSources/weeklyData.json`
 - `src/sheetsData.json` when a new weekly high/low record is verified
 - `reports/weekly/<season>-week-<week>.md`
+
+The same verified run also updates the historical Scoring Records workbook. It refreshes career wins, losses, winning percentage, high-point wins, season totals, weekly scoring records, career points, and MFL victory points. `Sheet13` (money won) is intentionally excluded. A hidden `_Automation Log` tab stores the last applied season snapshot so reruns and stat corrections apply only the net difference instead of double-counting results.
 
 ---
 

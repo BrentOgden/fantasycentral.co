@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { updateHistoricalGoogleSheet } from './google-sheets-history.mjs';
 
 const ROOT = process.cwd();
 const season = Number(process.env.SEASON || new Date().getFullYear());
@@ -8,6 +9,11 @@ const mflLeagueId = process.env.MFL_LEAGUE_ID || '63794';
 const espnSwid = process.env.ESPN_SWID;
 const espnS2 = process.env.ESPN_S2;
 const mflApiKey = process.env.MFL_API_KEY || '';
+const mflOwnerFallback = new Map([
+  ['0001', 'Brent Ogden'], ['0002', 'Tom Courtney'], ['0003', 'Nick Hazen'], ['0004', 'Kristen Hazen'],
+  ['0005', 'Brooke-Lynn Killingbeck'], ['0006', 'Jake Killingbeck'], ['0007', 'Gary Garcia'], ['0008', 'Chad Marchand'],
+  ['0009', 'Jimmy Cunningham'], ['0010', 'Jeremy Ogden'], ['0011', 'Justin Gutierrez'], ['0012', 'Met Nagatani'],
+]);
 
 if (!espnSwid || !espnS2) {
   throw new Error('ESPN_SWID and ESPN_S2 are required. Store them as GitHub Actions secrets.');
@@ -85,6 +91,8 @@ function normalizeEspn(data, week) {
       division: divisions.get(team.divisionId) || '',
       rank: number(team.playoffSeed || team.rankCalculatedFinal || team.currentProjectedRank, 99),
       pointsFor: fixed(overall.pointsFor),
+      wins,
+      losses,
       record: { record: ties ? `${wins}-${losses}-${ties}` : `${wins}-${losses}`, winPercentage: pct(wins, losses, ties) },
     };
   }).sort((a, b) => a.rank - b.rank || b.pointsFor - a.pointsFor);
@@ -161,7 +169,7 @@ function normalizeMflLeague(data, standingsData) {
     return {
       franchiseId,
       teamName: franchise.name || `Franchise ${franchiseId}`,
-      ownerName: franchise.owner_name || franchise.ownerName || '',
+      ownerName: franchise.owner_name || franchise.ownerName || mflOwnerFallback.get(franchiseId) || '',
       division: divisions.get(String(franchise.division)) || '',
       rank: number(row.rank, 99),
       pointsFor: fixed(row.pf ?? row.pointsFor),
@@ -178,6 +186,20 @@ function normalizeMflLeague(data, standingsData) {
   });
   normalized.forEach((team, index) => { if (team.rank === 99) team.rank = index + 1; });
   return normalized;
+}
+
+function getCompletedEspnWeeks(data, standings) {
+  const ownerById = new Map(standings.map((team) => [team.id, team.ownerName]));
+  const grouped = new Map();
+  for (const game of asArray(data.schedule).filter((item) => item.home && item.away && ['HOME', 'AWAY', 'TIE'].includes(item.winner))) {
+    const gameWeek = number(game.matchupPeriodId);
+    if (!grouped.has(gameWeek)) grouped.set(gameWeek, []);
+    grouped.get(gameWeek).push(
+      { ownerName: ownerById.get(number(game.home.teamId)) || `Team ${game.home.teamId}`, score: fixed(game.home.totalPoints) },
+      { ownerName: ownerById.get(number(game.away.teamId)) || `Team ${game.away.teamId}`, score: fixed(game.away.totalPoints) },
+    );
+  }
+  return [...grouped.entries()].map(([gameWeek, results]) => ({ week: gameWeek, results })).sort((a, b) => a.week - b.week);
 }
 
 function normalizeMflMatchups(data, standings) {
@@ -229,11 +251,14 @@ const [mflLeagueRaw, mflStandingsRaw, mflResultsRaw] = await Promise.all([
 ]);
 
 const espn = normalizeEspn(espnRaw, week);
+espn.completedWeeks = getCompletedEspnWeeks(espnRaw, espn.standings);
+espn.currentWeekResults = espn.matchups.flatMap((game) => [game.home, game.away]);
 const mflStandings = normalizeMflLeague(mflLeagueRaw, mflStandingsRaw);
 const mflMatchups = normalizeMflMatchups(mflResultsRaw, mflStandings);
 if (espn.standings.length < 2 || mflStandings.length < 2) throw new Error('Audit refused to write incomplete standings data.');
 
 const recordChanges = await updateWeeklyRecords(espn);
+const sheetUpdate = await updateHistoricalGoogleSheet({ season, week, espn, mfl: { standings: mflStandings }, root: ROOT });
 const generatedAt = new Date().toISOString();
 const weeklyData = {
   season,
@@ -255,6 +280,7 @@ const report = [
   `- ESPN: ${espn.matchups.length} matchups, ${espn.standings.length} teams`,
   `- MFL: ${mflMatchups.length} matchups, ${mflStandings.length} teams`,
   `- Record changes: ${recordChanges.length ? recordChanges.join('; ') : 'none'}`,
+  `- Google Sheet: updated ${sheetUpdate.updatedTabs.length} historical-stat tabs and logged ${season} Week ${week}`,
   `- Warnings: ${weeklyData.warnings.length ? weeklyData.warnings.join('; ') : 'none'}`,
   '',
   '## ESPN results',

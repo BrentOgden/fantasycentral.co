@@ -21,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "espn-api": "^1.0.1",
     "framer-motion": "^12.12.1",
+    "googleapis": "^144.0.0",
     "highcharts": "^11.1.0",
     "highcharts-react-official": "^3.2.0",
     "netlify-plugin-image-optim": "^0.4.0",
