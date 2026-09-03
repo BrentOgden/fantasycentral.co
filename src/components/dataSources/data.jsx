@@ -3,10 +3,10 @@ import weeklyData from './weeklyData.json';
 const fallbackStandings = [
     {
         id: 1,
-        teamName: "Puka de Beppo",
+        teamName: "Big Nix Energy",
         ownerName: "Brent Ogden",
         playoffPoints: 329.25,
-        teamLogo: "brentlogo2025.png",
+        teamLogo: "brent2026.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=1",
         record: {
             record: "8-6",
@@ -33,10 +33,10 @@ const fallbackStandings = [
     },
     {
         id: 3,
-        teamName: "The Great White Buffalos",
+        teamName: "The *Show Stopper* Stoppers",
         ownerName: "Tom Courtney ",
         playoffPoints: 352.2,
-        teamLogo: "tom_logo.png",
+        teamLogo: "tom2026.jpeg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=23",
         record: {
             record: "9-5",
@@ -62,7 +62,7 @@ const fallbackStandings = [
     },
     {
         id: 5,
-        teamName: "De'Vont Stop Believin'",
+        teamName: "For Kyren Out Loud",
         ownerName: "Met Nagatani",
         playoffPoints: 432,
         teamLogo: "met_logo.jpg",
@@ -105,10 +105,10 @@ const fallbackStandings = [
     },
     {
         id: 8,
-        teamName: "Teaser Pleasers",
+        teamName: "Degenerates",
         ownerName: "Kyle Kohlscheen",
         playoffPoints: 405.25,
-        teamLogo: "kyle_logo.png",
+        teamLogo: "kyle2026.jpeg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=17",
         record: {
             record: "11-3",
@@ -120,10 +120,10 @@ const fallbackStandings = [
     },
     {
         id: 9,
-        teamName: "Hamburger Meat FC",
+        teamName: "Got that Dog in Him",
         ownerName: "Justin Gutierrez",
         playoffPoints: 196.2,
-        teamLogo: "justin_logo.png",
+        teamLogo: "justin2026.png",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=18",
         record: {
             record: "9-5",
@@ -148,10 +148,10 @@ const fallbackStandings = [
     },
     {
         id: 11,
-        teamName: "OH Rick Rocket",
+        teamName: "Commando Rice @ Dice",
         ownerName: "Freeman Puthavongsa",
         playoffPoints: 'DNQ',
-        teamLogo: "freeman_logo.jpg",
+        teamLogo: "https://a-static.besthdwallpaper.com/demon-slayer-tanjiro-s-water-breathing-dragon-form-wallpaper-720x1280-42478_184.jpg",
         teamUrl: "https://fantasy.espn.com/football/team?leagueId=249295&teamId=28",
         record: {
             record: "5-9",
