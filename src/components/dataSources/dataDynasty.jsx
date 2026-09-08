@@ -6,7 +6,7 @@ const fallbackStandings = [
         teamName: "Stolen Valor",
         ownerName: "Brent Ogden",
         playoffPoints: 514.55,
-        teamLogo: "brent2025.png",
+        teamLogo: "brent_dynasty.jpg",
         teamUrl: "https://www44.myfantasyleague.com/2026/options?L=63794&F=0001&O=07",
         record: {
             record: "9-5",
