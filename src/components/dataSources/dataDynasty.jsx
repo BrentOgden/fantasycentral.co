@@ -3,7 +3,7 @@ import weeklyData from './weeklyData.json';
 const fallbackStandings = [
     {
         id: 1,
-        teamName: "Stolen Valor",
+        teamName: "Big Nix Energy",
         ownerName: "Brent Ogden",
         playoffPoints: 514.55,
         teamLogo: "brent_dynasty.jpg",
