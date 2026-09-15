@@ -156,7 +156,7 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
   };
   const valueUpdates = writes.map(([name, headers]) => {
     if (name !== 'Sheet14') return { range: `'${name}'!A1`, values: objectsToRows(headers, data[name]), width: headers.length };
-    const extraWidth = Math.max(0, ...sheet14Extras.values().map((extras) => extras.length));
+    const extraWidth = Math.max(0, ...[...sheet14Extras.values()].map((extras) => extras.length));
     return {
       range: `'${name}'!A1`,
       values: [[...headers, ...Array(extraWidth).fill('')], ...data[name].map((row) => [...headers.map((header) => row[header] ?? ''), ...(sheet14Extras.get(ownerKey(row.Owner)) || [])])],
