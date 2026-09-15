@@ -88,7 +88,7 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         shell: bash
         run: |
-          report_file="$(find reports/weekly -type f -name '*.md' -printf '%T@ %p\\n' | sort -nr | head -1 | cut -d' ' -f2-)"
+          report_file="$(find reports/weekly -type f -name '*.md' -printf '%T@ %p\n' | sort -nr | head -1 | cut -d' ' -f2-)"
           if [[ -n "$report_file" ]]; then
             cat "$report_file" >> "$GITHUB_STEP_SUMMARY"
           fi
