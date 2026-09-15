@@ -13,8 +13,11 @@ export default function Results() {
     .sort((a, b) => a.rank - b.rank)
     .map(item => <CardPicks key={item.id} item={item} />);
 
-  const leaders = [...new Set(dataPicks.map((item) => item.rank))].sort((a, b) => a - b).slice(0, 3)
-    .map((rank) => ({ rank, entries: dataPicks.filter((item) => item.rank === rank) }));
+  const leaders = [...new Set(dataPicks.map((item) => item.correct))].sort((a, b) => b - a).slice(0, 3)
+    .map((correct) => ({
+      rank: 1 + dataPicks.filter((item) => item.correct > correct).length,
+      entries: dataPicks.filter((item) => item.correct === correct),
+    }));
   const ordinal = (rank) => rank === 1 ? '1st' : rank === 2 ? '2nd' : rank === 3 ? '3rd' : `${rank}th`;
 
   return (
