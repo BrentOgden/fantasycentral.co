@@ -129,8 +129,14 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
   }
   for (const team of snapshot.mfl) {
     const currentOwner = firstName(team.ownerName);
-    const key = ownerKey(vpLegacyOwnerByFranchise.get(team.franchiseId) || currentOwner);
-    const row = vpRows.find((item) => ownerKey(item.Owner) === key);
+    const currentKey = ownerKey(currentOwner);
+    let matches = currentKey ? vpRows.filter((item) => ownerKey(item.Owner) === currentKey) : [];
+    if (matches.length === 0) {
+      const legacyKey = ownerKey(vpLegacyOwnerByFranchise.get(team.franchiseId));
+      if (legacyKey) matches = vpRows.filter((item) => ownerKey(item.Owner) === legacyKey);
+    }
+    if (matches.length > 1) throw new Error(`Ambiguous VPs owner match for ${team.ownerName || team.franchiseId}.`);
+    const row = matches[0];
     if (!row) throw new Error(`Could not map MFL owner ${team.ownerName || team.franchiseId} to the VPs sheet.`);
     row.Owner = currentOwner;
     const otherWeeks = Object.entries(row).filter(([keyName]) => /^Week \d+$/.test(keyName) && keyName !== `Week ${week}`).reduce((sum, [, value]) => sum + numeric(value), 0);
