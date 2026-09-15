@@ -13,8 +13,9 @@ function SheetData() {
       setData(sheetData);
 
       const getPercentValue = (row) => {
-        const raw = row["Winning %"] || "0%";
-        return parseFloat(raw.replace('%', '')) || 0;
+        const raw = row["Winning %"] ?? 0;
+        const value = parseFloat(String(raw).replace('%', '')) || 0;
+        return String(raw).includes('%') ? value / 100 : value;
       };
 
       const getTotalGames = (row) => {
@@ -52,7 +53,9 @@ function SheetData() {
         {data.map((entry, index) => (
           <tr key={index} className={index === topIndex ? 'highlight-row' : ''}>
             {headers.map((header, idx) => (
-              <td key={idx}>{entry[header]}</td>
+              <td key={idx}>{header === 'Winning %' && typeof entry[header] === 'number'
+                ? `${(entry[header] * 100).toFixed(2)}%`
+                : entry[header]}</td>
             ))}
           </tr>
         ))}
