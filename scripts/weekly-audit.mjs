@@ -137,7 +137,7 @@ function normalizeEspn(data, week) {
   const losers = results.filter((result) => !result.won && !result.tied);
   const high = [...results].sort((a, b) => b.score - a.score)[0];
   const largestLoss = [...losers].sort((a, b) => b.margin - a.margin)[0];
-  const highestScoringLoss = [...losers].sort((a, b) => b.score - a.score)[0];
+  const highPointsOpponentLoss = losers.find((result) => result.opponent.id === high.id);
   const closestLoss = [...losers].sort((a, b) => a.margin - b.margin)[0];
   const topPlayer = topPlayers(false)[0] || topPlayers(true)[0];
   const lostText = (result, includeScores = false) => includeScores
@@ -152,7 +152,7 @@ function normalizeEspn(data, week) {
       { title: 'High Points', name: high.ownerName, details: `${high.score} points` },
       { title: 'Tim Tebow "Praise Jesus" Award', name: topPlayer?.name || 'Unavailable', details: topPlayer ? `${topPlayer.score} points` : 'Player scoring unavailable' },
       { title: 'Big Ben’s "Buy me Dinner First" Award', name: largestLoss?.ownerName || 'Unavailable', details: largestLoss ? lostText(largestLoss) : 'No completed loss' },
-      { title: 'Pot of Gold Award', name: highestScoringLoss?.ownerName || 'Unavailable', details: highestScoringLoss ? lostText(highestScoringLoss, true) : 'No completed loss' },
+      { title: 'Pot of Gold Award', name: highPointsOpponentLoss?.ownerName || 'Unavailable', details: highPointsOpponentLoss ? lostText(highPointsOpponentLoss, true) : 'No completed loss' },
       { title: 'Aaron Hernandez Hangin’ Tough Award', name: closestLoss?.ownerName || 'Unavailable', details: closestLoss ? lostText(closestLoss) : 'No completed loss' },
     ],
     offenseStars: topPlayers(false).map((player) => `${player.name} - ${player.score} points`),
