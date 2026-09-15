@@ -32,7 +32,11 @@ const pct = (wins, losses, ties = 0) => {
   const games = wins + losses + ties;
   return games ? ((wins + ties / 2) / games).toFixed(3).replace(/^0/, '') : '.000';
 };
-const ownerFirstName = (name = '') => name.trim().split(/\s+/)[0] || 'Unknown';
+const ownerFullName = (member) => {
+  const name = [member.firstName, member.lastName].map((part) => String(part || '').trim()).filter(Boolean).join(' ');
+  if (!name) throw new Error('ESPN member is missing a real name.');
+  return name;
+};
 
 async function fetchJson(url, options = {}) {
   const response = await fetch(url, {
@@ -76,7 +80,8 @@ function getEspnWeek(data) {
 }
 
 function normalizeEspn(data, week) {
-  const members = new Map(asArray(data.members).map((member) => [member.id, member.displayName || member.firstName || 'Unknown']));
+  const members = new Map(asArray(data.members).map((member) => [member.id, ownerFullName(member)]));
+  const ownerAliases = Object.fromEntries(asArray(data.members).filter((member) => member.displayName).map((member) => [member.displayName, ownerFullName(member)]));
   const divisions = new Map(asArray(data.settings?.scheduleSettings?.divisions).map((division) => [division.id, division.name]));
   const teams = new Map(asArray(data.teams).map((team) => [number(team.id), team]));
   const standings = [...teams.values()].map((team) => {
@@ -136,11 +141,12 @@ function normalizeEspn(data, week) {
   const closestLoss = [...losers].sort((a, b) => a.margin - b.margin)[0];
   const topPlayer = topPlayers(false)[0] || topPlayers(true)[0];
   const lostText = (result, includeScores = false) => includeScores
-    ? `Lost to ${ownerFirstName(result.opponent.ownerName)} ${result.opponent.score} to ${result.score}`
-    : `Lost to ${ownerFirstName(result.opponent.ownerName)} by ${result.margin} points`;
+    ? `Lost to ${result.opponent.ownerName} ${result.opponent.score} to ${result.score}`
+    : `Lost to ${result.opponent.ownerName} by ${result.margin} points`;
 
   return {
     standings,
+    ownerAliases,
     matchups,
     awards: [
       { title: 'High Points', name: high.ownerName, details: `${high.score} points` },

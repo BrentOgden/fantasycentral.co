@@ -92,6 +92,27 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
   const logRows = valuesBySheet.get(LOG_SHEET) || [];
   const priorLog = logRows.slice(1).filter((row) => Number(row[0]) === season).sort((a, b) => Number(b[1]) - Number(a[1]))[0];
   const previousSnapshot = priorLog?.[3] ? JSON.parse(priorLog[3]) : null;
+
+  // Consolidate earlier username-based rows before applying snapshot differences.
+  const aliases = new Map(Object.entries(espn.ownerAliases || {}).map(([alias, name]) => [ownerKey(alias), name]));
+  const canonicalOwner = (name) => aliases.get(ownerKey(name)) || name;
+  for (const [sheetName, rows] of Object.entries(data)) {
+    if (sheetName === 'VPs' || sheetName === 'Sheet13') continue;
+    for (const row of rows) row.Owner = canonicalOwner(row.Owner);
+  }
+  for (const [sheetName, metrics] of [['Sheet12', ['Wins', 'Losses']], ['Sheet3', ['Times']], ['Sheet14', ['Points', 'Seasons']]]) {
+    const merged = new Map();
+    for (const row of data[sheetName]) {
+      const key = ownerKey(row.Owner);
+      if (!merged.has(key)) merged.set(key, { ...row });
+      else for (const metric of metrics) merged.get(key)[metric] = rounded(numeric(merged.get(key)[metric]) + numeric(row[metric]));
+    }
+    data[sheetName] = [...merged.values()];
+  }
+  if (previousSnapshot) {
+    for (const team of previousSnapshot.espn || []) team.ownerName = canonicalOwner(team.ownerName);
+  }
+
   const snapshot = buildSnapshot(espn, mfl, week);
 
   const careerWins = mergeCareerTotals(data.Sheet12, snapshot, previousSnapshot, 'Wins');
