@@ -1,4 +1,6 @@
-export default [
+import results from './picksResults.json';
+
+const profiles = [
     {
         id: 1,
         teamName: "Puka de Beppo",
@@ -169,4 +171,11 @@ export default [
         rank: 7,
     }
     
-]
+];
+
+const key = (name) => name.trim().toLowerCase();
+export default results.standings.map((entry) => {
+  const profile = profiles.find((item) => key(item.ownerName) === key(entry.ownerName));
+  if (!profile) throw new Error(`Missing pick'em profile for ${entry.ownerName}`);
+  return { ...profile, ...entry, record: { record: entry.submitted ? `${entry.correct}-${entry.incorrect}` : 'No picks', points: String(entry.seasonPoints) } };
+});

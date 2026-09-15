@@ -17,8 +17,9 @@ function CardPicks({ item }) {
       {/* Stats */}
       <div className="mt-2 space-y-0.5">
         <p className="font-bold m-0 text-[#8e2034] text-center">{item.ownerName}</p>
-        <p className="m-0 text-black text-center">Weekly Record : {item.record.record}</p>
-        <p className="m-0 text-black text-center">Total Points : {item.record.points}</p>
+        <p className="m-0 text-black text-center">Correct–Incorrect : {item.record.record}</p>
+        {item.missed > 0 && <p className="m-0 text-black text-center">Missed Picks : {item.missed}</p>}
+        <p className="m-0 text-black text-center">Season Points : {item.record.points}</p>
         <p className="m-0 text-black text-center">Place : {item.rank}</p>
       </div>
     </section>

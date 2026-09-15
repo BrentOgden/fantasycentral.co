@@ -2,11 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import CountUp from '../components/CountUp'
 
+import picksResults from './dataSources/picksResults.json'
+const submitted = picksResults.standings.reduce((sum, entry) => sum + entry.submitted, 0)
+const correct = picksResults.standings.reduce((sum, entry) => sum + entry.correct, 0)
 const stats = [
-    { id: 1, name: 'Total Picks Made', value: 1911 },
-    { id: 2, name: 'Correct Picks', value: 1205 },
-    { id: 3, name: 'Times the Super Bowl Teams Were Picked', value: 162 },
-    { id: 4, name: 'Average Correct Pick %', value: .63, isPercentage: true },
+    { id: 1, name: `Week ${picksResults.week} Picks Submitted`, value: submitted },
+    { id: 2, name: `Week ${picksResults.week} Correct Picks`, value: correct },
+    { id: 3, name: `Week ${picksResults.week} Missed Picks`, value: picksResults.standings.reduce((sum, entry) => sum + entry.missed, 0) },
+    { id: 4, name: 'Submitted Picks Correct %', value: submitted ? correct / submitted : 0, isPercentage: true },
 ]
 
 const containerVariants = {
