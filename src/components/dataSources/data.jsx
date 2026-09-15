@@ -182,7 +182,8 @@ const generatedById = new Map(
 );
 
 export default fallbackStandings.map((team) => {
-    const generated = generatedById.get(Number(team.id));
+    const espnTeamId = Number(team.teamUrl.match(/[?&]teamId=(\d+)/)?.[1]);
+    const generated = generatedById.get(espnTeamId);
     return generated
         ? {
             ...team,
