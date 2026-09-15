@@ -11,6 +11,10 @@ const clean = (value) => String(value ?? '').trim();
 const rounded = (value) => Number(numeric(value).toFixed(2));
 const ownerKey = (value) => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const firstName = (value) => clean(value).split(/\s+/)[0];
+const vpLegacyOwnerByFranchise = new Map([
+  ['0005', 'Kyle'],
+  ['0006', 'Brandon'],
+]);
 const byNumberDesc = (key) => (a, b) => numeric(b[key]) - numeric(a[key]) || clean(a.Owner).localeCompare(clean(b.Owner));
 const byNumberAsc = (key) => (a, b) => numeric(a[key]) - numeric(b[key]) || clean(a.Owner).localeCompare(clean(b.Owner));
 
@@ -124,9 +128,11 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
     for (const row of vpRows) for (let weekNumber = 1; weekNumber <= 14; weekNumber += 1) row[`Week ${weekNumber}`] = '';
   }
   for (const team of snapshot.mfl) {
-    const key = ownerKey(firstName(team.ownerName));
+    const currentOwner = firstName(team.ownerName);
+    const key = ownerKey(vpLegacyOwnerByFranchise.get(team.franchiseId) || currentOwner);
     const row = vpRows.find((item) => ownerKey(item.Owner) === key);
     if (!row) throw new Error(`Could not map MFL owner ${team.ownerName || team.franchiseId} to the VPs sheet.`);
+    row.Owner = currentOwner;
     const otherWeeks = Object.entries(row).filter(([keyName]) => /^Week \d+$/.test(keyName) && keyName !== `Week ${week}`).reduce((sum, [, value]) => sum + numeric(value), 0);
     row[`Week ${week}`] = rounded(team.victoryPoints - otherWeeks);
     row['Year 2'] = rounded(Object.entries(row).filter(([keyName]) => /^Week \d+$/.test(keyName)).reduce((sum, [, value]) => sum + numeric(value), 0));
