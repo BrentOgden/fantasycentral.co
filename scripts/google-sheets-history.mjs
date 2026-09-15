@@ -95,7 +95,15 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
 
   // Consolidate earlier username-based rows before applying snapshot differences.
   const aliases = new Map(Object.entries(espn.ownerAliases || {}).map(([alias, name]) => [ownerKey(alias), name]));
-  const canonicalOwner = (name) => aliases.get(ownerKey(name)) || name;
+  const historicalNames = new Map([
+    ['nicholashazen', 'Nick Hazen'],
+    ['methuennagatani', 'Met Nagatani'],
+  ]);
+  const existingNames = new Map(data.Sheet12.map((row) => [ownerKey(row.Owner), clean(row.Owner)]));
+  const canonicalOwner = (name) => {
+    const fullName = aliases.get(ownerKey(name)) || name;
+    return historicalNames.get(ownerKey(fullName)) || existingNames.get(ownerKey(fullName)) || fullName;
+  };
   for (const [sheetName, rows] of Object.entries(data)) {
     if (sheetName === 'VPs' || sheetName === 'Sheet13') continue;
     for (const row of rows) row.Owner = canonicalOwner(row.Owner);
@@ -114,6 +122,7 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
   }
 
   const snapshot = buildSnapshot(espn, mfl, week);
+  for (const team of snapshot.espn) team.ownerName = canonicalOwner(team.ownerName);
 
   const careerWins = mergeCareerTotals(data.Sheet12, snapshot, previousSnapshot, 'Wins');
   const careerLosses = mergeCareerTotals(careerWins, snapshot, previousSnapshot, 'Losses');
@@ -133,8 +142,8 @@ export async function updateHistoricalGoogleSheet({ season, week, espn, mfl, roo
   const currentWeek = espn.completedWeeks.find((entry) => entry.week === week)?.results || espn.currentWeekResults;
   const high = [...currentWeek].sort((a, b) => b.score - a.score)[0];
   const low = [...currentWeek].sort((a, b) => a.score - b.score)[0];
-  if (high) data.Sheet9 = upsertWeeklyRecord(data.Sheet9, season, week, high, 28);
-  if (low) data.Sheet11 = upsertWeeklyRecord(data.Sheet11, season, week, low, 11, true);
+  if (high) data.Sheet9 = upsertWeeklyRecord(data.Sheet9, season, week, { ...high, ownerName: canonicalOwner(high.ownerName) }, 28);
+  if (low) data.Sheet11 = upsertWeeklyRecord(data.Sheet11, season, week, { ...low, ownerName: canonicalOwner(low.ownerName) }, 11, true);
 
   const careerPoints = mergeCareerTotals(data.Sheet14, snapshot, previousSnapshot, 'Points').map((row) => {
     const previousOwner = (previousSnapshot?.espn || []).some((team) => ownerKey(team.ownerName) === ownerKey(row.Owner));
