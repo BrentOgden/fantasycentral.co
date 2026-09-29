@@ -1,82 +1,46 @@
 {
   "season": 2026,
-  "week": 2,
+  "week": 3,
   "poolName": "The COVID-12",
   "sourceUrl": "https://picks.cbssports.com/football/pickem/pools/kbxw63b2ge3dkmrzgm2dm===/standings",
   "games": 16,
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-29",
   "standings": [
     {
       "ownerName": "Cody Box",
-      "correct": 11,
+      "correct": 8,
       "submitted": 16,
-      "incorrect": 5,
+      "incorrect": 8,
       "missed": 0,
-      "seasonPoints": 24,
+      "seasonPoints": 32,
       "rank": 1
     },
     {
       "ownerName": "Freeman Puthavongsa",
-      "correct": 10,
+      "correct": 7,
       "submitted": 16,
-      "incorrect": 6,
+      "incorrect": 9,
       "missed": 0,
-      "seasonPoints": 23,
+      "seasonPoints": 30,
       "rank": 2
     },
     {
-      "ownerName": "Garret Weber",
-      "correct": 12,
-      "submitted": 16,
-      "incorrect": 4,
-      "missed": 0,
-      "seasonPoints": 22,
-      "rank": 3
-    },
-    {
       "ownerName": "Met Nagatani",
-      "correct": 11,
-      "submitted": 16,
-      "incorrect": 5,
-      "missed": 0,
-      "seasonPoints": 21,
-      "rank": 4
-    },
-    {
-      "ownerName": "Nick Hazen",
-      "correct": 10,
-      "submitted": 16,
-      "incorrect": 6,
-      "missed": 0,
-      "seasonPoints": 21,
-      "rank": 4
-    },
-    {
-      "ownerName": "Justin Gutierrez",
-      "correct": 10,
-      "submitted": 16,
-      "incorrect": 6,
-      "missed": 0,
-      "seasonPoints": 20,
-      "rank": 6
-    },
-    {
-      "ownerName": "Kristen Hazen",
-      "correct": 9,
-      "submitted": 15,
-      "incorrect": 6,
-      "missed": 1,
-      "seasonPoints": 20,
-      "rank": 6
-    },
-    {
-      "ownerName": "Brent Ogden",
       "correct": 9,
       "submitted": 16,
       "incorrect": 7,
       "missed": 0,
-      "seasonPoints": 19,
-      "rank": 8
+      "seasonPoints": 30,
+      "rank": 2
+    },
+    {
+      "ownerName": "Brent Ogden",
+      "correct": 9,
+      "submitted": 15,
+      "incorrect": 6,
+      "missed": 1,
+      "seasonPoints": 28,
+      "rank": 4
     },
     {
       "ownerName": "Jeremy Ogden",
@@ -84,7 +48,43 @@
       "submitted": 16,
       "incorrect": 7,
       "missed": 0,
-      "seasonPoints": 18,
+      "seasonPoints": 27,
+      "rank": 5
+    },
+    {
+      "ownerName": "Justin Gutierrez",
+      "correct": 5,
+      "submitted": 16,
+      "incorrect": 11,
+      "missed": 0,
+      "seasonPoints": 25,
+      "rank": 6
+    },
+    {
+      "ownerName": "Garret Weber",
+      "correct": 0,
+      "submitted": 0,
+      "incorrect": 0,
+      "missed": 16,
+      "seasonPoints": 22,
+      "rank": 7
+    },
+    {
+      "ownerName": "Nick Hazen",
+      "correct": 0,
+      "submitted": 0,
+      "incorrect": 0,
+      "missed": 16,
+      "seasonPoints": 21,
+      "rank": 8
+    },
+    {
+      "ownerName": "Kristen Hazen",
+      "correct": 0,
+      "submitted": 0,
+      "incorrect": 0,
+      "missed": 16,
+      "seasonPoints": 20,
       "rank": 9
     },
     {
