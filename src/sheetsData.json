@@ -3,17 +3,17 @@
     {
       "Wins": 168,
       "Owner": "Justin Gutierrez",
-      "Winning %": 0.6199261992619927
+      "Winning %": 0.6176470588235294
     },
     {
-      "Wins": 154,
+      "Wins": 155,
       "Owner": "Nick Hazen",
-      "Winning %": 0.5703703703703704
+      "Winning %": 0.5719557195571956
     },
     {
-      "Wins": 136,
+      "Wins": 137,
       "Owner": "Brent Ogden",
-      "Winning %": 0.5018450184501845
+      "Winning %": 0.5036764705882353
     },
     {
       "Wins": 92,
@@ -23,7 +23,7 @@
     {
       "Wins": 89,
       "Owner": "Jeremy Ogden",
-      "Winning %": 0.4972067039106145
+      "Winning %": 0.49444444444444446
     },
     {
       "Wins": 86,
@@ -31,14 +31,14 @@
       "Winning %": 0.5512820512820513
     },
     {
-      "Wins": 81,
+      "Wins": 82,
       "Owner": "Kristen Hazen",
-      "Winning %": 0.5328947368421053
+      "Winning %": 0.5359477124183006
     },
     {
       "Wins": 81,
       "Owner": "Kyle Kohlscheen",
-      "Winning %": 0.4682080924855491
+      "Winning %": 0.46551724137931033
     },
     {
       "Wins": 80,
@@ -56,24 +56,24 @@
       "Winning %": 0.5736434108527132
     },
     {
-      "Wins": 60,
+      "Wins": 61,
       "Owner": "Met Nagatani",
-      "Winning %": 0.47244094488188976
+      "Winning %": 0.4765625
     },
     {
       "Wins": 43,
       "Owner": "Tom Courtney",
-      "Winning %": 0.5733333333333334
+      "Winning %": 0.5657894736842105
     },
     {
-      "Wins": 35,
+      "Wins": 36,
       "Owner": "Cody Box",
-      "Winning %": 0.4605263157894737
+      "Winning %": 0.4675324675324675
     },
     {
       "Wins": 34,
       "Owner": "Freeman Puthavongsa",
-      "Winning %": 0.4533333333333333
+      "Winning %": 0.4473684210526316
     },
     {
       "Wins": 33,
@@ -88,7 +88,7 @@
     {
       "Wins": 32,
       "Owner": "Garret Weber",
-      "Winning %": 0.4266666666666667
+      "Winning %": 0.42105263157894735
     },
     {
       "Wins": 25,
@@ -96,9 +96,9 @@
       "Winning %": 0.6410256410256411
     },
     {
-      "Wins": 20,
+      "Wins": 21,
       "Owner": "Casey Splane",
-      "Winning %": 0.6451612903225806
+      "Winning %": 0.65625
     },
     {
       "Wins": 19,
@@ -120,7 +120,7 @@
     {
       "Losses": 135,
       "Owner": "Brent Ogden",
-      "Winning %": 0.5018450184501845
+      "Winning %": 0.5036764705882353
     },
     {
       "Losses": 118,
@@ -130,27 +130,27 @@
     {
       "Losses": 116,
       "Owner": "Nick Hazen",
-      "Winning %": 0.5703703703703704
+      "Winning %": 0.5719557195571956
     },
     {
-      "Losses": 103,
+      "Losses": 104,
       "Owner": "Justin Gutierrez",
-      "Winning %": 0.6199261992619927
+      "Winning %": 0.6176470588235294
     },
     {
-      "Losses": 92,
+      "Losses": 93,
       "Owner": "Kyle Kohlscheen",
-      "Winning %": 0.4682080924855491
+      "Winning %": 0.46551724137931033
     },
     {
-      "Losses": 90,
+      "Losses": 91,
       "Owner": "Jeremy Ogden",
-      "Winning %": 0.4972067039106145
+      "Winning %": 0.49444444444444446
     },
     {
       "Losses": 71,
       "Owner": "Kristen Hazen",
-      "Winning %": 0.5328947368421053
+      "Winning %": 0.5359477124183006
     },
     {
       "Losses": 70,
@@ -160,7 +160,7 @@
     {
       "Losses": 67,
       "Owner": "Met Nagatani",
-      "Winning %": 0.47244094488188976
+      "Winning %": 0.4765625
     },
     {
       "Losses": 65,
@@ -188,24 +188,24 @@
       "Winning %": 0.39285714285714285
     },
     {
-      "Losses": 43,
+      "Losses": 44,
       "Owner": "Garret Weber",
-      "Winning %": 0.4266666666666667
+      "Winning %": 0.42105263157894735
+    },
+    {
+      "Losses": 42,
+      "Owner": "Freeman Puthavongsa",
+      "Winning %": 0.4473684210526316
     },
     {
       "Losses": 41,
       "Owner": "Cody Box",
-      "Winning %": 0.4605263157894737
+      "Winning %": 0.4675324675324675
     },
     {
-      "Losses": 41,
-      "Owner": "Freeman Puthavongsa",
-      "Winning %": 0.4533333333333333
-    },
-    {
-      "Losses": 32,
+      "Losses": 33,
       "Owner": "Tom Courtney",
-      "Winning %": 0.5733333333333334
+      "Winning %": 0.5657894736842105
     },
     {
       "Losses": 30,
@@ -230,7 +230,7 @@
     {
       "Losses": 11,
       "Owner": "Casey Splane",
-      "Winning %": 0.6451612903225806
+      "Winning %": 0.65625
     }
   ],
   "Sheet3": [
@@ -251,16 +251,16 @@
       "Owner": "Bobby Killingbeck"
     },
     {
+      "Times": 17,
+      "Owner": "Kristen Hazen"
+    },
+    {
       "Times": 16,
       "Owner": "Jake Killingbeck"
     },
     {
       "Times": 16,
       "Owner": "Jeremy Ogden"
-    },
-    {
-      "Times": 16,
-      "Owner": "Kristen Hazen"
     },
     {
       "Times": 12,
@@ -958,7 +958,7 @@
       "Year": 2023
     },
     {
-      "Losses": 3,
+      "Losses": 4,
       "Owner": "Jeremy Ogden",
       "Year": "2026"
     }
@@ -1030,6 +1030,11 @@
       "Year": 2018
     },
     {
+      "Points": 255.9,
+      "Owner": "Kristen Hazen",
+      "Year": "2026 Week 4"
+    },
+    {
       "Points": 255.45,
       "Owner": "Kristen Hazen",
       "Year": 2021
@@ -1098,11 +1103,6 @@
       "Points": 243.3,
       "Owner": "Jake Killingbeck",
       "Year": 2017
-    },
-    {
-      "Points": 243.05,
-      "Owner": "Tom Courtney",
-      "Year": 2021
     }
   ],
   "Sheet10": [
@@ -1236,8 +1236,8 @@
   ],
   "Sheet12": [
     {
-      "Winning %": 0.6451612903225806,
-      "Wins": 20,
+      "Winning %": 0.65625,
+      "Wins": 21,
       "Losses": 11,
       "Owner": "Casey Splane"
     },
@@ -1248,9 +1248,9 @@
       "Owner": "Matt Jimenez"
     },
     {
-      "Winning %": 0.6199261992619927,
+      "Winning %": 0.6176470588235294,
       "Wins": 168,
-      "Losses": 103,
+      "Losses": 104,
       "Owner": "Justin Gutierrez"
     },
     {
@@ -1266,16 +1266,16 @@
       "Owner": "Brooke-lynn Killingbeck"
     },
     {
-      "Winning %": 0.5733333333333334,
-      "Wins": 43,
-      "Losses": 32,
-      "Owner": "Tom Courtney"
-    },
-    {
-      "Winning %": 0.5703703703703704,
-      "Wins": 154,
+      "Winning %": 0.5719557195571956,
+      "Wins": 155,
       "Losses": 116,
       "Owner": "Nick Hazen"
+    },
+    {
+      "Winning %": 0.5657894736842105,
+      "Wins": 43,
+      "Losses": 33,
+      "Owner": "Tom Courtney"
     },
     {
       "Winning %": 0.5512820512820513,
@@ -1290,21 +1290,21 @@
       "Owner": "Curt Ogden"
     },
     {
-      "Winning %": 0.5328947368421053,
-      "Wins": 81,
+      "Winning %": 0.5359477124183006,
+      "Wins": 82,
       "Losses": 71,
       "Owner": "Kristen Hazen"
     },
     {
-      "Winning %": 0.5018450184501845,
-      "Wins": 136,
+      "Winning %": 0.5036764705882353,
+      "Wins": 137,
       "Losses": 135,
       "Owner": "Brent Ogden"
     },
     {
-      "Winning %": 0.4972067039106145,
+      "Winning %": 0.49444444444444446,
       "Wins": 89,
-      "Losses": 90,
+      "Losses": 91,
       "Owner": "Jeremy Ogden"
     },
     {
@@ -1314,15 +1314,21 @@
       "Owner": "Darrell Lomelino"
     },
     {
-      "Winning %": 0.47244094488188976,
-      "Wins": 60,
+      "Winning %": 0.4765625,
+      "Wins": 61,
       "Losses": 67,
       "Owner": "Met Nagatani"
     },
     {
-      "Winning %": 0.4682080924855491,
+      "Winning %": 0.4675324675324675,
+      "Wins": 36,
+      "Losses": 41,
+      "Owner": "Cody Box"
+    },
+    {
+      "Winning %": 0.46551724137931033,
       "Wins": 81,
-      "Losses": 92,
+      "Losses": 93,
       "Owner": "Kyle Kohlscheen"
     },
     {
@@ -1332,21 +1338,15 @@
       "Owner": "Danny Culberson"
     },
     {
-      "Winning %": 0.4605263157894737,
-      "Wins": 35,
-      "Losses": 41,
-      "Owner": "Cody Box"
-    },
-    {
-      "Winning %": 0.4533333333333333,
+      "Winning %": 0.4473684210526316,
       "Wins": 34,
-      "Losses": 41,
+      "Losses": 42,
       "Owner": "Freeman Puthavongsa"
     },
     {
-      "Winning %": 0.4266666666666667,
+      "Winning %": 0.42105263157894735,
       "Wins": 32,
-      "Losses": 43,
+      "Losses": 44,
       "Owner": "Garret Weber"
     },
     {
@@ -1454,34 +1454,34 @@
   ],
   "Sheet14": [
     {
-      "Points": 44340,
+      "Points": 44509.75,
       "Owner": "Justin Gutierrez",
       "Seasons": 22,
-      "Average/Season": 2015.45
+      "Average/Season": 2023.17
     },
     {
-      "Points": 42312.8,
+      "Points": 42507.5,
       "Owner": "Nick Hazen",
       "Seasons": 22,
-      "Average/Season": 1923.31
+      "Average/Season": 1932.16
     },
     {
-      "Points": 42247.25,
+      "Points": 42434.5,
       "Owner": "Brent Ogden",
       "Seasons": 22,
-      "Average/Season": 1920.33
+      "Average/Season": 1928.84
     },
     {
-      "Points": 30694.05,
+      "Points": 30878.3,
       "Owner": "Jeremy Ogden",
       "Seasons": 15,
-      "Average/Season": 2046.27
+      "Average/Season": 2058.55
     },
     {
-      "Points": 27051.15,
+      "Points": 27307.05,
       "Owner": "Kristen Hazen",
       "Seasons": 13,
-      "Average/Season": 2080.86
+      "Average/Season": 2100.54
     },
     {
       "Points": 25278.65,
@@ -1490,10 +1490,10 @@
       "Average/Season": 1685.24
     },
     {
-      "Points": 24429.2,
+      "Points": 24574,
       "Owner": "Kyle Kohlscheen",
       "Seasons": 14,
-      "Average/Season": 1744.94
+      "Average/Season": 1755.29
     },
     {
       "Points": 23566.3,
@@ -1502,10 +1502,10 @@
       "Average/Season": 1963.86
     },
     {
-      "Points": 23255.95,
+      "Points": 23447.95,
       "Owner": "Met Nagatani",
       "Seasons": 11,
-      "Average/Season": 2114.18
+      "Average/Season": 2131.63
     },
     {
       "Points": 23172.45,
@@ -1526,10 +1526,10 @@
       "Average/Season": 1937.55
     },
     {
-      "Points": 15201.9,
+      "Points": 15339.9,
       "Owner": "Tom Courtney",
       "Seasons": 7,
-      "Average/Season": 2171.7
+      "Average/Season": 2191.41
     },
     {
       "Points": 15114.85,
@@ -1538,22 +1538,22 @@
       "Average/Season": 2159.26
     },
     {
-      "Points": 14156.95,
+      "Points": 14295.05,
       "Owner": "Garret Weber",
       "Seasons": 7,
-      "Average/Season": 2022.42
+      "Average/Season": 2042.15
     },
     {
-      "Points": 13952.8,
+      "Points": 14076.7,
       "Owner": "Freeman Puthavongsa",
       "Seasons": 7,
-      "Average/Season": 1993.26
+      "Average/Season": 2010.96
     },
     {
-      "Points": 13383.95,
+      "Points": 13555,
       "Owner": "Cody Box",
       "Seasons": 7,
-      "Average/Season": 1911.99
+      "Average/Season": 1936.43
     },
     {
       "Points": 13265.75,
@@ -1580,6 +1580,12 @@
       "Average/Season": 1447.75
     },
     {
+      "Points": 5452.2,
+      "Owner": "Casey Splane",
+      "Seasons": 3,
+      "Average/Season": 1817.4
+    },
+    {
       "Points": 5240.5,
       "Owner": "Todd Regel",
       "Seasons": 4,
@@ -1590,12 +1596,6 @@
       "Owner": "Darrell Lomelino",
       "Seasons": 3,
       "Average/Season": 1736.5
-    },
-    {
-      "Points": 5208.4,
-      "Owner": "Casey Splane",
-      "Seasons": 3,
-      "Average/Season": 1736.13
     },
     {
       "Points": 3901.7,
@@ -1612,16 +1612,16 @@
   ],
   "VPs": [
     {
-      "VPs": 59,
+      "VPs": 64,
       "Owner": "Chad",
       "Seasons (of 3)": 2,
       "Year 1": 48,
-      "Year 2": 11,
+      "Year 2": 16,
       "Year 3": "",
       "Week 1": 3,
       "Week 2": 4,
       "Week 3": 4,
-      "Week 4": "",
+      "Week 4": 5,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1634,16 +1634,60 @@
       "Week 14": ""
     },
     {
-      "VPs": 47,
+      "VPs": 51,
       "Owner": "Kristen",
       "Seasons (of 3)": 2,
       "Year 1": 37,
-      "Year 2": 10,
+      "Year 2": 14,
       "Year 3": "",
       "Week 1": 4,
       "Week 2": 5,
       "Week 3": 1,
-      "Week 4": "",
+      "Week 4": 4,
+      "Week 5": "",
+      "Week 6": "",
+      "Week 7": "",
+      "Week 8": "",
+      "Week 9": "",
+      "Week 10": "",
+      "Week 11": "",
+      "Week 12": "",
+      "Week 13": "",
+      "Week 14": ""
+    },
+    {
+      "VPs": 41,
+      "Owner": "Justin",
+      "Seasons (of 3)": 2,
+      "Year 1": 31,
+      "Year 2": 10,
+      "Year 3": "",
+      "Week 1": 5,
+      "Week 2": 1,
+      "Week 3": 0,
+      "Week 4": 4,
+      "Week 5": "",
+      "Week 6": "",
+      "Week 7": "",
+      "Week 8": "",
+      "Week 9": "",
+      "Week 10": "",
+      "Week 11": "",
+      "Week 12": "",
+      "Week 13": "",
+      "Week 14": ""
+    },
+    {
+      "VPs": 41,
+      "Owner": "Tom",
+      "Seasons (of 3)": 2,
+      "Year 1": 30,
+      "Year 2": 11,
+      "Year 3": "",
+      "Week 1": 0,
+      "Week 2": 4,
+      "Week 3": 4,
+      "Week 4": 3,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1665,7 +1709,7 @@
       "Week 1": 2,
       "Week 2": 4,
       "Week 3": 1,
-      "Week 4": "",
+      "Week 4": 0,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1678,38 +1722,16 @@
       "Week 14": ""
     },
     {
-      "VPs": 38,
+      "VPs": 39,
       "Owner": "Nick",
       "Seasons (of 3)": 2,
       "Year 1": 34,
-      "Year 2": 4,
+      "Year 2": 5,
       "Year 3": "",
       "Week 1": 0,
       "Week 2": 0,
       "Week 3": 4,
-      "Week 4": "",
-      "Week 5": "",
-      "Week 6": "",
-      "Week 7": "",
-      "Week 8": "",
-      "Week 9": "",
-      "Week 10": "",
-      "Week 11": "",
-      "Week 12": "",
-      "Week 13": "",
-      "Week 14": ""
-    },
-    {
-      "VPs": 38,
-      "Owner": "Tom",
-      "Seasons (of 3)": 2,
-      "Year 1": 30,
-      "Year 2": 8,
-      "Year 3": "",
-      "Week 1": 0,
-      "Week 2": 4,
-      "Week 3": 4,
-      "Week 4": "",
+      "Week 4": 1,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1723,15 +1745,15 @@
     },
     {
       "VPs": 37,
-      "Owner": "Justin",
+      "Owner": "Brent",
       "Seasons (of 3)": 2,
-      "Year 1": 31,
-      "Year 2": 6,
+      "Year 1": 33,
+      "Year 2": 4,
       "Year 3": "",
-      "Week 1": 5,
-      "Week 2": 1,
-      "Week 3": 0,
-      "Week 4": "",
+      "Week 1": 0,
+      "Week 2": 0,
+      "Week 3": 3,
+      "Week 4": 1,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1744,16 +1766,16 @@
       "Week 14": ""
     },
     {
-      "VPs": 36,
-      "Owner": "Brent",
+      "VPs": 34,
+      "Owner": "Gary",
       "Seasons (of 3)": 2,
-      "Year 1": 33,
-      "Year 2": 3,
+      "Year 1": 27,
+      "Year 2": 7,
       "Year 3": "",
       "Week 1": 0,
-      "Week 2": 0,
-      "Week 3": 3,
-      "Week 4": "",
+      "Week 2": 3,
+      "Week 3": 2,
+      "Week 4": 2,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1767,15 +1789,15 @@
     },
     {
       "VPs": 32,
-      "Owner": "Gary",
+      "Owner": "Met",
       "Seasons (of 3)": 2,
-      "Year 1": 27,
-      "Year 2": 5,
+      "Year 1": 28,
+      "Year 2": 4,
       "Year 3": "",
-      "Week 1": 0,
-      "Week 2": 3,
-      "Week 3": 2,
-      "Week 4": "",
+      "Week 1": 1,
+      "Week 2": 0,
+      "Week 3": 0,
+      "Week 4": 3,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1797,29 +1819,7 @@
       "Week 1": 3,
       "Week 2": 1,
       "Week 3": 3,
-      "Week 4": "",
-      "Week 5": "",
-      "Week 6": "",
-      "Week 7": "",
-      "Week 8": "",
-      "Week 9": "",
-      "Week 10": "",
-      "Week 11": "",
-      "Week 12": "",
-      "Week 13": "",
-      "Week 14": ""
-    },
-    {
-      "VPs": 29,
-      "Owner": "Met",
-      "Seasons (of 3)": 2,
-      "Year 1": 28,
-      "Year 2": 1,
-      "Year 3": "",
-      "Week 1": 1,
-      "Week 2": 0,
-      "Week 3": 0,
-      "Week 4": "",
+      "Week 4": 0,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1841,7 +1841,7 @@
       "Week 1": 4,
       "Week 2": 3,
       "Week 3": 2,
-      "Week 4": "",
+      "Week 4": 0,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
@@ -1854,16 +1854,16 @@
       "Week 14": ""
     },
     {
-      "VPs": 12,
+      "VPs": 14,
       "Owner": "Jake",
       "Seasons (of 3)": 2,
       "Year 1": 9,
-      "Year 2": 3,
+      "Year 2": 5,
       "Year 3": "",
       "Week 1": 3,
       "Week 2": 0,
       "Week 3": 0,
-      "Week 4": "",
+      "Week 4": 2,
       "Week 5": "",
       "Week 6": "",
       "Week 7": "",
