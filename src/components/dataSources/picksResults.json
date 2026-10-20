@@ -1,63 +1,63 @@
 {
   "season": 2026,
-  "week": 5,
+  "week": 6,
   "poolName": "The COVID-12",
   "sourceUrl": "https://picks.cbssports.com/football/pickem/pools/kbxw63b2ge3dkmrzgm2dm===/standings",
-  "games": 15,
-  "updatedAt": "2026-10-13",
+  "games": 14,
+  "updatedAt": "2026-10-20",
   "standings": [
     {
       "ownerName": "Cody Box",
-      "correct": 9,
-      "submitted": 15,
-      "incorrect": 6,
+      "correct": 6,
+      "submitted": 14,
+      "incorrect": 8,
       "missed": 0,
-      "seasonPoints": 52,
+      "seasonPoints": 58,
       "rank": 1
     },
     {
       "ownerName": "Freeman Puthavongsa",
-      "correct": 9,
-      "submitted": 15,
+      "correct": 8,
+      "submitted": 14,
       "incorrect": 6,
       "missed": 0,
-      "seasonPoints": 50,
-      "rank": 2
+      "seasonPoints": 58,
+      "rank": 1
     },
     {
       "ownerName": "Met Nagatani",
-      "correct": 9,
-      "submitted": 15,
+      "correct": 8,
+      "submitted": 14,
       "incorrect": 6,
       "missed": 0,
-      "seasonPoints": 48,
+      "seasonPoints": 56,
       "rank": 3
     },
     {
       "ownerName": "Brent Ogden",
-      "correct": 9,
-      "submitted": 15,
-      "incorrect": 6,
+      "correct": 7,
+      "submitted": 14,
+      "incorrect": 7,
       "missed": 0,
-      "seasonPoints": 47,
+      "seasonPoints": 54,
       "rank": 4
     },
     {
       "ownerName": "Justin Gutierrez",
-      "correct": 8,
-      "submitted": 15,
+      "correct": 7,
+      "submitted": 14,
       "incorrect": 7,
       "missed": 0,
-      "seasonPoints": 44,
+      "seasonPoints": 51,
       "rank": 5
     },
     {
       "ownerName": "Jeremy Ogden",
-      "correct": 9,
-      "submitted": 15,
-      "incorrect": 6,
+      "correct": 7,
+      "submitted": 14,
+      "incorrect": 7,
       "missed": 0,
-      "seasonPoints": 44,
+      "seasonPoints": 51,
       "rank": 5
     },
     {
@@ -65,7 +65,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 22,
       "rank": 7
     },
@@ -74,7 +74,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 21,
       "rank": 8
     },
@@ -83,7 +83,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 20,
       "rank": 9
     },
@@ -92,7 +92,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 12,
       "rank": 10
     },
@@ -101,7 +101,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 0,
       "rank": 11
     },
@@ -110,7 +110,7 @@
       "correct": 0,
       "submitted": 0,
       "incorrect": 0,
-      "missed": 15,
+      "missed": 14,
       "seasonPoints": 0,
       "rank": 11
     }
