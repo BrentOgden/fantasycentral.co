@@ -1,64 +1,64 @@
 {
   "season": 2026,
-  "week": 6,
+  "week": 7,
   "poolName": "The COVID-12",
   "sourceUrl": "https://picks.cbssports.com/football/pickem/pools/kbxw63b2ge3dkmrzgm2dm===/standings",
   "games": 14,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-27",
   "standings": [
     {
+      "ownerName": "Freeman Puthavongsa",
+      "correct": 9,
+      "submitted": 14,
+      "incorrect": 5,
+      "missed": 0,
+      "seasonPoints": 67,
+      "rank": 1
+    },
+    {
       "ownerName": "Cody Box",
+      "correct": 8,
+      "submitted": 14,
+      "incorrect": 6,
+      "missed": 0,
+      "seasonPoints": 66,
+      "rank": 2
+    },
+    {
+      "ownerName": "Brent Ogden",
+      "correct": 9,
+      "submitted": 14,
+      "incorrect": 5,
+      "missed": 0,
+      "seasonPoints": 63,
+      "rank": 3
+    },
+    {
+      "ownerName": "Met Nagatani",
+      "correct": 7,
+      "submitted": 14,
+      "incorrect": 7,
+      "missed": 0,
+      "seasonPoints": 63,
+      "rank": 3
+    },
+    {
+      "ownerName": "Jeremy Ogden",
+      "correct": 9,
+      "submitted": 14,
+      "incorrect": 5,
+      "missed": 0,
+      "seasonPoints": 60,
+      "rank": 5
+    },
+    {
+      "ownerName": "Justin Gutierrez",
       "correct": 6,
       "submitted": 14,
       "incorrect": 8,
       "missed": 0,
-      "seasonPoints": 58,
-      "rank": 1
-    },
-    {
-      "ownerName": "Freeman Puthavongsa",
-      "correct": 8,
-      "submitted": 14,
-      "incorrect": 6,
-      "missed": 0,
-      "seasonPoints": 58,
-      "rank": 1
-    },
-    {
-      "ownerName": "Met Nagatani",
-      "correct": 8,
-      "submitted": 14,
-      "incorrect": 6,
-      "missed": 0,
-      "seasonPoints": 56,
-      "rank": 3
-    },
-    {
-      "ownerName": "Brent Ogden",
-      "correct": 7,
-      "submitted": 14,
-      "incorrect": 7,
-      "missed": 0,
-      "seasonPoints": 54,
-      "rank": 4
-    },
-    {
-      "ownerName": "Justin Gutierrez",
-      "correct": 7,
-      "submitted": 14,
-      "incorrect": 7,
-      "missed": 0,
-      "seasonPoints": 51,
-      "rank": 5
-    },
-    {
-      "ownerName": "Jeremy Ogden",
-      "correct": 7,
-      "submitted": 14,
-      "incorrect": 7,
-      "missed": 0,
-      "seasonPoints": 51,
-      "rank": 5
+      "seasonPoints": 57,
+      "rank": 6
     },
     {
       "ownerName": "Garret Weber",
