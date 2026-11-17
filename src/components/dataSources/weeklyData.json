@@ -1,7 +1,7 @@
 {
   "season": 2026,
-  "week": 9,
-  "generatedAt": "2026-11-10T21:31:33.087Z",
+  "week": 10,
+  "generatedAt": "2026-11-17T17:16:40.285Z",
   "espn": {
     "standings": [
       {
@@ -10,12 +10,12 @@
         "ownerName": "Nicholas Hazen",
         "division": "Owners",
         "rank": 1,
-        "pointsFor": 1770.1,
-        "wins": 7,
+        "pointsFor": 1965.6,
+        "wins": 8,
         "losses": 2,
         "record": {
-          "record": "7-2",
-          "winPercentage": ".778"
+          "record": "8-2",
+          "winPercentage": ".800"
         }
       },
       {
@@ -24,12 +24,26 @@
         "ownerName": "Kristen Hazen",
         "division": "Players",
         "rank": 2,
-        "pointsFor": 1619.05,
+        "pointsFor": 1782.35,
         "wins": 7,
-        "losses": 2,
+        "losses": 3,
         "record": {
-          "record": "7-2",
-          "winPercentage": ".778"
+          "record": "7-3",
+          "winPercentage": ".700"
+        }
+      },
+      {
+        "id": 18,
+        "teamName": "Got That Dog In Him",
+        "ownerName": "Justin Gutierrez",
+        "division": "Owners",
+        "rank": 3,
+        "pointsFor": 1877.85,
+        "wins": 6,
+        "losses": 4,
+        "record": {
+          "record": "6-4",
+          "winPercentage": ".600"
         }
       },
       {
@@ -37,27 +51,13 @@
         "teamName": "Slap And Tickle",
         "ownerName": "Cody Box",
         "division": "Owners",
-        "rank": 3,
-        "pointsFor": 1591.1,
-        "wins": 6,
-        "losses": 3,
-        "record": {
-          "record": "6-3",
-          "winPercentage": ".667"
-        }
-      },
-      {
-        "id": 26,
-        "teamName": "For Kyren Out Loud",
-        "ownerName": "Methuen Nagatani",
-        "division": "Owners",
         "rank": 4,
-        "pointsFor": 1528.55,
+        "pointsFor": 1764.35,
         "wins": 6,
-        "losses": 3,
+        "losses": 4,
         "record": {
-          "record": "6-3",
-          "winPercentage": ".667"
+          "record": "6-4",
+          "winPercentage": ".600"
         }
       },
       {
@@ -66,26 +66,12 @@
         "ownerName": "Brent Ogden",
         "division": "Players",
         "rank": 5,
-        "pointsFor": 1511.5,
+        "pointsFor": 1694.1,
         "wins": 6,
-        "losses": 3,
-        "record": {
-          "record": "6-3",
-          "winPercentage": ".667"
-        }
-      },
-      {
-        "id": 18,
-        "teamName": "Got That Dog In Him",
-        "ownerName": "Justin Gutierrez",
-        "division": "Owners",
-        "rank": 6,
-        "pointsFor": 1566.95,
-        "wins": 5,
         "losses": 4,
         "record": {
-          "record": "5-4",
-          "winPercentage": ".556"
+          "record": "6-4",
+          "winPercentage": ".600"
         }
       },
       {
@@ -93,27 +79,27 @@
         "teamName": "Half Chubb",
         "ownerName": "casey splane",
         "division": "Owners",
-        "rank": 7,
-        "pointsFor": 1519.25,
-        "wins": 5,
+        "rank": 6,
+        "pointsFor": 1693.4,
+        "wins": 6,
         "losses": 4,
         "record": {
-          "record": "5-4",
-          "winPercentage": ".556"
+          "record": "6-4",
+          "winPercentage": ".600"
         }
       },
       {
-        "id": 21,
-        "teamName": "Smoking Split Lickers",
-        "ownerName": "Jeremy Ogden",
+        "id": 26,
+        "teamName": "For Kyren Out Loud",
+        "ownerName": "Methuen Nagatani",
         "division": "Owners",
-        "rank": 8,
-        "pointsFor": 1464.45,
-        "wins": 3,
-        "losses": 6,
+        "rank": 7,
+        "pointsFor": 1674.65,
+        "wins": 6,
+        "losses": 4,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333"
+          "record": "6-4",
+          "winPercentage": ".600"
         }
       },
       {
@@ -121,13 +107,13 @@
         "teamName": "Schlittin Rice",
         "ownerName": "Kyle Kohlscheen",
         "division": "Players",
-        "rank": 9,
-        "pointsFor": 1447.6,
-        "wins": 3,
+        "rank": 8,
+        "pointsFor": 1696.5,
+        "wins": 4,
         "losses": 6,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333"
+          "record": "4-6",
+          "winPercentage": ".400"
         }
       },
       {
@@ -135,13 +121,27 @@
         "teamName": "Commando Rice @ Dice",
         "ownerName": "Freeman Puthavongsa",
         "division": "Players",
-        "rank": 10,
-        "pointsFor": 1317.75,
-        "wins": 3,
+        "rank": 9,
+        "pointsFor": 1475.55,
+        "wins": 4,
         "losses": 6,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333"
+          "record": "4-6",
+          "winPercentage": ".400"
+        }
+      },
+      {
+        "id": 21,
+        "teamName": "Smoking Split Lickers",
+        "ownerName": "Jeremy Ogden",
+        "division": "Owners",
+        "rank": 10,
+        "pointsFor": 1644.95,
+        "wins": 3,
+        "losses": 7,
+        "record": {
+          "record": "3-7",
+          "winPercentage": ".300"
         }
       },
       {
@@ -150,12 +150,12 @@
         "ownerName": "Garret Weber",
         "division": "Players",
         "rank": 11,
-        "pointsFor": 1388.4,
-        "wins": 2,
+        "pointsFor": 1547.7,
+        "wins": 3,
         "losses": 7,
         "record": {
-          "record": "2-7",
-          "winPercentage": ".222"
+          "record": "3-7",
+          "winPercentage": ".300"
         }
       },
       {
@@ -164,12 +164,12 @@
         "ownerName": "Tom Courtney",
         "division": "Players",
         "rank": 12,
-        "pointsFor": 1149.85,
+        "pointsFor": 1277.7,
         "wins": 1,
-        "losses": 8,
+        "losses": 9,
         "record": {
-          "record": "1-8",
-          "winPercentage": ".111"
+          "record": "1-9",
+          "winPercentage": ".100"
         }
       }
     ],
@@ -190,91 +190,91 @@
     "matchups": [
       {
         "home": {
-          "id": 26,
-          "teamName": "For Kyren Out Loud",
-          "ownerName": "Methuen Nagatani",
-          "score": 190.45
-        },
-        "away": {
-          "id": 21,
-          "teamName": "Smoking Split Lickers",
-          "ownerName": "Jeremy Ogden",
-          "score": 153.35
-        },
-        "winner": "HOME"
-      },
-      {
-        "home": {
-          "id": 18,
-          "teamName": "Got That Dog In Him",
-          "ownerName": "Justin Gutierrez",
-          "score": 207.2
-        },
-        "away": {
           "id": 29,
           "teamName": "Rebuilding Year",
           "ownerName": "Garret Weber",
-          "score": 147.35
+          "score": 159.3
+        },
+        "away": {
+          "id": 26,
+          "teamName": "For Kyren Out Loud",
+          "ownerName": "Methuen Nagatani",
+          "score": 146.1
         },
         "winner": "HOME"
       },
       {
         "home": {
-          "id": 25,
-          "teamName": "Slap And Tickle",
-          "ownerName": "Cody Box",
-          "score": 194
-        },
-        "away": {
           "id": 1,
           "teamName": "Big Nix Energy",
           "ownerName": "Brent Ogden",
-          "score": 177.35
-        },
-        "winner": "HOME"
-      },
-      {
-        "home": {
-          "id": 24,
-          "teamName": "*Show Stopper*",
-          "ownerName": "Kristen Hazen",
-          "score": 192.75
+          "score": 182.6
         },
         "away": {
-          "id": 30,
-          "teamName": "Half Chubb",
-          "ownerName": "casey splane",
-          "score": 161.3
-        },
-        "winner": "HOME"
-      },
-      {
-        "home": {
-          "id": 23,
-          "teamName": "Thomas The Pain Train",
-          "ownerName": "Tom Courtney",
-          "score": 131.55
-        },
-        "away": {
-          "id": 7,
-          "teamName": "Parker The Show",
-          "ownerName": "Nicholas Hazen",
-          "score": 168.65
+          "id": 18,
+          "teamName": "Got That Dog In Him",
+          "ownerName": "Justin Gutierrez",
+          "score": 310.9
         },
         "winner": "AWAY"
       },
       {
         "home": {
-          "id": 17,
-          "teamName": "Schlittin Rice",
-          "ownerName": "Kyle Kohlscheen",
-          "score": 127.5
+          "id": 30,
+          "teamName": "Half Chubb",
+          "ownerName": "casey splane",
+          "score": 174.15
         },
         "away": {
+          "id": 25,
+          "teamName": "Slap And Tickle",
+          "ownerName": "Cody Box",
+          "score": 173.25
+        },
+        "winner": "HOME"
+      },
+      {
+        "home": {
+          "id": 7,
+          "teamName": "Parker The Show",
+          "ownerName": "Nicholas Hazen",
+          "score": 195.5
+        },
+        "away": {
+          "id": 24,
+          "teamName": "*Show Stopper*",
+          "ownerName": "Kristen Hazen",
+          "score": 163.1
+        },
+        "winner": "HOME"
+      },
+      {
+        "home": {
           "id": 28,
           "teamName": "Commando Rice @ Dice",
           "ownerName": "Freeman Puthavongsa",
-          "score": 136.7
+          "score": 157.8
+        },
+        "away": {
+          "id": 23,
+          "teamName": "Thomas The Pain Train",
+          "ownerName": "Tom Courtney",
+          "score": 127.85
+        },
+        "winner": "HOME"
+      },
+      {
+        "home": {
+          "id": 21,
+          "teamName": "Smoking Split Lickers",
+          "ownerName": "Jeremy Ogden",
+          "score": 180.5
+        },
+        "away": {
+          "id": 17,
+          "teamName": "Schlittin Rice",
+          "ownerName": "Kyle Kohlscheen",
+          "score": 248.9
         },
         "winner": "AWAY"
       }
@@ -283,40 +283,40 @@
       {
         "title": "High Points",
         "name": "Justin Gutierrez",
-        "details": "207.2 points"
+        "details": "310.9 points"
       },
       {
         "title": "Tim Tebow \"Praise Jesus\" Award",
-        "name": "C.J. Stroud",
-        "details": "72.5 points"
+        "name": "Christian McCaffrey",
+        "details": "66.35 points"
       },
       {
         "title": "Big Ben’s \"Buy me Dinner First\" Award",
-        "name": "Garret Weber",
-        "details": "Lost to Justin Gutierrez by 59.85 points"
+        "name": "Brent Ogden",
+        "details": "Lost to Justin Gutierrez by 128.3 points"
       },
       {
         "title": "Pot of Gold Award",
-        "name": "Garret Weber",
-        "details": "Lost to Justin Gutierrez 207.2 to 147.35"
+        "name": "Brent Ogden",
+        "details": "Lost to Justin Gutierrez 310.9 to 182.6"
       },
       {
         "title": "Aaron Hernandez Hangin’ Tough Award",
-        "name": "Kyle Kohlscheen",
-        "details": "Lost to Freeman Puthavongsa by 9.2 points"
+        "name": "Cody Box",
+        "details": "Lost to casey splane by 0.9 points"
       }
     ],
     "offenseStars": [
-      "C.J. Stroud - 72.5 points",
-      "Jordan Love - 53.55 points",
-      "Kenneth Walker III - 45.6 points",
-      "Joe Burrow - 44.45 points"
+      "Christian McCaffrey - 66.35 points",
+      "Brock Purdy - 65.6 points",
+      "Joe Burrow - 64.05 points",
+      "Patrick Mahomes - 58 points"
     ],
     "defenseStars": [
-      "Texans D/ST - 24.5 points",
-      "Bears D/ST - 20.25 points",
-      "Giants D/ST - 20 points",
-      "Rams D/ST - 18.25 points"
+      "Vikings D/ST - 29.75 points",
+      "Rams D/ST - 18.75 points",
+      "Seahawks D/ST - 15.5 points",
+      "Bills D/ST - 14.75 points"
     ],
     "completedWeeks": [
       {
@@ -772,7 +772,7 @@
           },
           {
             "ownerName": "Kristen Hazen",
-            "score": 192.75
+            "score": 192.95
           },
           {
             "ownerName": "casey splane",
@@ -795,80 +795,133 @@
             "score": 136.7
           }
         ]
+      },
+      {
+        "week": 10,
+        "results": [
+          {
+            "ownerName": "Garret Weber",
+            "score": 159.3
+          },
+          {
+            "ownerName": "Methuen Nagatani",
+            "score": 146.1
+          },
+          {
+            "ownerName": "Brent Ogden",
+            "score": 182.6
+          },
+          {
+            "ownerName": "Justin Gutierrez",
+            "score": 310.9
+          },
+          {
+            "ownerName": "casey splane",
+            "score": 174.15
+          },
+          {
+            "ownerName": "Cody Box",
+            "score": 173.25
+          },
+          {
+            "ownerName": "Nicholas Hazen",
+            "score": 195.5
+          },
+          {
+            "ownerName": "Kristen Hazen",
+            "score": 163.1
+          },
+          {
+            "ownerName": "Freeman Puthavongsa",
+            "score": 157.8
+          },
+          {
+            "ownerName": "Tom Courtney",
+            "score": 127.85
+          },
+          {
+            "ownerName": "Jeremy Ogden",
+            "score": 180.5
+          },
+          {
+            "ownerName": "Kyle Kohlscheen",
+            "score": 248.9
+          }
+        ]
       }
     ],
     "currentWeekResults": [
       {
-        "id": 26,
-        "teamName": "For Kyren Out Loud",
-        "ownerName": "Methuen Nagatani",
-        "score": 190.45
-      },
-      {
-        "id": 21,
-        "teamName": "Smoking Split Lickers",
-        "ownerName": "Jeremy Ogden",
-        "score": 153.35
-      },
-      {
-        "id": 18,
-        "teamName": "Got That Dog In Him",
-        "ownerName": "Justin Gutierrez",
-        "score": 207.2
-      },
-      {
         "id": 29,
         "teamName": "Rebuilding Year",
         "ownerName": "Garret Weber",
-        "score": 147.35
+        "score": 159.3
       },
       {
-        "id": 25,
-        "teamName": "Slap And Tickle",
-        "ownerName": "Cody Box",
-        "score": 194
+        "id": 26,
+        "teamName": "For Kyren Out Loud",
+        "ownerName": "Methuen Nagatani",
+        "score": 146.1
       },
       {
         "id": 1,
         "teamName": "Big Nix Energy",
         "ownerName": "Brent Ogden",
-        "score": 177.35
+        "score": 182.6
       },
       {
-        "id": 24,
-        "teamName": "*Show Stopper*",
-        "ownerName": "Kristen Hazen",
-        "score": 192.75
+        "id": 18,
+        "teamName": "Got That Dog In Him",
+        "ownerName": "Justin Gutierrez",
+        "score": 310.9
       },
       {
         "id": 30,
         "teamName": "Half Chubb",
         "ownerName": "casey splane",
-        "score": 161.3
+        "score": 174.15
       },
       {
-        "id": 23,
-        "teamName": "Thomas The Pain Train",
-        "ownerName": "Tom Courtney",
-        "score": 131.55
+        "id": 25,
+        "teamName": "Slap And Tickle",
+        "ownerName": "Cody Box",
+        "score": 173.25
       },
       {
         "id": 7,
         "teamName": "Parker The Show",
         "ownerName": "Nicholas Hazen",
-        "score": 168.65
+        "score": 195.5
       },
       {
-        "id": 17,
-        "teamName": "Schlittin Rice",
-        "ownerName": "Kyle Kohlscheen",
-        "score": 127.5
+        "id": 24,
+        "teamName": "*Show Stopper*",
+        "ownerName": "Kristen Hazen",
+        "score": 163.1
       },
       {
         "id": 28,
         "teamName": "Commando Rice @ Dice",
         "ownerName": "Freeman Puthavongsa",
-        "score": 136.7
+        "score": 157.8
+      },
+      {
+        "id": 23,
+        "teamName": "Thomas The Pain Train",
+        "ownerName": "Tom Courtney",
+        "score": 127.85
+      },
+      {
+        "id": 21,
+        "teamName": "Smoking Split Lickers",
+        "ownerName": "Jeremy Ogden",
+        "score": 180.5
+      },
+      {
+        "id": 17,
+        "teamName": "Schlittin Rice",
+        "ownerName": "Kyle Kohlscheen",
+        "score": 248.9
       }
     ]
   },
@@ -880,10 +933,10 @@
         "ownerName": "Chad Marchand",
         "division": "Hangman’s Row",
         "rank": 1,
-        "pointsFor": 2497,
+        "pointsFor": 2699.2,
         "record": {
-          "record": "9-0",
-          "winPercentage": "1.000",
+          "record": "9-1",
+          "winPercentage": ".900",
           "victoryPoints": "36"
         }
       },
@@ -893,11 +946,11 @@
         "ownerName": "Justin Gutierrez",
         "division": "Hangman’s Row",
         "rank": 2,
-        "pointsFor": 2452.2,
+        "pointsFor": 2742.55,
         "record": {
-          "record": "6-3",
-          "winPercentage": ".667",
-          "victoryPoints": "29"
+          "record": "7-3",
+          "winPercentage": ".700",
+          "victoryPoints": "33"
         }
       },
       {
@@ -906,11 +959,11 @@
         "ownerName": "Gary Garcia",
         "division": "The Gallows Gate",
         "rank": 3,
-        "pointsFor": 2177.6,
+        "pointsFor": 2461.95,
         "record": {
-          "record": "5-4",
-          "winPercentage": ".556",
-          "victoryPoints": "21"
+          "record": "6-4",
+          "winPercentage": ".600",
+          "victoryPoints": "25"
         }
       },
       {
@@ -919,10 +972,23 @@
         "ownerName": "Kristen Hazen",
         "division": "Hangman’s Row",
         "rank": 4,
-        "pointsFor": 2138.55,
+        "pointsFor": 2378.85,
         "record": {
-          "record": "5-4",
-          "winPercentage": ".556",
+          "record": "6-4",
+          "winPercentage": ".600",
+          "victoryPoints": "24"
+        }
+      },
+      {
+        "franchiseId": "0012",
+        "teamName": "Kishi Kaisai",
+        "ownerName": "Met Nagatani",
+        "division": "The Gallows Gate",
+        "rank": 5,
+        "pointsFor": 2173.85,
+        "record": {
+          "record": "6-4",
+          "winPercentage": ".600",
           "victoryPoints": "21"
         }
       },
@@ -931,38 +997,25 @@
         "teamName": "H-Town Honeys",
         "ownerName": "Brooke-Lynn Killingbeck",
         "division": "The Gallows Gate",
-        "rank": 5,
-        "pointsFor": 2135.55,
-        "record": {
-          "record": "5-4",
-          "winPercentage": ".556",
-          "victoryPoints": "19"
-        }
-      },
-      {
-        "franchiseId": "0012",
-        "teamName": "Kishi Kaisai",
-        "ownerName": "Met Nagatani",
-        "division": "The Gallows Gate",
         "rank": 6,
-        "pointsFor": 1957.05,
+        "pointsFor": 2342.75,
         "record": {
-          "record": "5-4",
-          "winPercentage": ".556",
-          "victoryPoints": "18"
+          "record": "5-5",
+          "winPercentage": ".500",
+          "victoryPoints": "20"
         }
       },
       {
-        "franchiseId": "0003",
-        "teamName": "The Show",
-        "ownerName": "Nick Hazen",
-        "division": "Hangman’s Row",
+        "franchiseId": "0002",
+        "teamName": "All Whites",
+        "ownerName": "Tom Courtney",
+        "division": "The Gallows Gate",
         "rank": 7,
-        "pointsFor": 1970.05,
+        "pointsFor": 2294.8,
         "record": {
-          "record": "4-5",
-          "winPercentage": ".444",
-          "victoryPoints": "16"
+          "record": "4-6",
+          "winPercentage": ".400",
+          "victoryPoints": "18"
         }
       },
       {
@@ -971,23 +1024,36 @@
         "ownerName": "Jeremy Ogden",
         "division": "Hangman’s Row",
         "rank": 8,
-        "pointsFor": 1962.6,
+        "pointsFor": 2255.1,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333",
-          "victoryPoints": "15"
+          "record": "3-7",
+          "winPercentage": ".300",
+          "victoryPoints": "17"
         }
       },
       {
-        "franchiseId": "0002",
-        "teamName": "All Whites",
-        "ownerName": "Tom Courtney",
-        "division": "The Gallows Gate",
+        "franchiseId": "0003",
+        "teamName": "The Show",
+        "ownerName": "Nick Hazen",
+        "division": "Hangman’s Row",
         "rank": 9,
-        "pointsFor": 1993.45,
+        "pointsFor": 2166,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333",
+          "record": "4-6",
+          "winPercentage": ".400",
+          "victoryPoints": "16"
+        }
+      },
+      {
+        "franchiseId": "0001",
+        "teamName": "Big Nix Energy",
+        "ownerName": "Brent Ogden",
+        "division": "Hangman’s Row",
+        "rank": 10,
+        "pointsFor": 2086.55,
+        "record": {
+          "record": "4-6",
+          "winPercentage": ".400",
           "victoryPoints": "14"
         }
       },
@@ -996,25 +1062,12 @@
         "teamName": "Team Cunningham",
         "ownerName": "Jimmy Cunningham",
         "division": "The Gallows Gate",
-        "rank": 10,
-        "pointsFor": 1741.55,
-        "record": {
-          "record": "5-4",
-          "winPercentage": ".556",
-          "victoryPoints": "14"
-        }
-      },
-      {
-        "franchiseId": "0001",
-        "teamName": "Big Nix Energy",
-        "ownerName": "Brent Ogden",
-        "division": "Hangman’s Row",
         "rank": 11,
-        "pointsFor": 1806.15,
+        "pointsFor": 1881.35,
         "record": {
-          "record": "3-6",
-          "winPercentage": ".333",
-          "victoryPoints": "11"
+          "record": "5-5",
+          "winPercentage": ".500",
+          "victoryPoints": "14"
         }
       },
       {
@@ -1023,10 +1076,10 @@
         "ownerName": "Jake Killingbeck",
         "division": "The Gallows Gate",
         "rank": 12,
-        "pointsFor": 1963.55,
+        "pointsFor": 2170.05,
         "record": {
-          "record": "1-8",
-          "winPercentage": ".111",
+          "record": "1-9",
+          "winPercentage": ".100",
           "victoryPoints": "8"
         }
       }
@@ -1035,95 +1088,95 @@
       {
         "teams": [
           {
-            "franchiseId": "0007",
-            "teamName": "Garcia Zias ",
-            "score": 236.05,
-            "result": "W"
-          },
-          {
             "franchiseId": "0004",
             "teamName": "*Showstopper*",
-            "score": 227.1,
-            "result": "L"
-          }
-        ]
-      },
-      {
-        "teams": [
+            "score": 240.3,
+            "result": "W"
+          },
           {
             "franchiseId": "0009",
             "teamName": "Team Cunningham",
-            "score": 162.4,
+            "score": 139.8,
             "result": "L"
-          },
+          }
+        ]
+      },
+      {
+        "teams": [
           {
             "franchiseId": "0008",
             "teamName": "The Chadahoochie Coochie Munchers",
-            "score": 334.75,
-            "result": "W"
-          }
-        ]
-      },
-      {
-        "teams": [
+            "score": 201.7,
+            "result": "L"
+          },
           {
             "franchiseId": "0012",
             "teamName": "Kishi Kaisai",
-            "score": 200.65,
+            "score": 216.55,
             "result": "W"
-          },
+          }
+        ]
+      },
+      {
+        "teams": [
           {
             "franchiseId": "0010",
             "teamName": "Smoking Split Lickers",
-            "score": 150.3,
+            "score": 293,
             "result": "L"
-          }
-        ]
-      },
-      {
-        "teams": [
+          },
           {
             "franchiseId": "0002",
             "teamName": "All Whites",
-            "score": 217.25,
-            "result": "L"
-          },
+            "score": 301.35,
+            "result": "W"
+          }
+        ]
+      },
+      {
+        "teams": [
           {
             "franchiseId": "0011",
             "teamName": "Got That Dog In Him",
-            "score": 240.5,
+            "score": 290.35,
             "result": "W"
-          }
-        ]
-      },
-      {
-        "teams": [
+          },
           {
             "franchiseId": "0005",
             "teamName": "H-Town Honeys",
-            "score": 232.6,
+            "score": 207.2,
             "result": "L"
-          },
-          {
-            "franchiseId": "0001",
-            "teamName": "Big Nix Energy",
-            "score": 258.55,
-            "result": "W"
           }
         ]
       },
       {
         "teams": [
           {
+            "franchiseId": "0001",
+            "teamName": "Big Nix Energy",
+            "score": 279.9,
+            "result": "W"
+          },
+          {
             "franchiseId": "0006",
             "teamName": "Old Chode",
-            "score": 193.25,
+            "score": 206.5,
             "result": "L"
-          },
+          }
+        ]
+      },
+      {
+        "teams": [
           {
             "franchiseId": "0003",
             "teamName": "The Show",
-            "score": 214.55,
+            "score": 193.95,
+            "result": "L"
+          },
+          {
+            "franchiseId": "0007",
+            "teamName": "Garcia Zias ",
+            "score": 284.35,
             "result": "W"
           }
         ]
